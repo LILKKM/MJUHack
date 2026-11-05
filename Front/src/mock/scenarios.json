@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "contractVersion": "0.1.0",
+    "dataKind": "mock",
+    "partial": false,
+    "createdAt": "2026-11-06T00:00:00+09:00",
+    "producer": "integration",
+    "limitations": [
+      "모든 장소·사건·작품·업체·접근성은 UI 시연 전용",
+      "ko와 방문 반경 100m는 mock 값이며 제품 확정값이 아님"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "location-ok",
+      "operation": "checkLocation",
+      "request": {
+        "latitude": 37.57,
+        "longitude": 126.98,
+        "accuracyM": 10,
+        "observedAt": "2026-11-06T00:00:00+09:00",
+        "photoGps": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "ok",
+        "data": {
+          "checkId": "mock:check:a",
+          "spotId": "mock:spot:a",
+          "mode": "current_location_only",
+          "reason": "photo_not_provided",
+          "validUntil": null
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "location-uncertain",
+      "operation": "checkLocation",
+      "request": {
+        "latitude": 37.57,
+        "longitude": 126.98,
+        "accuracyM": 25,
+        "observedAt": "2026-11-06T00:00:00+09:00",
+        "photoGps": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "error",
+        "data": null,
+        "error": {
+          "code": "LOCATION_UNCERTAIN",
+          "message": "시연 오류",
+          "retryable": true
+        }
+      }
+    },
+    {
+      "id": "outside-spot",
+      "operation": "checkLocation",
+      "request": {
+        "latitude": 37.6,
+        "longitude": 126.9,
+        "accuracyM": 10,
+        "observedAt": "2026-11-06T00:00:00+09:00",
+        "photoGps": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "error",
+        "data": null,
+        "error": {
+          "code": "OUTSIDE_SPOT",
+          "message": "시연 오류",
+          "retryable": true
+        }
+      }
+    },
+    {
+      "id": "era-match-a",
+      "operation": "selectEdition",
+      "request": {
+        "checkId": "mock:check:a",
+        "spotId": "mock:spot:a",
+        "eraId": "mock:era:a",
+        "kContentId": "mock:kcontent:a",
+        "language": "ko"
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "ok",
+        "data": {
+          "edition": {
+            "id": "mock:edition:a",
+            "spotId": "mock:spot:a",
+            "eventIds": [
+              "mock:event:a"
+            ],
+            "eraIds": [
+              "mock:era:a"
+            ],
+            "language": "ko",
+            "templateId": "mock:template:paper",
+            "templateVersion": "0.1.0",
+            "svgAssetPath": "assets/newspaper-demo.svg",
+            "interactionManifest": {
+              "namespace": "mock-paper",
+              "elements": [
+                {
+                  "id": "mock-paper-title",
+                  "role": "title",
+                  "action": "reveal"
+                },
+                {
+                  "id": "mock-paper-illustration",
+                  "role": "illustration",
+                  "action": "reveal"
+                },
+                {
+                  "id": "mock-paper-source",
+                  "role": "source",
+                  "action": "open_sources"
+                }
+              ]
+            },
+            "accessibleText": "시연 시대 a의 가상 역사 신문. 실제 역사적 사실이 아닙니다.",
+            "headline": "시연 시대 a에서 온 신문",
+            "lead": "기사·이미지·장소 관계를 확인하는 UI 전용 자료",
+            "body": [
+              "실제 사건과 무관한 시연 자료입니다."
+            ],
+            "claimSourceRefs": [
+              {
+                "claimId": "mock:claim:a",
+                "sourceIds": [
+                  "mock:source:demo"
+                ]
+              }
+            ],
+            "aiIllustrationLabel": "최종 AI 삽화가 아닌 임시 자리표시자",
+            "sourceIds": [
+              "mock:source:demo"
+            ],
+            "status": "published",
+            "contentVersion": "0.1.0",
+            "publishedAt": "2026-11-06T00:00:00+09:00"
+          }
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "era-match-b",
+      "operation": "selectEdition",
+      "request": {
+        "checkId": "mock:check:a",
+        "spotId": "mock:spot:a",
+        "eraId": "mock:era:b",
+        "kContentId": null,
+        "language": "ko"
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "ok",
+        "data": {
+          "edition": {
+            "id": "mock:edition:b",
+            "spotId": "mock:spot:a",
+            "eventIds": [
+              "mock:event:b"
+            ],
+            "eraIds": [
+              "mock:era:b"
+            ],
+            "language": "ko",
+            "templateId": "mock:template:paper",
+            "templateVersion": "0.1.0",
+            "svgAssetPath": "assets/newspaper-demo.svg",
+            "interactionManifest": {
+              "namespace": "mock-paper",
+              "elements": [
+                {
+                  "id": "mock-paper-title",
+                  "role": "title",
+                  "action": "reveal"
+                },
+                {
+                  "id": "mock-paper-illustration",
+                  "role": "illustration",
+                  "action": "reveal"
+                },
+                {
+                  "id": "mock-paper-source",
+                  "role": "source",
+                  "action": "open_sources"
+                }
+              ]
+            },
+            "accessibleText": "시연 시대 b의 가상 역사 신문. 실제 역사적 사실이 아닙니다.",
+            "headline": "시연 시대 b에서 온 신문",
+            "lead": "기사·이미지·장소 관계를 확인하는 UI 전용 자료",
+            "body": [
+              "실제 사건과 무관한 시연 자료입니다."
+            ],
+            "claimSourceRefs": [
+              {
+                "claimId": "mock:claim:b",
+                "sourceIds": [
+                  "mock:source:demo"
+                ]
+              }
+            ],
+            "aiIllustrationLabel": "최종 AI 삽화가 아닌 임시 자리표시자",
+            "sourceIds": [
+              "mock:source:demo"
+            ],
+            "status": "published",
+            "contentVersion": "0.1.0",
+            "publishedAt": "2026-11-06T00:00:00+09:00"
+          }
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "era-unavailable",
+      "operation": "selectEdition",
+      "request": {
+        "checkId": "mock:check:a",
+        "spotId": "mock:spot:a",
+        "eraId": "mock:era:unavailable",
+        "kContentId": null,
+        "language": "ko"
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "empty",
+        "data": {
+          "items": [],
+          "reason": "NO_EDITION_FOR_ERA"
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "language-unavailable",
+      "operation": "selectEdition",
+      "request": {
+        "checkId": "mock:check:a",
+        "spotId": "mock:spot:a",
+        "eraId": "mock:era:a",
+        "kContentId": null,
+        "language": "en"
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "empty",
+        "data": {
+          "items": [],
+          "reason": "NO_EDITION_FOR_LANGUAGE"
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "no-accessible-restaurant",
+      "operation": "recommendCourse",
+      "request": {
+        "spotId": "mock:spot:a",
+        "eraId": null,
+        "requiredAccessNeeds": [
+          "wheelchair_entry"
+        ],
+        "preferences": [],
+        "question": "휠체어 출입이 확인된 음식점이 있는 코스",
+        "conversationId": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "empty",
+        "data": {
+          "items": [],
+          "reason": "NO_ACCESSIBLE_CANDIDATES"
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "chat-unavailable",
+      "operation": "recommendCourse",
+      "request": {
+        "spotId": "mock:spot:a",
+        "eraId": null,
+        "requiredAccessNeeds": [],
+        "preferences": [],
+        "question": "주변 코스 추천",
+        "conversationId": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "error",
+        "data": null,
+        "error": {
+          "code": "CHAT_UNAVAILABLE",
+          "message": "시연 오류",
+          "retryable": true
+        }
+      }
+    },
+    {
+      "id": "course-ok",
+      "operation": "recommendCourse",
+      "request": {
+        "spotId": "mock:spot:a",
+        "eraId": null,
+        "requiredAccessNeeds": [],
+        "preferences": [],
+        "question": "주변 코스 추천",
+        "conversationId": null
+      },
+      "response": {
+        "contractVersion": "0.1.0",
+        "dataKind": "mock",
+        "status": "ok",
+        "data": {
+          "conversationId": "mock:chat:a",
+          "message": "가상 시연 방문 순서입니다.",
+          "stopIds": [
+            "mock:spot:a",
+            "mock:restaurant:a"
+          ],
+          "reasons": [
+            "역사 신문 열람",
+            "주변 음식점 후보"
+          ],
+          "placeAccessibility": [
+            {
+              "id": "mock:access:tourist_place",
+              "placeType": "tourist_place",
+              "placeId": "mock:tour:a",
+              "features": [
+                {
+                  "key": "wheelchair_entry",
+                  "status": "available",
+                  "detail": "UI 상태 검증용 가상 데이터"
+                }
+              ],
+              "rawFields": {},
+              "sourceIds": [
+                "mock:source:demo"
+              ],
+              "checkedAt": "2026-11-06T00:00:00+09:00"
+            },
+            {
+              "id": "mock:access:restaurant",
+              "placeType": "restaurant",
+              "placeId": "mock:restaurant:a",
+              "features": [
+                {
+                  "key": "wheelchair_entry",
+                  "status": "unknown",
+                  "detail": null
+                }
+              ],
+              "rawFields": {},
+              "sourceIds": [
+                "mock:source:demo"
+              ],
+              "checkedAt": "2026-11-06T00:00:00+09:00"
+            },
+            {
+              "id": "mock:access:spot",
+              "placeType": "spot",
+              "placeId": "mock:spot:a",
+              "features": [
+                {
+                  "key": "wheelchair_entry",
+                  "status": "unknown",
+                  "detail": null
+                }
+              ],
+              "rawFields": {},
+              "sourceIds": [
+                "mock:source:demo"
+              ],
+              "checkedAt": "2026-11-06T00:00:00+09:00"
+            }
+          ],
+          "unknownFields": [
+            "음식점 출입 접근성"
+          ],
+          "warnings": [
+            "방문 순서 제안 · 장소 사이 이동은 별도 확인 필요"
+          ],
+          "sourceRefs": [
+            "mock:source:demo"
+          ]
+        },
+        "error": null
+      }
+    }
+  ]
+}

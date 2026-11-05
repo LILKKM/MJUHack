@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" role="img" aria-labelledby="mock-paper-title mock-paper-desc">
+  <title id="mock-paper-title">시연 신문 — 실제 역사 자료 아님</title>
+  <desc id="mock-paper-desc">최종 디자인과 AI 삽화를 대신하는 인터랙션 연결용 임시 SVG입니다.</desc>
+  <rect width="640" height="860" fill="#f5eddb"/>
+  <g fill="#302d26" font-family="sans-serif" text-anchor="middle">
+    <text x="320" y="75" font-size="32">동네의 시간 · 시연 신문</text>
+    <text x="320" y="112" font-size="16">MOCK · 실제 장소·사건·AI 삽화 아님</text>
+  </g>
+  <path d="M40 140H600 M40 148H600 M40 700H600" stroke="#302d26" stroke-width="2"/>
+  <g id="mock-paper-illustration">
+    <rect x="40" y="180" width="560" height="360" fill="#ded5c1"/>
+    <text x="320" y="360" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#302d26">최종 삽화 준비 중</text>
+  </g>
+  <g fill="#302d26" font-family="sans-serif" font-size="18">
+    <text x="40" y="590">기사·시대·출처는 선택한 edition 데이터로 연결합니다.</text>
+    <text x="40" y="625">이 자산은 모션과 클릭 동작 연결을 위한 샘플입니다.</text>
+  </g>
+  <g id="mock-paper-source" fill="#302d26" font-family="sans-serif">
+    <text x="40" y="745" font-size="20">출처 확인 영역</text>
+    <text x="40" y="785" font-size="16">실제 사료는 데이터 검토 후 연결합니다.</text>
+  </g>
+</svg>
