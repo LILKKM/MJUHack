@@ -1,0 +1,204 @@
+{
+  "source": "Phosphor Icons / regular",
+  "license": "MIT",
+  "records": [
+    {
+      "sourceId": "SDM03",
+      "name": "국립대한민국임시정부기념관",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "통일로279-24 같은 기념관. 1층 진입로 계단은 휠체어리프트 이용. 리프트 운영과 핀20m 접면은 미확인. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "SDM09",
+      "name": "서대문형무소역사관",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "통일로251 역사관. 야외 관람로는 평탄하나 건물 입구는 계단으로 이동식 리프트 필요. 접근로 약6도. 지하·2층 접근 불가 조건을 반드시 안내. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "SDM15",
+      "name": "서대문독립공원",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "통일로251 서대문독립공원. 공원 출입구 근거이며 모든 내부 시설·역사 핀20m 접면 접근을 보장하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "MPO02",
+      "name": "당인리 발전소(마포새빛문화숲)",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "옛 당인리발전소 지상 공원인 마포새빛문화숲과 망원한강공원의 공식 연결시설 근거. 보행로 폭3m·21인승 승강기. 공원 전체 및 산업시설 출입, 실시간 승강기 작동·핀20m 접면은 미확인. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "MPO07",
+      "name": "양화진 외국인선교사묘원",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "양화진길46, 합정동 외국인선교사묘원 동일 장소. 입구 무단차이나 흙·접근불가구간이 있어 전체 묘역 접근 보장 불가. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "MPO09",
+      "name": "절두산 순교성지",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "토정로6 성지 안 한국천주교순교자박물관만 확인. 주차장~출입구 경사로와 입구 리프트 조건. 성지 전체·계단·핀20m 접면으로 확대하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "EPY06",
+      "name": "은평역사한옥박물관",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "주차장 접근로의 출입 근거. 옥상 정자·석물 전시장 전체 및 핀20m 도달은 미검증. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "EPY07",
+      "name": "진관사",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "완만한 경사로와 대여 정보는 있으나 각 전각 내부 출입/경사 수치는 미확인. 태극기비 접근으로 전파하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG11",
+      "name": "경교장",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "수동문·경사로 조건. 전체 층간 관람 및20m핀 도달 보장은 아님. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG12",
+      "name": "경복궁",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "공식 경사로 관람동선을 선택해야 함. 모든 전각 내부·월대 접근 보장 아님. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG13",
+      "name": "경희궁",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "궁궐 전체 관람동선 및 숭정전 등 핀 위치 도달을 정문 정보만으로 보장하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG14",
+      "name": "국립민속박물관",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "본관 운영기관도 휠체어 대여를 안내. 대여 장비는 박물관 실내에서만 사용. 파주관 자료는 미사용. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG15",
+      "name": "대한민국역사박물관",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "출입 접근 근거이며 전체 전시동선·혼잡·20m핀은 현장 미검증. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG16",
+      "name": "북촌한옥마을",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "정독도서관~삼청동 방향 평탄 구간과 다른 경사 구간을 구분. 마을 전체·개별한옥 접근 보장 아님. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG17",
+      "name": "서울역사박물관",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "청계천박물관·경희궁과 혼동하지 않음. 현장/20m핀은 미검증. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG19",
+      "name": "운현궁",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "경사로를 통한 휠체어 접근 안내가 있으나 전각 내부 전체와 출입문 폭은 미확인. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG20",
+      "name": "인사동",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "거리 접근로의 근거. 개별 상점·골목 또는 선택된 핀20m까지의 접근성으로 확대하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG21",
+      "name": "종묘",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "완만한 진입 경사와 내부 흙길·일부 박석 조건. 당일 관람제도·동선은 운영기관 재확인. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG22",
+      "name": "창경궁",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "주출입구 무단차와 경사로 관람동선 안내. 판석 구간 주의, 모든전각 내부·20m핀 도달 보장 아님. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG23",
+      "name": "창덕궁",
+      "icon": "info.svg",
+      "label": "접근 조건 확인",
+      "background": "#F2AC88",
+      "foreground": "#24364B",
+      "detail": "운영기관은 월대 근접관람 제한 및 후원 급경사·젖은 비포장길 주의를 명시. 관광공사 전각마다 경사로라는 요약을 무제한 접근으로 해석하지 않음. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG24",
+      "name": "탑골공원",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "출입구 확인 수준. 팔각정 내부·비석 앞·20m핀 도달은 현장 미검증. / 핀 20m 내 접근: 미검증"
+    },
+    {
+      "sourceId": "JNG26",
+      "name": "흥인지문",
+      "icon": "wheelchair.svg",
+      "label": "휠체어 출입 정보",
+      "background": "#8FCBAD",
+      "foreground": "#24364B",
+      "detail": "성문 상부·내부 관람을 보장하지 않음. 역 출구 번호는 같은 페이지 내 상충하므로 특정 번호 안내를 보류. / 핀 20m 내 접근: 미검증"
+    }
+  ]
+}

@@ -25,7 +25,7 @@
 .arrival-ground-shade { z-index: 1; pointer-events: none; background: radial-gradient(ellipse at 50% 45%, var(--arrival-clear) 20%, var(--arrival-shadow)); opacity: 0; transition: opacity 2s; }
 .cloud-volume { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
 .cloud-canvas { display: block; width: 100%; height: 100%; }
-.arrival-anchor { position: absolute; left: 50%; top: 50%; z-index: 2; width: 0; height: 0; pointer-events: none; }
+.arrival-anchor { position: absolute; left: var(--avatar-x, 50%); top: var(--avatar-y, 50%); z-index: 2; width: 0; height: 0; pointer-events: none; }
 .arrival-avatar { position: absolute; width: 86px; height: 112px; left: -43px; bottom: 0; opacity: 0; transform-origin: 50% 100%; }
 .arrival-avatar svg { position: relative; width: 100%; height: 100%; filter: drop-shadow(5px 6px 2px var(--arrival-shadow)); }
 .avatar-motion-trail { position: absolute; bottom: 40px; left: 39px; width: 5px; height: 220px; background: linear-gradient(var(--arrival-clear),var(--arrival-sun)); opacity: 0; }
@@ -39,9 +39,6 @@
 .phase-falling .arrival-avatar { animation: avatar-plunge .34s cubic-bezier(.42,0,.92,.38) both; }
 .phase-landed .arrival-avatar { opacity: 1; animation: avatar-settle .58s ease-out both; }
 .phase-falling .avatar-motion-trail { animation: arrival-trail .34s both; }
-.phase-landed .impact-one { animation: landing-ring 1.1s ease-out both; }
-.phase-landed .impact-two { animation: landing-ring 1.2s .15s ease-out both; }
-.phase-landed .arrival-anchor { animation: ground-impact .3s both; }
 @keyframes avatar-plunge { 0% { opacity: 0; transform: translate3d(130px,-110vh,0) rotate(-24deg) scale(.65); } 12% { opacity: 1; } 85% { opacity: 1; transform: translate3d(8px,-70px,0) rotate(-10deg) scale(1); } 100% { opacity: 1; transform: translate3d(0,5px,0) rotate(0) scale(1.08,.92); } }
 @keyframes avatar-settle { 0% { transform: translateY(5px) rotate(-16deg) scale(1.08,.92); } 23% { transform: rotate(12deg) scale(.98,1.02); } 46% { transform: rotate(-8deg); } 68% { transform: rotate(4deg); } 85% { transform: rotate(-2deg); } 100% { transform: none; } }
 @keyframes arrival-trail { 0%, 20% { opacity: 0; } 50%, 85% { opacity: .6; } 100% { opacity: 0; } }
@@ -100,10 +97,9 @@
 .arrival-map-note { bottom: 30px; }
 .arrival-ground { inset: -120%; transform-origin: 50% 50%; }
 .phase-revealing .arrival-ground, .phase-flying .arrival-ground, .phase-departing .arrival-ground, .phase-following .arrival-ground { visibility: hidden; }
-.phase-falling .arrival-ground, .phase-impact .arrival-ground, .phase-pullback .arrival-ground, .phase-landed .arrival-ground { visibility: visible; transform: perspective(1600px) rotateX(var(--landing-tilt,0deg)) scale(var(--landing-scale,1)); }
+.phase-clearing .arrival-ground, .phase-falling .arrival-ground, .phase-impact .arrival-ground, .phase-pullback .arrival-ground, .phase-landed .arrival-ground { visibility: visible; transform: perspective(1600px) rotateX(var(--landing-tilt,0deg)) scale(var(--landing-scale,1)); }
 .phase-impact .arrival-ground-shade, .phase-pullback .arrival-ground-shade { opacity: 1; }
-.phase-impact .impact-one { animation: landing-ring 1.1s ease-out both; }.phase-impact .impact-two { animation: landing-ring 1.2s .15s ease-out both; }
-.phase-impact .arrival-anchor { animation: ground-impact .3s both; }
+.impact-waves .impact-one { animation: landing-ring 1.1s ease-out both; }.impact-waves .impact-two { animation: landing-ring 1.2s .18s ease-out both; }
 .phase-pullback .arrival-anchor, .phase-landed .arrival-anchor { transform: scale(var(--landing-scale,1)); }
 .hotspot-label { opacity: 0; }
 .phase-clouds .arrival-map-note, .phase-revealing .arrival-map-note, .phase-flying .arrival-map-note, .phase-locating .arrival-map-note, .phase-preparing .arrival-map-note { visibility: hidden; }
@@ -114,4 +110,10 @@
 .arrival-flight-action { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .arrival .arrival-browse { min-height: 36px; border: 0; padding: 4px 16px; font-size: var(--type-caption); color: var(--arrival-ink); background: var(--arrival-paper); border-radius: 20px; }
 
-.phase-falling .hero-canvas, .phase-impact .hero-canvas, .phase-pullback .hero-canvas, .phase-landed .hero-canvas { filter: drop-shadow(0 5px 3px #24364b2b); }
+.avatar-ground-shadow { position: absolute; left: -20px; top: -8px; width: 40px; height: 16px; border-radius: 50%; background: #24364b36; filter: blur(4px); opacity: 0; }
+.phase-falling .avatar-ground-shadow, .phase-impact .avatar-ground-shadow, .phase-pullback .avatar-ground-shadow, .phase-landed .avatar-ground-shadow { opacity: 1; }
+
+.arrival-scroll-hint { position: absolute; z-index: 6; left: 50%; bottom: max(48px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 20px; background: transparent; color: var(--color-ink); box-shadow: none; text-shadow: none; font-size: var(--type-caption); line-height: 1.4; white-space: nowrap; pointer-events: none; }
+.arrival-scroll-hint svg { width: 20px; height: 20px; animation: scroll-hint-arrow 1.8s ease-in-out infinite; }
+@keyframes scroll-hint-arrow { 0%,100% { transform: translateY(-2px); opacity: .65; } 50% { transform: translateY(3px); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .arrival-scroll-hint svg { animation: none; } }

@@ -1,6 +1,9 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
-jest.mock('./arrival/CloudCanvas', () => () => null);
+jest.mock('./arrival/CloudCanvas', () => {
+  const React = require('react');
+  return function Clouds({ opening, onCleared }) { React.useEffect(() => { if (opening) onCleared(); }, [opening, onCleared]); return null; };
+});
 jest.mock('./arrival/HeroCanvas', () => {
   const React = require('react');
   return function Model({ onReady }) { React.useEffect(onReady, [onReady]); return null; };
@@ -20,6 +23,7 @@ async function enterApp() {
   act(() => jest.advanceTimersByTime(2800));
   for (const duration of [1100, 600, 500, 400, 700, 1800]) act(() => jest.advanceTimersByTime(duration));
   fireEvent.click(screen.getByRole('button', { name: '장소 목록 열기' }));
+  fireEvent.click(screen.getByRole('button', { name: '장소 검색 펼치기' }));
   fireEvent.click(screen.getByText('개발 도구'));
   await act(async () => { fireEvent.click(screen.getByRole('button', { name: '가상 신문 시연 열기' })); });
 }

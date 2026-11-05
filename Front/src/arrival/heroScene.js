@@ -42,7 +42,7 @@ export function createHeroScene(canvas, onCamera, { onLoad, onError } = {}) {
       lastPhase=phase;
     }
     controls.enabled = false;
-    hero.root.visible=!['clouds','following','preparing'].includes(phase);
+    hero.root.visible=!['clouds','following','preparing','clearing'].includes(phase);
     hero.root.position.set(0,0,0); hero.root.rotation.set(0,-.25,0); hero.root.scale.setScalar(1);
     camera.clearViewOffset();
     camera.up.set(0,1,0);
@@ -67,14 +67,15 @@ export function createHeroScene(canvas, onCamera, { onLoad, onError } = {}) {
         hero.root.rotation.z=-.2*drop;
         hero.root.scale.setScalar(1-.25*drop);
       }
-    } else if (['falling','impact','pullback','landed'].includes(phase)) {
+    } else if (['clearing','falling','impact','pullback','landed'].includes(phase)) {
+      hero.root.rotation.y=0;
       const view=landingView(phase,progress);
       const distance=8*view.distance;
       controls.target.set(0,-.144,0);
       camera.up.set(0,0,-1);
       camera.position.set(0,-.144+distance,0);
       if (anchor) camera.setViewOffset(canvas.clientWidth, canvas.clientHeight, canvas.clientWidth/2-anchor.x, canvas.clientHeight/2-anchor.y, canvas.clientWidth, canvas.clientHeight);
-      hero.root.visible=hasPosition;
+      hero.root.visible=hasPosition && phase!=='clearing';
       onCamera?.({...view,anchor});
       hero.root.scale.setScalar(.30);
       if (phase==='falling') {

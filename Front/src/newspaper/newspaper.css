@@ -1,13 +1,12 @@
-.world-place-card { position: absolute; z-index: 9; left: 12px; right: 12px; bottom: 112px; padding: 16px; border-radius: var(--radius-panel); background: var(--color-surface); color: var(--color-ink); border: 1px solid #24364b24; box-shadow: 0 12px 32px #24364b38; max-height: calc(100% - var(--app-header-height) - 144px); overflow-y: auto; animation: place-card-appear 180ms ease-out both; }
-.world-place-card h2 { font-size: var(--type-card); line-height: 1.2; margin: 4px 24px 8px 0; }
-.world-place-card small { font-size: var(--type-meta); }
-.world-place-card p { margin: 8px 0 0; }
-.place-card-address, .place-card-radius { font-size: var(--type-caption); }
-.place-card-visit { font-size: var(--type-body); line-height: 1.35; }
-.arrival .place-card-close { position: absolute; top: 4px; right: 4px; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--color-ink); font-size: var(--type-heading); }
-.arrival .place-card-action { margin-top: 12px; min-height: 44px; padding: 8px 12px; border: 0; border-radius: var(--radius-button); background: var(--color-brand); color: var(--color-ink); font-size: var(--type-body); }
-.place-card-simulation { display: block; margin-top: 12px; }
-.visit-toast { position: absolute; z-index: 20; left: 12px; right: 12px; top: calc(var(--app-header-height) + 12px); padding: 12px 16px; border-radius: var(--radius-button); background: var(--color-ink); color: var(--color-surface); box-shadow: 0 8px 24px #24364b38; font-size: var(--type-body); line-height: 1.35; animation: visit-toast-enter var(--toast-enter-duration) var(--toast-enter-easing) both; pointer-events: none; }
+.world-place-card { position: absolute; z-index: 9; left: 50%; top: calc(50% - 16px); transform: translate(-50%, -50%); width: 72%; max-width: 280px; aspect-ratio: 1; padding: 16px; border-radius: var(--panel-radius); background: var(--color-surface); color: var(--color-ink); border: 1px solid #24364b14; box-shadow: var(--shadow-panel); overflow-y: auto; scrollbar-width: none; text-align: center; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; }
+.world-place-card h2 { flex: 1 1 auto; min-width: 0; text-align: left; font-size: var(--type-card); font-weight: 600; line-height: 1.4; margin: 0; max-width: 100%; overflow-wrap: anywhere; }
+.world-place-card .place-card-description { flex: 1 0 auto; display: grid; align-content: center; padding: 0 8px; width: 100%; margin: 0; font-size: var(--type-body); line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; text-wrap: pretty; }
+.place-card-heading { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; width: 100%; }
+.place-card-tools { display: flex; flex: 0 0 auto; align-items: center; }
+.arrival .place-card-close { position: static; flex: 0 0 44px; }
+.arrival .place-card-action { min-height: 44px; padding: 12px 16px; border: 0; border-radius: 16px; background: var(--color-brand); color: var(--color-ink); font-size: var(--type-body); font-weight: 600; text-align: center; }
+.place-card-simulation { display: block; margin-top: 16px; }
+.visit-toast { position: absolute; z-index: 20; left: 8%; right: 8%; top: calc(var(--app-header-height) + 16px); padding: 4px 16px; border-radius: 8px; background: #24364bbf; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: #fff; box-shadow: var(--shadow-toast); font-size: var(--type-caption); font-weight: 400; line-height: 1.5; text-align: center; text-wrap: balance; animation: visit-toast-enter var(--toast-enter-duration) var(--toast-enter-easing) both; pointer-events: none; }
 .visit-toast.is-leaving { animation: visit-toast-exit var(--toast-exit-duration) var(--toast-exit-easing) both; }
 @keyframes place-card-appear { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 @keyframes visit-toast-enter { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
@@ -40,3 +39,5 @@
 @keyframes visit-toast-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes visit-toast-fade-out { from { opacity: 1; } to { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .world-place-card, .newspaper-sheet { animation: none; }.visit-toast { animation: visit-toast-fade-in 80ms ease-in both !important; }.visit-toast.is-leaving { animation: visit-toast-fade-out 80ms ease-out both !important; } }
+
+.world-place-card::-webkit-scrollbar { display: none; }

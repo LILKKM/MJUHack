@@ -16,22 +16,28 @@
   --color-surface: #FFF9ED;
   --color-ink: #24364B;
   --color-accent: #F2AC88;
-  --type-meta: 9pt;
-  --type-caption: 11pt;
-  --type-body: 13pt;
-  --type-card: 15pt;
-  --type-section: 19pt;
-  --type-heading: 23pt;
-  --type-display: 29pt;
-  --type-hero: 37pt;
-  --font-ko: 'Neujoh', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --type-meta: 7.65pt;
+  --type-caption: 9.35pt;
+  --type-body: 11.05pt;
+  --type-card: 12.75pt;
+  --type-section: 16.15pt;
+  --type-heading: 19.55pt;
+  --type-display: 24.65pt;
+  --type-hero: 31.45pt;
+  --font-ko: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   --font-en: 'Abhaya Libre', Georgia, 'Times New Roman', serif;
   --font-masthead: 'Chomsky', 'Abhaya Libre', serif;
   --masthead-paper: var(--color-surface);
   --masthead-ink: #000;
   --masthead-rule: #24364b40;
   --app-header-height: calc(56px + env(safe-area-inset-top, 0px));
-  --radius-panel: 16px; --radius-button: 12px; --radius-chip: 999px;
+  --type-bottom-label: 10.4975pt;
+  --panel-width: 92%; --panel-max-width: 360px; --panel-padding: 24px;
+  --panel-radius: 20px;
+  --shadow-navigation: 0 2px 8px #24364b14;
+  --shadow-toast: 0 4px 16px #24364b1f;
+  --shadow-panel: 0 12px 32px #24364b29;
+  --radius-panel: 20px; --radius-button: 12px; --radius-chip: 999px;
   --toast-enter-duration: 180ms; --toast-enter-easing: ease-in;
   --toast-exit-duration: 220ms; --toast-exit-easing: ease-out;
 }
@@ -65,3 +71,8 @@
 @container (max-width: 600px) {
   .brand-wordmark { font-size: var(--type-heading); }
 }
+
+.ui-close { display: grid; place-items: center; width: 44px; height: 44px; min-height: 44px; padding: 0; border: 0; border-radius: 12px; background: transparent; color: var(--color-ink); box-shadow: none; }
+.ui-close svg { display: block; width: 12px; height: 12px; }
+.scroll-without-bar { scrollbar-width: none; }
+.scroll-without-bar::-webkit-scrollbar { display: none; }

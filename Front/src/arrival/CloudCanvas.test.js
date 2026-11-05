@@ -47,7 +47,7 @@ test('pause freezes the cloud flow and reduced-motion renders a still scene', ()
   frame(350); expect(renderCloud.mock.calls.at(-1)[0].time).toBe(still.time);
 });
 
-test('clearing completes once at the end of its own timeline, after the early drop', () => {
+test('clearing completes once at the end of its own timeline, before the map drop', () => {
   const cleared=jest.fn();
   render(<CloudCanvas opening={true} paused={false} reduced={false} onCleared={cleared}/>);
   frame(100);

@@ -24,3 +24,17 @@ test('filters preserve list-only places and expose empty combinations without su
   expect(filterPlaces({ query: 'JNG12' }).map(place => place.id)).toEqual(['JNG12']);
   expect(filterPlaces({ query: '존재하지 않는 장소' })).toEqual([]);
 });
+
+test('all 58 source IDs join a Korean card introduction without changing review status', () => {
+  const descriptions = require('./placeDescriptionsKo.json');
+  expect(Object.keys(descriptions).sort()).toEqual(original.map(row => row.sourceId).sort());
+  Object.values(descriptions).forEach(text => {
+    expect(text.length).toBeGreaterThan(0);
+    expect(text.length).toBeLessThanOrEqual(85);
+    expect(text).toMatch(/입니다\.$/);
+  });
+  places.forEach(place => expect(place.descriptionKo).toBe(descriptions[place.id]));
+  expect(descriptions.EPY03).toContain('소개했던 옛 문학관');
+  expect(descriptions.MPO03).toContain('서강나루 표석');
+  expect(descriptions.MPO05).toContain('육지에서');
+});
