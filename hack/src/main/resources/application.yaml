@@ -1,3 +1,14 @@
 spring:
   application:
     name: hack
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3307/hack?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
+    username: ${DB_USERNAME:hack}
+    password: ${DB_PASSWORD:hack}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate   # schema is owned by Flyway (src/main/resources/db/migration)
+  flyway:
+    enabled: true
+    locations: classpath:db/migration

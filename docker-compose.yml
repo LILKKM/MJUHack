@@ -1,0 +1,27 @@
+# Local development database. Start with: docker compose up -d
+# Credentials below are for local development only.
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: mjuhack-mysql
+    environment:
+      MYSQL_DATABASE: hack
+      MYSQL_USER: hack
+      MYSQL_PASSWORD: hack
+      MYSQL_ROOT_PASSWORD: root
+      TZ: Asia/Seoul
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+    ports:
+      - "3307:3306"   # 3307 so it does not clash with a locally installed MySQL on 3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uhack", "-phack"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  mysql-data:
