@@ -41,11 +41,17 @@ public final class BarrierFreeNormalizer {
         FIELD_TO_FEATURE.put("lactationroom", "NURSING_ROOM");
     }
 
-    // 순서가 중요하다: "단차 없음"은 좋은 뜻이므로 부정어 검사보다 먼저 본다.
-    private static final Pattern GOOD_NEGATION = Pattern.compile("(단차|문턱|턱|계단|장애물)\\s*(이|가)?\\s*없");
-    private static final Pattern PARTIAL = Pattern.compile("일부|부분|있으나|있지만|다소|협소|좁|급경사|경사.*(급|심)|문의|요청\\s*시|사전\\s*(예약|요청)|제한적|불편");
-    private static final Pattern NEGATIVE = Pattern.compile("^\\s*(n|no|x)\\s*$|없음|없습니다|없다|불가|미설치|미운영|미비치|어려움|어렵|안\\s*됨|미보유|해당\\s*없");
-    private static final Pattern POSITIVE = Pattern.compile("^\\s*(y|yes|o)\\s*$|있음|있습니다|있다|가능|비치|설치|운영|대여|구비|보유|완비|전용|\\d+\\s*(면|대|개|곳|실)|무료|지원|동반");
+    // "단차 없음"처럼 '없음'이 좋은 뜻인 표현. 부정어 검사 전에 지운다.
+    private static final Pattern GOOD_NEGATION = Pattern.compile("(단차|문턱|턱|계단|장애물)\\s*(이|가)?\\s*없(음|고|어|으며|는|다)?");
+    // 조건이 붙거나 일부만 되는 표현
+    private static final Pattern PARTIAL = Pattern.compile(
+            "일부|부분|있으나|있지만|으나|지만|(가능|이용)하나|다소|협소|좁|급경사|경사.{0,6}(급|심)|문의|요청\\s*시|요청해야"
+                    + "|사전\\s*(예약|요청)|제한적|불편|잠겨|계단이?\\s*있");
+    private static final Pattern NEGATIVE = Pattern.compile(
+            "^\\s*(n|no|x)\\s*$|없음|없습니다|없다|없어|불가|미설치|미운영|미비치|어려움|어렵|안\\s*됨|미보유|해당\\s*없|공사\\s*중|폐쇄");
+    private static final Pattern POSITIVE = Pattern.compile(
+            "^\\s*(y|yes|o)\\s*$|있음|있습니다|있다|있어|가능|비치|설치|운영|대여\\s*가능|대여가능|구비|보유|완비|전용"
+                    + "|\\d+\\s*(면|대|개|곳|실|석)|무료|지원|동반|제공|평탄|쉬움|쉽|원활|용이|완만|무단차");
 
     public static List<Item> normalize(JsonNode detail) {
         Map<String, Item> byFeature = new LinkedHashMap<>();
@@ -64,22 +70,34 @@ public final class BarrierFreeNormalizer {
         return new ArrayList<>(byFeature.values());
     }
 
+    /**
+     * 1. 조건·일부 표현이 있으면 PARTIAL
+     * 2. ('단차 없음' 같은 좋은 뜻을 지운 뒤) 부정 표현과 긍정 표현이 함께 있으면 PARTIAL
+     * 3. 부정만 있으면 UNAVAILABLE, 긍정만 있으면 AVAILABLE, 둘 다 없으면 UNKNOWN
+     */
     static String classify(String text) {
         String t = text.toLowerCase();
-        if (GOOD_NEGATION.matcher(t).find()) {
-            return PARTIAL.matcher(t).find() ? "PARTIAL" : "AVAILABLE";
-        }
         if (PARTIAL.matcher(t).find()) {
             return "PARTIAL";
         }
-        if (NEGATIVE.matcher(t).find()) {
+        boolean goodNegation = GOOD_NEGATION.matcher(t).find();
+        String rest = GOOD_NEGATION.matcher(t).replaceAll(" ");
+        boolean negative = NEGATIVE.matcher(rest).find();
+        boolean positive = goodNegation || POSITIVE.matcher(rest).find();
+        if (negative && positive) {
+            return "PARTIAL";
+        }
+        if (negative) {
             return "UNAVAILABLE";
         }
-        if (POSITIVE.matcher(t).find()) {
+        if (positive) {
             return "AVAILABLE";
         }
-        return "UNKNOWN";
+        // "장애인 화장실(재궁, 영녕전, 전사청 앞)"처럼 시설명 뒤에 위치만 적은 경우는 '있음'으로 본다
+        return LOCATION_LIST.matcher(t).matches() ? "AVAILABLE" : "UNKNOWN";
     }
+
+    private static final Pattern LOCATION_LIST = Pattern.compile("^[^()]{1,20}\\([^)]+\\)\\s*$");
 
     private static Item better(Item a, Item b) {
         int ra = rank(a.status());

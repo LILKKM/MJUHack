@@ -107,7 +107,8 @@ public class SessionService {
         }
     }
 
-    private void touch(String id) {
+    /** 대화가 이어지는 동안 세션 만료를 늦춘다. */
+    public void touch(String id) {
         jdbc.sql("UPDATE chat_session SET expires_at = ? WHERE id = ?")
                 .params(Timestamp.valueOf(LocalDateTime.now(SEOUL).plus(TTL)), id).update();
     }
@@ -139,6 +140,10 @@ public class SessionService {
                 throw ApiException.badRequest("알 수 없는 eraId: " + eraId);
             }
             jdbc.sql("UPDATE chat_session SET era_id = ? WHERE id = ?").params(eraId, id).update();
+            // 작품 없이 시대만 바꾸면, 이전 작품은 더 이상 이 시대의 추천 이유가 아니다
+            if (req.kContentId() == null) {
+                jdbc.sql("UPDATE chat_session SET k_content_id = NULL WHERE id = ?").param(id).update();
+            }
         }
         if (req.startSpotId() != null) {
             if (!spots.exists(req.startSpotId())) {

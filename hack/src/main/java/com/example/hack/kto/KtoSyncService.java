@@ -115,10 +115,12 @@ public class KtoSyncService {
     @Transactional
     public List<MatchReport> matchSpots() {
         Map<String, String> signguToDistrict = props.signguDistricts();
-        List<Place> ktoPlaces = jdbc.sql("SELECT content_id, title, l_dong_signgu_cd, latitude, longitude FROM kto_place")
+        List<Place> ktoPlaces = jdbc.sql(
+                        "SELECT content_id, title, l_dong_signgu_cd, latitude, longitude, content_type_id FROM kto_place")
                 .query((rs, i) -> new Place(rs.getString("content_id"), rs.getString("title"),
                         signguToDistrict.get(rs.getString("l_dong_signgu_cd")),
-                        toDouble(rs.getBigDecimal("latitude")), toDouble(rs.getBigDecimal("longitude"))))
+                        toDouble(rs.getBigDecimal("latitude")), toDouble(rs.getBigDecimal("longitude")),
+                        rs.getString("content_type_id")))
                 .list();
         if (ktoPlaces.isEmpty()) {
             log.warn("[kto] kto_place 가 비어 있습니다. 먼저 places 단계를 실행하세요.");
@@ -197,7 +199,10 @@ public class KtoSyncService {
 
     // ---- 4. 접근성 반영 -----------------------------------------------------------------------------------
 
-    /** kto_barrier_free 원본을 spot_accessibility 로 옮긴다. 팀·현장 확인 값(provider≠KTO)은 덮어쓰지 않는다. */
+    /**
+     * kto_barrier_free 원본을 spot_accessibility 로 옮긴다.
+     * 팀·현장 확인 값(provider≠KTO)은 덮어쓰지 않고, 상세가 없는 장소의 기존 값은 지우지 않는다.
+     */
     @Transactional
     public int applyBarrierFree() {
         record Row(String spotId, String contentId, String raw, Timestamp fetchedAt) {
@@ -211,10 +216,11 @@ public class KtoSyncService {
                 .list();
         int inserted = 0;
         for (Row r : rows) {
-            jdbc.sql("DELETE FROM spot_accessibility WHERE spot_id = ? AND provider = 'KTO'").param(r.spotId()).update();
+            // 관광공사에 상세가 없으면 기존 값(엑셀 메모에서 옮긴 V5 행 등)을 그대로 둔다
             if (r.raw() == null) {
                 continue;
             }
+            jdbc.sql("DELETE FROM spot_accessibility WHERE spot_id = ? AND provider = 'KTO'").param(r.spotId()).update();
             LocalDate checked = r.fetchedAt().toLocalDateTime().toLocalDate();
             for (Item item : BarrierFreeNormalizer.normalize(json.readTree(r.raw()))) {
                 inserted += jdbc.sql("""

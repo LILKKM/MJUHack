@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import com.example.hack.common.GeoUtils;
 
@@ -23,10 +24,20 @@ public final class SpotMatcher {
     private SpotMatcher() {
     }
 
-    public record Place(String id, String name, String districtId, Double lat, Double lng) {
+    /** @param contentTypeId 관광공사 콘텐츠 타입 (우리 장소는 null) */
+    public record Place(String id, String name, String districtId, Double lat, Double lng, String contentTypeId) {
+
+        public Place(String id, String name, String districtId, Double lat, Double lng) {
+            this(id, name, districtId, lat, lng, null);
+        }
 
         boolean hasCoords() {
             return lat != null && lng != null;
+        }
+
+        /** 이름이 달라도 '근처 후보'로 보여줄 만한 유형: 관광지(12), 문화시설(14), 레포츠(28). 식당·쇼핑·숙박은 제외 */
+        boolean isSightseeing() {
+            return contentTypeId == null || Set.of("12", "14", "28").contains(contentTypeId);
         }
     }
 
@@ -65,7 +76,7 @@ public final class SpotMatcher {
                 } else {
                     weak.add(new Candidate(k, Kind.CONTAINS, d));
                 }
-            } else if (d != null && d <= 0.15) {
+            } else if (d != null && d <= 0.15 && k.isSightseeing()) {
                 weak.add(new Candidate(k, Kind.NEARBY, d));
             }
         }
@@ -119,12 +130,16 @@ public final class SpotMatcher {
         return out;
     }
 
-    /** 괄호 안 설명, 공백, 구두점을 지운다. 예: "독립문·영은문 주초" → "독립문영은문주초" */
+    /**
+     * 괄호·대괄호 안 설명, 공백, 구두점을 지운다.
+     * 예: "독립문·영은문 주초" → "독립문영은문주초", "종묘 [유네스코 세계유산]" → "종묘"
+     */
     static String normalize(String name) {
         if (name == null) {
             return "";
         }
         return name.replaceAll("\\([^)]*\\)", "")
+                .replaceAll("\\[[^\\]]*\\]", "")
                 .replaceAll("[\\s·ㆍ,./\\-_'\"「」]", "")
                 .toLowerCase();
     }

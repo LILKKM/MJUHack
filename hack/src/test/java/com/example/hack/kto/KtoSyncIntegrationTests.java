@@ -90,6 +90,28 @@ class KtoSyncIntegrationTests {
     @Autowired
     JdbcClient jdbc;
 
+    /** V8 시드 데이터를 지워 수집 전 상태로 되돌린다. */
+    @org.junit.jupiter.api.BeforeEach
+    void resetToBeforeCollection() {
+        jdbc.sql("DELETE FROM spot_accessibility WHERE provider = 'KTO'").update();
+        jdbc.sql("DELETE FROM kto_barrier_free").update();
+        jdbc.sql("DELETE FROM kto_place").update();
+        jdbc.sql("UPDATE spot SET latitude = NULL, longitude = NULL, coord_status = 'MISSING' WHERE coord_status = 'KTO'").update();
+        jdbc.sql("UPDATE spot SET kto_content_id = NULL, kto_match_status = NULL WHERE kto_match_status = 'AUTO' OR id = 'JNG23'").update();
+    }
+
+    /** 상세가 없는 장소는 apply 가 기존 행을 지우면 안 된다. */
+    @Test
+    void applyKeepsExistingRowsWhenKtoHasNoDetail() {
+        jdbc.sql("""
+                INSERT INTO spot_accessibility (spot_id, feature_code, status, raw_text, provider)
+                VALUES ('SDM08', 'PARKING', 'AVAILABLE', '엑셀 메모', 'KTO')
+                """).update();
+        sync.fetchBarrierFree(false);   // SDM08(126503)은 가짜 응답에 상세가 없다
+        sync.applyBarrierFree();
+        assertThat(statuses("SDM08")).containsEntry("PARKING", "AVAILABLE");
+    }
+
     @Test
     void fullPipeline() {
         assertThat(sync.syncPlaces()).isEqualTo(3);

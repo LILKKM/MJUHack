@@ -25,3 +25,11 @@ kto:
     "410": SDM
     "440": MPO
     "380": EPY
+
+# Claude (코스 추천·챗봇). API 키는 환경변수 ANTHROPIC_API_KEY 로 넣는다. 저장소에 커밋하지 않는다
+claude:
+  model: claude-opus-5-5
+  effort: medium
+  max-tokens: 16000
+  max-tool-rounds: 6                     # 한 번의 답변에서 도구를 부를 수 있는 최대 횟수
+  history-messages: 20                   # 매 요청에 함께 보내는 최근 대화 수

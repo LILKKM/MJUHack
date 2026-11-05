@@ -40,9 +40,13 @@ MJUHack/
 
 DB 접속 정보는 기본값이 `localhost:3307 / hack / hack` 이다. 다른 DB를 쓰려면 환경변수 `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` 를 설정한다.
 
-### 관광공사 무장애 정보 수집 (선택, 한 번만)
+### AI 코스 추천·챗봇 (Claude)
 
-환경변수 `KTO_SERVICE_KEY` 에 공공데이터포털 Decoding 키를 넣고 실행한다. 자세한 단계는 [DB-SCHEMA.md](docs/DB-SCHEMA.md#관광공사-무장애-정보-수집) 참고.
+환경변수 `ANTHROPIC_API_KEY` 에 Claude API 키를 넣고 서버를 실행한다. 저장소에 커밋하지 않는다. 키가 없어도 서버와 일반 API는 동작하고, AI API만 `503 LLM_NOT_CONFIGURED` 를 준다. 모델은 `application.yaml` 의 `claude.model` 에서 바꾼다.
+
+### 관광공사 무장애 정보
+
+수집된 데이터가 시드(V8)로 들어 있어 **키 없이 그대로 쓸 수 있다.** 다시 수집할 때만 `KTO_SERVICE_KEY` (공공데이터포털 Decoding 키)를 넣고 실행한다. 자세한 단계는 [DB-SCHEMA.md](docs/DB-SCHEMA.md#관광공사-무장애-정보-수집) 참고.
 
 ```bash
 cd hack && ./gradlew bootRun --args="--spring.main.web-application-type=none --kto.sync=all"

@@ -42,6 +42,8 @@ public class KtoSyncRunner implements ApplicationRunner {
         }
         List<String> steps = values.stream().flatMap(v -> List.of(v.split(",")).stream()).map(String::trim).toList();
         boolean all = steps.contains("all");
+        attachFileLog();
+        log.info("[kto] 시작: {}", steps);
         int exit = 0;
         try {
             if (all || steps.contains("places")) {
@@ -59,10 +61,35 @@ public class KtoSyncRunner implements ApplicationRunner {
         } catch (KtoException e) {
             log.error("[kto] 중단: {}", e.getMessage());
             exit = 1;
+        } catch (RuntimeException e) {
+            log.error("[kto] 중단(예상하지 못한 오류): {}", e.toString(), e);
+            exit = 1;
         } finally {
-            log.info("[kto] 이번 실행 API 호출 {}건", client.callCount());
+            log.info("[kto] 이번 실행 API 호출 {}건. 로그 파일: {}", client.callCount(), LOG_FILE);
         }
         final int code = exit;
         System.exit(SpringApplication.exit(context, () -> code));
+    }
+
+    /** 수집 로그를 콘솔과 함께 hack/build/kto-sync.log 에도 남긴다 (실행할 때마다 새로 씀). */
+    static final String LOG_FILE = "build/kto-sync.log";
+
+    private static void attachFileLog() {
+        if (!(LoggerFactory.getILoggerFactory() instanceof ch.qos.logback.classic.LoggerContext ctx)) {
+            return;
+        }
+        var encoder = new ch.qos.logback.classic.encoder.PatternLayoutEncoder();
+        encoder.setContext(ctx);
+        encoder.setPattern("%d{HH:mm:ss.SSS} %-5level %msg%n");
+        encoder.setCharset(java.nio.charset.StandardCharsets.UTF_8);
+        encoder.start();
+        var appender = new ch.qos.logback.core.FileAppender<ch.qos.logback.classic.spi.ILoggingEvent>();
+        appender.setContext(ctx);
+        appender.setName("kto-sync-file");
+        appender.setFile(LOG_FILE);
+        appender.setAppend(false);
+        appender.setEncoder(encoder);
+        appender.start();
+        ctx.getLogger("com.example.hack.kto").addAppender(appender);
     }
 }

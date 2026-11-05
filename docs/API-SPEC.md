@@ -1,10 +1,10 @@
-# API 명세서 v0.3
+# API 명세서 v0.4
 
 서북권 역사 배리어프리 여행 서비스 · 백엔드(Spring Boot) REST API
 
 - 기준 문서: `서북권 역사 배리어프리 여행 서비스 기획서` (2026-11-06), DB 스키마 `hack/src/main/resources/db/migration/V1__init_schema.sql`
 - 상태 표기: ✅ 구현됨 · 🛠 설계만 (아직 구현 전)
-- 이 문서는 구현 전 계약 초안이다. 필드를 바꾸면 이 문서와 [DB-SCHEMA.md](DB-SCHEMA.md)를 함께 수정한다.
+- 구현된 API 는 실제 동작 기준이고, 필드를 바꾸면 이 문서와 [DB-SCHEMA.md](DB-SCHEMA.md)를 함께 수정한다.
 
 ## 0. 공통 규칙
 
@@ -45,7 +45,8 @@
 | 404 | `SPOT_NOT_FOUND`, `SESSION_NOT_FOUND`, `COURSE_NOT_FOUND` | 없는 ID |
 | 410 | `SESSION_EXPIRED` | 만료된 챗봇 세션 |
 | 422 | `NO_CANDIDATES` | 조건을 만족하는 장소가 없음 (조건을 자동으로 완화하지 않음) |
-| 502 | `LLM_UNAVAILABLE` | LLM 호출 실패. 이미 만든 코스와 장소 정보는 유지 |
+| 502 | `LLM_UNAVAILABLE` | Claude 호출 실패. 이미 만든 코스와 장소 정보는 유지 |
+| 503 | `LLM_NOT_CONFIGURED` | `ANTHROPIC_API_KEY` 없음 또는 키 오류 |
 
 ---
 
@@ -327,6 +328,24 @@
 - 후보가 `stopCount` 보다 적으면 있는 만큼만 반환하고 경고를 붙인다. 하나도 없으면 `422 NO_CANDIDATES` 를 반환한다.
 - 출발 장소에 좌표가 없으면 `400` 이다 (좌표로 다시 보내야 한다).
 
+### ✅ `POST /api/courses/recommend` (AI 코스 추천)
+
+사용자가 자유롭게 쓴 맥락으로 Claude 가 조건을 파악하고, 서버 로직으로 코스를 만들어 설명까지 돌려준다. 세션이 없으면 새로 만든다. 이어지는 수정 요청은 응답의 `sessionId` 로 챗봇 API(7절)를 부른다.
+
+요청:
+
+```json
+{
+  "context": "휠체어 타요. 1987 봤어요. 명지대에서 출발해요.",
+  "sessionId": null,
+  "location": null
+}
+```
+
+응답 `201 Created`: 7절 메시지 응답과 같은 형식 (`sessionId`, `message`, `session`, `course`, `referencedSpotIds`).
+
+필요한 조건(시대 또는 작품, 출발지)이 빠져 있으면 Claude 가 되묻고 `course` 는 `null` 이다.
+
 ### ✅ `GET /api/courses/{courseId}`
 
 저장된 코스를 생성 당시 응답 그대로 반환한다 (`course.snapshot`).
@@ -387,44 +406,53 @@
 }
 ```
 
-### 🛠 `GET /api/chat/sessions/{sessionId}/messages`
+### ✅ `GET /api/chat/sessions/{sessionId}/messages`
 
 ```json
 [
-  { "id": 1, "role": "USER", "content": "두 번째 장소 빼고 다른 데", "createdAt": "2026-11-06T14:31:00+09:00" },
+  { "id": 1, "role": "USER", "content": "두 번째 장소 빼줘", "createdAt": "2026-11-06T14:31:00+09:00" },
   { "id": 2, "role": "ASSISTANT", "content": "…", "createdAt": "2026-11-06T14:31:04+09:00" }
 ]
 ```
 
-`TOOL` 역할의 메시지(서버 내부 도구 호출 기록)는 응답에서 뺀다.
-
-### 🛠 `POST /api/chat/sessions/{sessionId}/messages`
+### ✅ `POST /api/chat/sessions/{sessionId}/messages`
 
 요청:
 
 ```json
 {
-  "content": "근처에 휠체어로 갈 수 있는 곳 하나 더 넣어줘",
+  "content": "두 번째 장소는 빼줘. 그리고 안산 봉수대를 넣어줘.",
   "location": { "latitude": 37.5801, "longitude": 126.9235 }
 }
 ```
 
-`location` 은 선택이며, 이번 요청의 거리 계산에만 쓰고 저장하지 않는다.
+- `content`: 필수, 2000자 이내
+- `location`: 선택. 이번 요청의 거리 계산에만 쓴다. 저장하지 않고 Claude 에게도 보내지 않는다.
 
 응답 `200 OK`:
 
 ```json
 {
-  "message": { "id": 8, "role": "ASSISTANT", "content": "…", "createdAt": "2026-11-06T14:32:10+09:00" },
+  "sessionId": "e39038b7-3da1-48f9-b147-8ad4a76dd26b",
+  "message": { "id": 8, "role": "ASSISTANT", "content": "… 강경대 민주광장 [SDM01] …", "createdAt": "2026-11-06T14:32:10+09:00" },
   "session": { "...": "세션 상태" },
-  "course": { "...": "코스 (바뀐 경우에만, 6절 형식)" }
+  "course": { "...": "코스. 이번 답변으로 바뀐 경우에만 있고, 아니면 null (6절 형식)" },
+  "referencedSpotIds": ["SDM01", "SDM13"]
 }
 ```
 
+- 답변 안의 `[SDM01]` 표시를 프론트에서 지도·상세 링크로 바꾼다. `referencedSpotIds` 는 서버 데이터에서 확인된 ID 만 담는다.
+- 답변은 마크다운으로 올 수 있다.
+- Claude 호출에 수 초~수십 초가 걸릴 수 있으니 프론트에 로딩 표시를 둔다.
+
+Claude 가 쓸 수 있는 도구: `find_spots`, `get_spot_detail`, `recommend_course`, `update_course`, `update_user_state`, `search_nearby_places`.
+
 LLM 사용 원칙:
-- LLM은 서버가 넘긴 후보 장소·근거 안에서만 답한다.
-- 서버는 응답에 나온 장소 ID가 후보에 있는지 다시 검사한다. 없으면 버린다.
-- LLM이 실패하면 `502 LLM_UNAVAILABLE` 을 반환한다. 세션과 현재 코스는 그대로 유지된다.
+- 필터링·접근성 판단·거리 계산은 서버가 한다. 코스는 도구로만 만들고 바꿀 수 있다. Claude 는 조건 파악과 설명을 맡는다.
+- 코스에 넣는 장소는 서버가 접근성 조건을 다시 검사한다. 맞지 않으면 도구 오류로 돌려주고, Claude 가 이유와 대안을 설명한다.
+- 도구 결과나 이전 대화에 없던 장소 ID 는 서버가 답변에서 지운다.
+- 대화 기록은 사용자·답변 글만 저장한다 (`chat_message`). 최근 20개와 세션 상태를 매 요청에 함께 보낸다.
+- Claude 가 거절하면 200 으로 안내 문구를 준다. 호출이 실패하면 `502 LLM_UNAVAILABLE`, 키가 없으면 `503 LLM_NOT_CONFIGURED` 를 주고 이번 대화는 저장하지 않는다. 일반 코스 API(6절)는 키 없이도 동작한다.
 
 ---
 
@@ -435,3 +463,4 @@ LLM 사용 원칙:
 | v0.1 | 2026-11-06 | 초안. DB 스키마 V1~V3 기준. `/api/health` 만 구현됨 |
 | v0.2 | 2026-11-06 | 기준 데이터·장소·시기 연결·기사·코스 생성/조회·세션 상태 API 구현. 코스 응답의 `eraId` → `eraIds`(작품이 여러 시대일 수 있음), `userTypes`·`startLabel`·`excluded[].name` 추가. 챗봇 메시지 API는 LLM 미선정으로 미구현 |
 | v0.3 | 2026-11-06 | 관광공사 무장애 정보 수집 연결. 접근성 항목 `ENTRANCE`(출입구 단차 없음)·`GUIDE_DOG`(보조견 동반) 추가 — `/api/user-types` 와 코스 선호 조건에 반영. 장소 좌표 상태에 `KTO` 추가 |
+| v0.4 | 2026-11-06 | Claude 연동. `POST /api/courses/recommend`, 챗봇 메시지 API 구현. `distanceFromPrevKm` 은 코스 수정 후 첫 장소에서 `null` 일 수 있음. 작품 없이 시대만 바꾸면 세션의 작품이 지워짐 |

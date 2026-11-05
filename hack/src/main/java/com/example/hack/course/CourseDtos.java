@@ -21,7 +21,7 @@ public final class CourseDtos {
     }
 
     public record Stop(
-            int order, StopSpot spot, double distanceFromPrevKm, String accessMemo,
+            int order, StopSpot spot, Double distanceFromPrevKm, String accessMemo,
             List<String> unknownFeatures, String crossLinkId) {
     }
 

@@ -77,7 +77,7 @@ public class CourseService {
     }
 
     private record Candidate(SpotRow spot, List<String> unknownRequired, List<String> partialRequired,
-            double preferenceScore, List<String> crossLinkIds) {
+            double preferenceScore, List<String> crossLinkIds, List<String> evidence) {
     }
 
     @Transactional
@@ -95,23 +95,9 @@ public class CourseService {
         int stopCount = resolveStopCount(req.stopCount(),
                 req.timeBudgetMin() != null ? req.timeBudgetMin() : session != null ? session.timeBudgetMin() : null);
 
-        Map<String, Requirement> required = new HashMap<>();
-        Map<String, Requirement> preferred = new HashMap<>();
-        Map<String, String> typeNames = new HashMap<>();
-        for (UserTypeResponse t : reference.findUserTypes()) {
-            typeNames.put(t.code(), t.name());
-            if (!userTypes.contains(t.code())) {
-                continue;
-            }
-            for (Requirement r : t.requirements()) {
-                if (r.required()) {
-                    required.put(r.featureCode(), r);
-                    preferred.remove(r.featureCode());
-                } else if (!required.containsKey(r.featureCode())) {
-                    preferred.put(r.featureCode(), r);
-                }
-            }
-        }
+        Reqs reqs = requirements(userTypes);
+        Map<String, Requirement> required = reqs.required();
+        Map<String, String> typeNames = reqs.typeNames();
 
         // ---- 2. filter candidates ----
         List<SpotRow> inEra = spots.findRowsByEras(eraIds);
@@ -123,39 +109,17 @@ public class CourseService {
         List<Excluded> excluded = new ArrayList<>();
         int missingCoords = 0;
         for (SpotRow s : inEra) {
-            Map<String, AccessibilityItem> byFeature = access.getOrDefault(s.id(), List.of()).stream()
-                    .collect(Collectors.toMap(AccessibilityItem::featureCode, a -> a));
-            List<String> blocked = required.keySet().stream()
-                    .filter(f -> byFeature.containsKey(f) && "UNAVAILABLE".equals(byFeature.get(f).status()))
-                    .sorted().toList();
-            if (!blocked.isEmpty()) {
-                String why = blocked.stream()
-                        .map(f -> required.get(f).featureName() + " 없음"
-                                + (byFeature.get(f).rawText() == null ? "" : " (" + byFeature.get(f).rawText() + ")"))
-                        .collect(Collectors.joining(", "));
-                excluded.add(new Excluded(s.id(), s.name(), why));
+            String blocked = blockedReason(reqs, access.getOrDefault(s.id(), List.of()));
+            if (blocked != null) {
+                excluded.add(new Excluded(s.id(), s.name(), blocked));
                 continue;
             }
             if (!s.hasCoords()) {
                 missingCoords++;
                 continue;
             }
-            List<String> unknown = required.keySet().stream()
-                    .filter(f -> !byFeature.containsKey(f) || "UNKNOWN".equals(byFeature.get(f).status()))
-                    .sorted().toList();
-            List<String> partial = required.keySet().stream()
-                    .filter(f -> byFeature.containsKey(f) && "PARTIAL".equals(byFeature.get(f).status()))
-                    .sorted().toList();
-            double score = 0;
-            for (String f : union(required.keySet(), preferred.keySet())) {
-                AccessibilityItem a = byFeature.get(f);
-                if (a != null && "AVAILABLE".equals(a.status())) {
-                    score += 1;
-                } else if (a != null && "PARTIAL".equals(a.status())) {
-                    score += 0.5;
-                }
-            }
-            candidates.add(new Candidate(s, unknown, partial, score, crossLinks.getOrDefault(s.id(), List.of())));
+            candidates.add(evaluate(s, reqs, access.getOrDefault(s.id(), List.of()),
+                    crossLinks.getOrDefault(s.id(), List.of())));
         }
         if (candidates.isEmpty()) {
             throw new ApiException(HttpStatus.UNPROCESSABLE_ENTITY, "NO_CANDIDATES",
@@ -201,13 +165,7 @@ public class CourseService {
                     GeoUtils.round2(legs.get(i)), accessMemo(s, c, required), c.unknownRequired(), crossLinkId));
         }
 
-        List<String> warnings = new ArrayList<>();
-        warnings.add(ROUTE_WARNING);
-        warnings.add(DISTANCE_NOTE);
-        long unknownStops = chosen.stream().filter(c -> !c.unknownRequired().isEmpty()).count();
-        if (unknownStops > 0) {
-            warnings.add(unknownStops + "곳은 필수 접근성 항목이 아직 확인되지 않았습니다. 방문 전 확인이 필요합니다.");
-        }
+        List<String> warnings = baseWarnings(chosen);
         if (chosen.size() < stopCount) {
             warnings.add("조건에 맞는 장소가 " + chosen.size() + "곳뿐이라 요청한 " + stopCount + "곳보다 적습니다.");
         }
@@ -224,6 +182,181 @@ public class CourseService {
             response = save(session.id(), eraIds, response);
         }
         return response;
+    }
+
+    /**
+     * 세션의 현재 코스에서 장소를 빼거나 넣거나 바꿔 새 코스로 저장한다. 챗봇의 "두 번째 장소 빼고 다른 데"에 쓴다.
+     * 추가하는 장소도 코스 생성과 같은 접근성 조건으로 검사한다.
+     *
+     * @param action   remove | add | replace
+     * @param position 1부터 시작. add 에서 생략하면 맨 뒤
+     */
+    @Transactional
+    public CourseResponse edit(String sessionId, String action, Integer position, String spotId) {
+        SessionResponse session = sessions.get(sessionId);
+        if (session.currentCourseId() == null) {
+            throw ApiException.badRequest("수정할 현재 코스가 없습니다. 먼저 코스를 만들어 주세요.");
+        }
+        CourseResponse current = get(session.currentCourseId());
+        List<String> ids = new ArrayList<>(current.stops().stream().map(s -> s.spot().id()).toList());
+
+        boolean needsPosition = "remove".equals(action) || "replace".equals(action);
+        if (needsPosition && (position == null || position < 1 || position > ids.size())) {
+            throw ApiException.badRequest("position 은 1~" + ids.size() + " 사이여야 합니다.");
+        }
+        switch (action == null ? "" : action) {
+            case "remove" -> ids.remove(position - 1);
+            case "replace" -> ids.set(position - 1, requireSpotId(spotId));
+            case "add" -> {
+                int at = position == null ? ids.size() : position - 1;
+                if (at < 0 || at > ids.size()) {
+                    throw ApiException.badRequest("position 은 1~" + (ids.size() + 1) + " 사이여야 합니다.");
+                }
+                ids.add(at, requireSpotId(spotId));
+            }
+            default -> throw ApiException.badRequest("action 은 remove, add, replace 중 하나여야 합니다.");
+        }
+        if (ids.isEmpty()) {
+            throw ApiException.badRequest("코스에는 장소가 최소 1곳 있어야 합니다.");
+        }
+        if (ids.size() > MAX_STOPS) {
+            throw ApiException.badRequest("코스에는 장소를 최대 " + MAX_STOPS + "곳까지 넣을 수 있습니다.");
+        }
+        if (new HashSet<>(ids).size() != ids.size()) {
+            throw ApiException.badRequest("이미 코스에 있는 장소입니다: " + spotId);
+        }
+
+        Reqs reqs = requirements(session.userTypes());
+        Map<String, List<AccessibilityItem>> access = spots.accessibilityBySpot(ids);
+        Map<String, List<String>> crossLinks = spots.crossLinkIdsBySpot(ids);
+        Map<String, CrossLinkResponse> linkById = spots.findCrossLinks(null).stream()
+                .collect(Collectors.toMap(CrossLinkResponse::id, l -> l));
+
+        List<Stop> stops = new ArrayList<>();
+        List<Candidate> chosen = new ArrayList<>();
+        Set<String> eraIds = new LinkedHashSet<>(current.eraIds());
+        SpotRow prev = session.startSpotId() == null ? null : spots.findRow(session.startSpotId()).orElse(null);
+        for (int i = 0; i < ids.size(); i++) {
+            String id = ids.get(i);
+            SpotRow s = spots.findRow(id).orElseThrow(() -> ApiException.badRequest("알 수 없는 장소입니다: " + id));
+            if (!s.hasCoords()) {
+                throw ApiException.badRequest(s.name() + " 은(는) 좌표가 없어 코스에 넣을 수 없습니다.");
+            }
+            String blocked = blockedReason(reqs, access.getOrDefault(id, List.of()));
+            if (blocked != null) {
+                throw ApiException.badRequest(s.name() + " 은(는) 이용자 조건에 맞지 않습니다: " + blocked);
+            }
+            Candidate c = evaluate(s, reqs, access.getOrDefault(id, List.of()), crossLinks.getOrDefault(id, List.of()));
+            Double distance = i == 0 && prev == null ? firstLegIfUnchanged(current, id)
+                    : prev == null || !prev.hasCoords() ? null
+                    : Double.valueOf(GeoUtils.round2(dist(prev.latitude().doubleValue(), prev.longitude().doubleValue(), s)));
+            stops.add(new Stop(i + 1, new StopSpot(s.id(), s.name(), s.eraId(), s.latitude(), s.longitude()), distance,
+                    accessMemo(s, c, reqs.required()), c.unknownRequired(), pickCrossEraLink(c, linkById)));
+            chosen.add(c);
+            eraIds.add(s.eraId());
+            prev = s;
+        }
+
+        List<String> warnings = baseWarnings(chosen);
+        String editNote = " 요청에 따라 코스를 수정했습니다.";
+        String reason = current.reason() != null && current.reason().endsWith(editNote)
+                ? current.reason() : current.reason() + editNote;
+        CourseResponse edited = new CourseResponse(null, List.copyOf(eraIds), session.userTypes(), current.startLabel(),
+                reason, stops, current.excluded(), warnings);
+        return save(sessionId, edited.eraIds(), edited);
+    }
+
+    private String requireSpotId(String spotId) {
+        if (spotId == null || spotId.isBlank()) {
+            throw ApiException.badRequest("spot_id 가 필요합니다.");
+        }
+        return spotId;
+    }
+
+    /** 출발 좌표를 저장하지 않으므로, 첫 장소가 그대로일 때만 이전 거리를 유지한다. */
+    private static Double firstLegIfUnchanged(CourseResponse current, String firstSpotId) {
+        Stop first = current.stops().get(0);
+        return first.spot().id().equals(firstSpotId) ? first.distanceFromPrevKm() : null;
+    }
+
+    private record Reqs(Map<String, Requirement> required, Map<String, Requirement> preferred,
+            Map<String, String> typeNames) {
+    }
+
+    private Reqs requirements(List<String> userTypes) {
+        Map<String, Requirement> required = new HashMap<>();
+        Map<String, Requirement> preferred = new HashMap<>();
+        Map<String, String> typeNames = new HashMap<>();
+        for (UserTypeResponse t : reference.findUserTypes()) {
+            typeNames.put(t.code(), t.name());
+            if (!userTypes.contains(t.code())) {
+                continue;
+            }
+            for (Requirement r : t.requirements()) {
+                if (r.required()) {
+                    required.put(r.featureCode(), r);
+                    preferred.remove(r.featureCode());
+                } else if (!required.containsKey(r.featureCode())) {
+                    preferred.put(r.featureCode(), r);
+                }
+            }
+        }
+        return new Reqs(required, preferred, typeNames);
+    }
+
+    /** 필수 항목이 '없음'으로 확인되었으면 그 이유, 아니면 null. */
+    private static String blockedReason(Reqs reqs, List<AccessibilityItem> items) {
+        Map<String, AccessibilityItem> byFeature = items.stream()
+                .collect(Collectors.toMap(AccessibilityItem::featureCode, a -> a));
+        List<String> blocked = reqs.required().keySet().stream()
+                .filter(f -> byFeature.containsKey(f) && "UNAVAILABLE".equals(byFeature.get(f).status()))
+                .sorted().toList();
+        if (blocked.isEmpty()) {
+            return null;
+        }
+        return blocked.stream()
+                .map(f -> reqs.required().get(f).featureName() + " 없음"
+                        + (byFeature.get(f).rawText() == null ? "" : " (" + byFeature.get(f).rawText() + ")"))
+                .collect(Collectors.joining(", "));
+    }
+
+    private static Candidate evaluate(SpotRow s, Reqs reqs, List<AccessibilityItem> items, List<String> links) {
+        Map<String, Requirement> required = reqs.required();
+        Map<String, AccessibilityItem> byFeature = items.stream()
+                .collect(Collectors.toMap(AccessibilityItem::featureCode, a -> a));
+        List<String> unknown = required.keySet().stream()
+                .filter(f -> !byFeature.containsKey(f) || "UNKNOWN".equals(byFeature.get(f).status()))
+                .sorted().toList();
+        List<String> partial = required.keySet().stream()
+                .filter(f -> byFeature.containsKey(f) && "PARTIAL".equals(byFeature.get(f).status()))
+                .sorted().toList();
+        double score = 0;
+        for (String f : union(required.keySet(), reqs.preferred().keySet())) {
+            AccessibilityItem a = byFeature.get(f);
+            if (a != null && "AVAILABLE".equals(a.status())) {
+                score += 1;
+            } else if (a != null && "PARTIAL".equals(a.status())) {
+                score += 0.5;
+            }
+        }
+        // 필수 항목의 근거 원문 (예: "계단·급경사 없는 접근로: 출입구까지 경사로가 설치되어 있음")
+        List<String> evidence = required.keySet().stream().sorted()
+                .filter(f -> byFeature.containsKey(f) && byFeature.get(f).rawText() != null
+                        && !"UNKNOWN".equals(byFeature.get(f).status()))
+                .map(f -> required.get(f).featureName() + ": " + byFeature.get(f).rawText())
+                .toList();
+        return new Candidate(s, unknown, partial, score, links, evidence);
+    }
+
+    private static List<String> baseWarnings(List<Candidate> chosen) {
+        List<String> warnings = new ArrayList<>();
+        warnings.add(ROUTE_WARNING);
+        warnings.add(DISTANCE_NOTE);
+        long unknownStops = chosen.stream().filter(c -> !c.unknownRequired().isEmpty()).count();
+        if (unknownStops > 0) {
+            warnings.add(unknownStops + "곳은 필수 접근성 항목이 아직 확인되지 않았습니다. 방문 전 확인이 필요합니다.");
+        }
+        return warnings;
     }
 
     public CourseResponse get(long courseId) {
@@ -322,8 +455,9 @@ public class CourseService {
     }
 
     private static String accessMemo(SpotRow s, Candidate c, Map<String, Requirement> required) {
-        List<String> parts = new ArrayList<>();
-        if (s.accessibilityNote() != null) {
+        List<String> parts = new ArrayList<>(c.evidence());
+        // 엑셀 메모는 근거가 없을 때만 보여준다. '조회 대상' 같은 작업용 메모는 숨긴다.
+        if (c.evidence().isEmpty() && s.accessibilityNote() != null && !s.accessibilityNote().contains("조회 대상")) {
             parts.add(s.accessibilityNote());
         }
         if (!c.partialRequired().isEmpty()) {

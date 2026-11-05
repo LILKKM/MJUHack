@@ -52,8 +52,10 @@ class ApiIntegrationTests {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(8)))
                 .andExpect(jsonPath("$[*].eraId", everyItem(is("MODERN"))));
+        // 은평구는 관광공사 좌표로 채운 2곳만 좌표가 있다 (V8)
         mvc.perform(get("/api/spots").param("districtId", "EPY").param("hasCoords", "true"))
-                .andExpect(jsonPath("$", hasSize(0)));
+                .andExpect(jsonPath("$[*].id", is(java.util.List.of("EPY06", "EPY07"))))
+                .andExpect(jsonPath("$[0].coordStatus").value("KTO"));
     }
 
     @Test

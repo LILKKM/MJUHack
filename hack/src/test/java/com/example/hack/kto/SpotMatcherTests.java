@@ -44,6 +44,19 @@ class SpotMatcherTests {
     }
 
     @Test
+    void bracketSuffixIsIgnoredAndShopsAreNotNearbyCandidates() {
+        Place jongmyo = new Place("126510", "종묘 [유네스코 세계유산]", "JNG", 37.5744, 126.9941, "12");
+        assertThat(SpotMatcher.match(new Place("JNG21", "종묘", "JNG", 37.5745, 126.994), List.of(jongmyo))
+                .match().kto().id()).isEqualTo("126510");
+
+        Place bookstore = new Place("1304864", "영풍문고 종각종로본점", "JNG", 37.5700, 126.9825, "38");
+        Place museum = new Place("1", "어느 박물관", "JNG", 37.5700, 126.9826, "14");
+        Result r = SpotMatcher.match(new Place("JNG09", "의금부 터 표석", "JNG", 37.5702, 126.9826),
+                List.of(bookstore, museum));
+        assertThat(r.candidates()).extracting(c -> c.kto().id()).containsExactly("1");
+    }
+
+    @Test
     void ambiguousContainsIsNotLinked() {
         Place a = new Place("A1", "진관사", "EPY", 37.6380, 126.9460);
         Place b = new Place("A2", "진관사 템플스테이", "EPY", 37.6381, 126.9461);

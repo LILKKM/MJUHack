@@ -28,6 +28,29 @@ class BarrierFreeNormalizerTests {
         assertThat(BarrierFreeNormalizer.classify("관리사무소에 확인")).isEqualTo("UNKNOWN");
     }
 
+    /** 2026-11-06 실제 수집 원문에서 가져온 사례 */
+    @Test
+    void classifiesRealKtoTexts() {
+        assertThat(BarrierFreeNormalizer.classify(
+                "출입구까지 단차가 없어 휠체어 이용 가능하나 흙구간 및 휠체어 접근이 불가한 구간 있음")).isEqualTo("PARTIAL");
+        assertThat(BarrierFreeNormalizer.classify(
+                "야외 관람로는 단차가 없고 평탄해서 이동하기 좋으나 형무소 건물 내부의 전시관은 모두 입구에 계단이 있어서"))
+                .isEqualTo("PARTIAL");
+        assertThat(BarrierFreeNormalizer.classify("1층 진입로에 계단이 있으나 휠체어리프트 있어 집입 가능함")).isEqualTo("PARTIAL");
+        assertThat(BarrierFreeNormalizer.classify(
+                "수유실 있음(홍화문 우측, 평소에 잠겨 있어서 이용시 안내소에 요청해야 함)")).isEqualTo("PARTIAL");
+        assertThat(BarrierFreeNormalizer.classify("주 출입구까지 평탄한 길")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("접근로 이용이 쉬움")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("음성안내어플 제공")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("출입구까지 턱이 없어 휠체어 접근 가능함")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("주출입구 무단차관람객 도움벨이 설치되어 있음")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("장애인주차장 3면 보유")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("주차장이 공사 중(2027년까지)")).isEqualTo("UNAVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("장애인 화장실(재궁, 영녕전, 전사청 앞)")).isEqualTo("AVAILABLE");
+        assertThat(BarrierFreeNormalizer.classify("일부구간 경사로가 설치되어 있음")).isEqualTo("PARTIAL");
+        assertThat(BarrierFreeNormalizer.classify("전각에 경사로가 설치되어 있으나 일부구간 접근 어려움")).isEqualTo("PARTIAL");
+    }
+
     @Test
     void mapsFieldsSkipsBlanksAndKeepsBetterStatus() {
         JsonMapper json = JsonMapper.builder().build();
