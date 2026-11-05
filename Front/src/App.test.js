@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+beforeEach(() => {
+  global.fetch = jest.fn(() =>
+    Promise.resolve({ json: () => Promise.resolve({ status: 'ok' }) })
+  );
+});
+
+test('shows backend status', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(await screen.findByText(/백엔드 상태: ok/)).toBeInTheDocument();
 });
