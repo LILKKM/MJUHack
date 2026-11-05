@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1866 royal wedding at Unhyeongung Norakdang: formal procession with royal palanquin and attendants in the courtyard outside a timber hall, onlookers at the gate. Wide view, no close royal likeness or modern event reconstruction equipment.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1866년 봄 · 한성 운현궁】 임금의 가례, 운현궁 노락당에서 거행
+
+열다섯 살 임금의 가례가 운현궁에서 성대하게 치러졌다. 왕비로는 여흥 민씨 민치록의 따님이 간택되었다. 왕비는 가례에 앞서 운현궁 노락당에 머물며 궁중 법도를 익혔다. 이어 임금께서 친히 납시어 왕비를 맞이하는 의식이 거행되었다.
+
+운현궁은 임금께서 왕위에 오르시기 전 나고 자라신 집이다. 지금은 임금의 아버지인 흥선대원군이 섭정을 하며 나랏일을 처리하는 곳이다. 대원군은 아들이 즉위한 뒤 이 집을 크게 넓혀 노안당과 노락당을 새로 지었다. 대궐에 버금가는 위세를 갖추게 되어 세간에서는 "운현궁이 곧 조정"이라는 말까지 나온다.
+
+이번 왕비 간택에는 대원군의 뜻이 크게 작용한 것으로 알려졌다. 새 왕비는 일찍 부모를 여의어 친정의 세력이 약하다. 그래서 외척이 권력을 휘두르던 지난 시절의 폐단을 되풀이하지 않을 것이라는 계산이 깔려 있다는 해석이다. 왕비가 대원군 부인과 같은 집안이라는 점도 고려되었다고 한다.
+
+가례 날 운현궁 앞길에는 도성 백성들이 몰려나와 화려한 행렬을 구경했다. 그러나 근래 서양 배가 잇달아 바다에 나타나고 천주교도 처형이 이어지는 등 나라 안팎이 어수선하다. 새 왕비를 맞은 젊은 임금과 대원군의 앞날에 관심이 쏠리고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

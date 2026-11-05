@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 2002 Seoul Museum of History opening: contemporary families leaning over a large Seoul city model in a modern museum gallery, subdued early-digital color photograph texture. No readable labels.
+Style and texture: Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【2002년 5월 · 서울】 경희궁 터에 서울역사박물관 개관
+
+서울의 600년 역사를 한눈에 볼 수 있는 서울역사박물관이 종로구 신문로 경희궁 옛터에 문을 열었다. 조선의 도읍 한양에서 오늘의 거대 도시 서울에 이르기까지 도시가 걸어온 길을 보여 주는 도시 역사 전문 박물관이다.
+
+박물관이 들어선 경희궁 터는 그 자체로 서울 역사의 굴곡을 보여 준다. 경희궁은 광해군 때 지어져 영조와 정조가 머물던 궁궐이었다. 그러나 경복궁 중건 때 전각이 대부분 헐렸고, 일제강점기에는 일본인 학교가 들어서며 궁궐의 모습을 잃었다. 정문인 흥화문과 정전인 숭정전도 다른 곳으로 팔려 나갔다가 뒤늦게 일부만 복원되었다.
+
+전시실에는 조선시대 한양의 모습을 담은 지도와 그림, 생활 유물이 진열되었다. 개항기와 일제강점기, 광복 이후 서울의 변화를 보여 주는 사진과 자료도 함께 전시되었다. 서울 도심을 정밀하게 재현한 대형 모형 앞에서 관람객들은 자기 동네를 찾아보며 즐거워했다.
+
+박물관 측은 "서울에 살면서도 서울의 역사를 잘 모르는 시민이 많다"며 "도시의 기억을 함께 나누는 공간이 되겠다"고 밝혔다. 사라진 궁궐 자리에서 도시의 기억을 되살리는 일이 시작되었다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

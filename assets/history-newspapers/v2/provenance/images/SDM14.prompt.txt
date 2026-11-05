@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: Late Joseon Hongjewon state inn: workers sweeping a dirt courtyard, carrying food baskets and preparing guest rooms for a Qing envoy, simple tiled wooden lodging and low hills. Focus on labor, not the unverified story of women washing in a stream.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【조선 후기 · 한성 서북 교외】 칙사 행차 앞둔 홍제원, 밤낮없이 분주
+
+청나라 칙사의 행차가 가까워지면서 도성 서북쪽 무악재 너머 홍제원이 손님맞이 준비로 분주하다. 홍제원은 중국 사신이 한양에 들어오기 전 마지막으로 하룻밤을 묵는 나라의 숙소다. 의주에서 출발한 사신 일행이 이곳에 닿으면 먼저 몸을 씻고 옷을 갈아입는다. 이튿날 의장을 갖춰 무악재를 넘고 모화관과 영은문을 지나 도성으로 들어가는 것이 오랜 관례다.
+
+관아에서는 며칠 전부터 방을 고치고 마당을 쓸었다. 음식을 준비하느라 인근 마을 사람들까지 불려 나왔다. 길가 백성들은 행차 때 엎드려 예를 갖추라는 지시를 받았다. 사신 일행을 먹이고 재우는 비용과 선물은 모두 나라와 백성의 부담이다. 한 주민은 "칙사가 한 번 다녀가면 마을 살림이 몇 해 기운다"며 한숨을 쉬었다.
+
+홍제원 앞을 흐르는 개천에는 병자년 난리 뒤 청에서 돌아온 여인들이 이 물에 몸을 씻고 도성에 들어갔다는 이야기가 전한다. 사실 여부는 알 수 없다. 다만 이 일대가 나라의 아픈 기억과 얽힌 곳임은 분명하다.
+
+큰 나라를 섬기는 예법은 엄연하지만, 그 무게는 고스란히 길목 백성들의 어깨에 얹힌다. 홍제원의 밤은 오늘도 등불이 꺼지지 않는다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "JNG15",
+  "name": "대한민국역사박물관",
+  "articleCell": "O48",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "2ccc6152fa819a62129c3c3259825223ac2005eac1d7b7fb9d89ec1bbf468038",
+  "articleHeader": "【2012년 12월 · 서울】 광화문 옛 정부 청사, 대한민국역사박물관으로 문 열어",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "대한민국역사박물관 기사 장면을 재구성한 AI 이미지",
+  "alt": "【2012년 12월 · 서울】 광화문 옛 정부 청사, 대한민국역사박물관으로 문 열어 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.",
+  "sceneBrief": "2012 National Museum of Korean Contemporary History opening: visitors in a modern exhibition gallery studying period radios and household objects in cases, clean contemporary architecture. No readable labels or invented political claims.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-08f41bd1-9ec2-4579-83fc-91420e7e4c13.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/JNG15/article-v1.prompt.txt",
+    "sha256": "dfcdbfadc6c5ffe13b84af1d555856816c8ceaed041e79da0a45a13c9ae378b4"
+  },
+  "image": {
+    "path": "deliverables/images/JNG15/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2261134,
+    "sha256": "e8fd1fea3bbf0ea705c41a712e3e6172384c242dd6bbb5f80e531c6b6f62a985"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 조문·궁궐 사건 후·즉위·1946년 민속 전시·2012년 근현대 전시·1919년 준비 회합·2002년 도시 모형·1751년 화가와 인왕산 장면 확인. 사진풍 명암과 시대별 질감 확인. 정확한 장소 배치와 전시·의례·인물의 역사적 세부는 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

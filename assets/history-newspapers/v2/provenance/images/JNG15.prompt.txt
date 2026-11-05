@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 2012 National Museum of Korean Contemporary History opening: visitors in a modern exhibition gallery studying period radios and household objects in cases, clean contemporary architecture. No readable labels or invented political claims.
+Style and texture: Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【2012년 12월 · 서울】 광화문 옛 정부 청사, 대한민국역사박물관으로 문 열어
+
+서울 광화문광장 옆 옛 문화체육관광부 청사가 대한민국 근현대사를 다루는 대한민국역사박물관으로 새롭게 문을 열었다. 개항기부터 오늘에 이르기까지 대한민국이 걸어온 길을 한자리에서 보여 주는 첫 국립 근현대사 박물관이다.
+
+박물관 건물은 1961년 미국의 원조로 나란히 지어진 쌍둥이 건물 가운데 하나다. 경제기획원이 들어서 경제개발 5개년 계획을 세우고 이끌던 곳이다. 한강의 기적을 설계하던 정부 청사가 이제 그 역사를 되돌아보는 박물관이 된 것이다. 바로 옆 쌍둥이 건물은 지금도 미국대사관으로 쓰이고 있다.
+
+전시실에는 독립운동과 광복, 정부 수립과 6·25 전쟁, 산업화와 민주화 과정을 보여 주는 자료와 유물이 시대순으로 진열되었다. 산업화 시기의 생활용품과 민주화 운동 관련 자료도 함께 전시되었다. 옥상 정원에서는 경복궁과 광화문광장이 한눈에 내려다보인다.
+
+다만 개관을 앞두고 일부 전시 내용이 특정 시기를 지나치게 미화하거나 축소했다는 비판도 나왔다. 역사 해석을 둘러싼 논쟁이 이어질 전망이다. 박물관 측은 다양한 의견을 수렴해 전시를 보완해 나가겠다고 밝혔다. 오늘의 역사를 어떻게 기억할지 묻는 새 공간이 광화문에 생겼다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

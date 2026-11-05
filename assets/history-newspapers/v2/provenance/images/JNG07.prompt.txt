@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1791 Jongno market after trading restrictions lifted: small street vendors freely arranging cloth, paper and food baskets beside established timber shops, shoppers in late-18th-century hanbok. No modern market goods or text.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1791년 · 한성】 신해년 통공, 육의전 빼고 금난전권 없앤다
+
+임금께서 좌의정 채제공의 건의를 받아들여 도성 시전 상인들이 누려 오던 금난전권을 거두기로 하셨다. 다만 비단과 무명, 명주, 종이, 모시, 어물을 파는 여섯 큰 상점, 곧 육의전만은 그 권리를 그대로 두기로 했다. 나라에 물품을 대는 의무를 지고 있기 때문이다.
+
+금난전권은 허가받은 시전 상인이 허가 없이 물건을 파는 난전을 단속할 수 있는 특권이다. 그동안 시전 상인들은 이 권리를 앞세워 길거리 장사꾼의 물건을 빼앗거나 값을 마음대로 올렸다. 그 탓에 도성 백성들은 비싼 값에 물건을 사야 했고 영세한 장사꾼들은 생계를 위협받았다.
+
+채제공은 "작은 장사꾼들이 마음 놓고 물건을 팔 수 있어야 물가가 내리고 백성이 편해진다"는 뜻을 아뢰었다고 한다. 이번 조치로 남대문 밖 칠패와 동대문 근처 이현의 장터 상인들이 크게 반기고 있다. 한 칠패 장사꾼은 "이제 쫓겨 다니지 않고 장사할 수 있게 되었다"며 기뻐했다.
+
+반면 종로 운종가의 시전 상인들 사이에서는 불만이 터져 나오고 있다. 수백 년 이어 온 특권을 잃게 된 상인들은 대책 마련에 나섰다. 도성의 장사판이 크게 바뀌는 신호탄이 될 것이라는 전망이 나온다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

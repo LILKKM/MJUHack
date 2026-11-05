@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1991 April Myongji University entrance: students gathered in shock and grief near a campus wall after a fatal police crackdown; distant plainclothes police with white helmets and denim jackets. Show the aftermath, no beating or injured body.
+Style and texture: Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1991년 4월 27일 · 서울】 명지대생, 교문 앞 시위 중 경찰 쇠파이프에 맞아 숨져
+
+시위를 하던 대학생이 진압 경찰에게 집단 구타를 당해 숨지는 일이 일어났다. 26일 오후 서울 서대문구 남가좌동 명지대 정문 앞에서 이 학교 경제학과 1학년 강경대 군(19)이 사복 체포조 경찰관들의 쇠파이프와 곤봉에 맞고 쓰러졌다. 강 군은 병원으로 옮겨지던 중 숨졌고, 시신은 오후 6시께 신촌 세브란스병원으로 옮겨졌다.
+
+학생들의 말을 종합하면 이날 명지대생들은 구속된 총학생회장의 석방과 학원 자주화를 요구하며 교내 집회를 연 뒤 교문 밖 진출을 시도했다. 흰 헬멧에 청재킷 차림의 체포조, 이른바 '백골단'이 학생들을 쫓아 교문 안까지 들어왔다. 담을 넘어 피하려던 강 군이 여러 명에게 붙잡혀 머리와 온몸을 맞았다는 것이다.
+
+강 군은 올봄 입학한 새내기다. 동기들은 "두 달 전 함께 입학식을 치른 친구"라며 말을 잇지 못했다. 소식이 퍼지자 밤사이 세브란스병원 영안실 앞에는 학생과 시민 수천 명이 모여 책임자 처벌과 백골단 해체를 요구했다.
+
+경찰은 진압 과정에서 과잉 대응이 있었는지 조사에 나섰다. 야권은 이번 사건을 "공권력에 의한 살인"으로 규정하고 내무부장관 해임을 요구했다. 정문 앞 아스팔트에는 학생들이 분필로 그려 둔 표시가 남아 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

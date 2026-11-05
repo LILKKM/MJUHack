@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1960 August at Yun Posun house in Anguk-dong: citizens and reporters waiting outside the traditional hanok entrance after the presidential election, modest 1960 suits and film cameras. No exact presidential portrait, no modern presidential residence.
+Style and texture: Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1960년 8월 13일 · 서울】 윤보선 의원, 제4대 대통령에 선출
+
+4·19혁명 이후 내각책임제로 바뀐 새 헌법 아래 첫 대통령으로 민주당 윤보선 의원이 선출되었다. 민의원과 참의원은 12일 국회에서 양원 합동회의를 열어 대통령 선거를 실시했고, 윤 의원이 압도적인 표차로 당선되었다. 새 대통령은 곧바로 취임 선서를 하고 업무에 들어갔다.
+
+새 헌법에서 대통령은 국가의 원수로서 나라를 대표하지만 실제 행정은 국무총리가 이끄는 내각이 맡는다. 윤 대통령은 앞으로 국무총리 후보를 지명해 국회의 동의를 받아야 한다. 민주당 안의 신파와 구파 사이에서 누구를 총리로 세울지를 놓고 벌써부터 신경전이 치열하다.
+
+윤 대통령은 충남 아산 출신으로 영국 에든버러대학에서 공부했다. 광복 뒤 서울시장과 상공부 장관을 지냈고 자유당 정권에 맞서 야당 정치인으로 활동해 왔다. 서울 안국동 그의 집은 오래전부터 야당 인사들이 드나들며 정국을 논하던 곳이다.
+
+시민들은 독재가 무너진 뒤 들어선 새 정부에 큰 기대를 걸고 있다. 그러나 경제난과 혁명 뒤의 혼란, 부정선거 책임자 처벌 등 풀어야 할 숙제가 산더미 같다. 안국동의 오래된 한옥에서 시작된 새 대통령의 길이 순탄할지 지켜볼 일이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

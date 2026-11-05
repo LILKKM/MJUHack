@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1920 Seodaemun prison: somber red-brick prison corridor and barred cell doorway, two anonymous women seen from behind in white period clothing, subdued remembrance of a young independence activist who died there. No corpse, torture or portrait claim.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1920년 10월 · 경성】 아우내 만세 주도한 이화학당 여학생, 옥중에서 숨져
+
+지난해 3월 충남 천안 병천의 아우내 장터에서 만세 시위를 이끌다 붙잡힌 유관순(18)이 서대문감옥에서 숨진 사실이 알려졌다. 유관순은 지난달 28일 옥중에서 세상을 떠났다. 이달 14일 이화학당 관계자들이 시신을 거둬 이태원 공동묘지에 묻은 것으로 전해졌다.
+
+유관순은 이화학당 학생으로 지난해 3월 경성 시위에 참여했다. 학교가 문을 닫자 고향으로 내려가 장터 만세 운동을 준비했다. 4월 1일 장터에 모인 수천 명 앞에서 태극기를 나눠 주고 만세를 불렀다. 이날 일본 헌병의 발포로 아버지와 어머니를 함께 잃었다.
+
+체포된 그는 공주에서 재판을 받은 뒤 경성복심법원에서 징역 3년이 확정되어 서대문감옥에 갇혔다. 같은 감방에 있던 이들에 따르면 그는 옥중에서도 뜻을 굽히지 않았다. 올해 3월 1일에는 만세 1주년을 맞아 감옥 안에서 다시 만세를 불렀다. 이후 모진 처우를 받아 몸이 크게 상했다고 한다.
+
+당국은 자세한 사인을 밝히지 않고 있다. 열여덟 꽃다운 나이의 죽음 앞에 동창생들은 소리 내 울지도 못했다. 서대문 밖 붉은 벽돌 감옥에는 지금도 만세 운동으로 붙잡힌 수많은 사람이 갇혀 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

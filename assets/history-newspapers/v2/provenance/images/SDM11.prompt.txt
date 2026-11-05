@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1920 Yeonhui campus opening: a newly finished modest granite Gothic collegiate building among pine trees, period male students approaching on a dirt path. Only first stone school building, no later completed campus buildings or modern campus.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1920년 · 경성 연희】 연희전문, 첫 석조 교사 '스팀슨관' 준공
+
+경성 서쪽 연희 언덕에 자리 잡은 연희전문학교가 첫 번째 돌 건물을 완공했다. 화강석을 쌓아 올린 이 3층 교사는 건립비를 기부한 미국인 스팀슨의 이름을 따 '스팀슨관'으로 불린다. 뾰족한 지붕과 단단한 돌벽이 소나무 숲 사이로 우뚝 솟아 멀리서도 눈에 띈다.
+
+연희전문은 선교사 언더우드 등이 중심이 되어 1915년 종로 기독교청년회관에서 수업을 시작했다. 1917년 정식 인가를 받은 뒤 이곳 연희 들판에 넓은 터를 마련했다. 학교 측은 앞으로 같은 양식의 건물을 차례로 세워 큰 학교 마을을 꾸밀 계획이다. 본관 격인 언더우드관과 아펜젤러관도 곧 공사에 들어간다.
+
+학교는 문과와 상과, 수물과 등을 두고 조선 청년들에게 근대 학문을 가르치고 있다. 지난해 만세 운동 이후 배움에 목마른 청년들의 지원이 늘었다는 것이 학교 측의 설명이다. 한 학생은 "돌로 지은 교실처럼 단단한 학문을 쌓고 싶다"고 말했다.
+
+다만 총독부의 교육 정책 아래에서 조선인이 세운 고등교육이 얼마나 자유로울지 걱정하는 목소리도 있다. 그래도 신촌 들판에 들어선 돌 건물은 조선 청년들의 배움을 향한 열망을 보여 주는 상징이 되고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

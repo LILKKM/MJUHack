@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "SDM03",
+  "name": "국립대한민국임시정부기념관",
+  "articleCell": "O4",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "7217c92a1ad7b04dffbb14cec096a6eceb187e73a8adda7ed91610f928af0bc5",
+  "articleHeader": "【1919년 4월 · 상하이】 상하이에서 '대한민국' 임시정부 수립",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "국립대한민국임시정부기념관 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1919년 4월 · 상하이】 상하이에서 '대한민국' 임시정부 수립 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1919 April Shanghai: anonymous independence activists gathered around a modest wooden meeting table in a rented room, discussing the establishment of a provisional republic. Documents face away from camera. Not the modern memorial museum in Seoul.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-00e6a36c-1640-42c0-9a64-2c125a681be9.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/SDM03/article-v1.prompt.txt",
+    "sha256": "242697c8b0ac048a06a8d4a6a68074f61e649d0b21c78cfc9e010e1b9936a5a7"
+  },
+  "image": {
+    "path": "deliverables/images/SDM03/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2688962,
+    "sha256": "686a85c353a829d3cc733c7c58cc3bc8467babd4878f72dd8e9395e51d109c66"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "사진풍·시대별 옷차림과 사건 중심 장면 확인. SDM01 화환 리본과 SDM02 노면에는 작은 문자 유사무늬가 있어 최종 조판 전 확인 필요. 역사 정확성은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

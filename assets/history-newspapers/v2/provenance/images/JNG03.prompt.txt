@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1885 opening of Gwanghyewon hospital in a converted Jaedong hanok: anonymous Western physician in period waistcoat and Korean assistant examining a seated patient while others wait in the courtyard. No modern surgical gear, white labcoat, fluorescent lights or hospital building.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1885년 4월 · 한성 재동】 서양식 병원 '광혜원' 재동에서 문 열어
+
+도성 북쪽 재동에 서양 의술로 병을 고치는 나라의 병원 광혜원이 문을 열었다. 병원은 지난겨울 갑신년 정변 때 반역죄로 집안이 몰락한 홍영식의 옛집을 고쳐 꾸몄다. 이 일대는 개화사상의 선구자였던 고 박규수 대감이 살며 젊은 양반들에게 새 학문을 가르치던 곳과 이웃해 있다.
+
+병원을 맡은 사람은 미국인 의사 알렌이다. 그는 정변 당시 칼에 깊이 찔려 목숨이 위태롭던 민영익을 서양 의술로 살려 내 임금의 신임을 얻었다. 이를 계기로 그는 나라에 병원을 세우자고 건의했고 임금께서 이를 허락하셨다. 병원 이름은 '널리 은혜를 베푸는 집'이라는 뜻이다. 문을 연 지 얼마 되지 않아 '여러 사람을 구한다'는 뜻의 '제중원'으로 이름을 바꿀 예정이라고 한다.
+
+개원 첫날부터 병원 앞에는 병자들이 줄을 섰다. 칼로 째고 꿰매는 서양 치료법을 두려워하는 이도 많다. 그러나 오래 앓던 종기가 하루 만에 나았다는 소문이 퍼지면서 찾는 사람이 늘고 있다.
+
+정변에 실패한 개화파의 집이 서양 의술을 펼치는 병원이 된 것을 두고 묘한 감회를 드러내는 이도 있다. 피로 얼룩진 개화의 꿈이 사람을 살리는 일로 다시 이어지게 될지 지켜볼 일이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

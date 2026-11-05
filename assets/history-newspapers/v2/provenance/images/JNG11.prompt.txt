@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1949 Gyeonggyojang following Kim Gu assassination: mourners in 1940s clothing gathering outside the house with white flowers, subdued respectful scene. No gunshot action, corpse, invented face or modern plaque.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1949년 6월 27일 · 서울】 백범 김구 선생, 경교장에서 피격 서거
+
+대한민국 임시정부 주석을 지낸 백범 김구 선생이 26일 낮 서울 서대문구 경교장 2층 집무실에서 괴한이 쏜 총에 맞아 세상을 떠났다. 향년 74세. 범인은 현역 육군 포병 소위 안두희로 밝혀졌다. 그는 선생을 찾아와 면담하던 중 권총을 꺼내 여러 발을 쏜 것으로 알려졌다.
+
+총소리를 듣고 달려온 비서들이 범인을 붙잡았으나 선생은 이미 숨을 거둔 뒤였다. 소식이 전해지자 경교장 앞에는 순식간에 수많은 시민이 몰려들었다. 사람들은 땅을 치며 통곡했다. 시민들은 "나라를 되찾은 지 4년 만에 이게 무슨 일이냐"며 울분을 터뜨렸다.
+
+선생은 1945년 11월 중국에서 귀국한 뒤 이곳 경교장에 머물며 임시정부의 정통성을 지키고 신탁통치 반대 운동을 이끌었다. 지난해에는 분단을 막기 위해 38선을 넘어 평양의 남북 연석회의에 다녀오기도 했다. 남한만의 단독 정부 수립에는 끝까지 반대했다.
+
+군 당국은 범인을 상대로 범행 동기와 배후를 조사하고 있다고 밝혔다. 그러나 시민들 사이에서는 배후를 둘러싼 갖가지 의혹이 쏟아지고 있다. 정부는 국민장으로 장례를 치르기로 했다. 통일된 나라를 꿈꾸던 노투사는 끝내 그 꿈을 이루지 못한 채 쓰러졌다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

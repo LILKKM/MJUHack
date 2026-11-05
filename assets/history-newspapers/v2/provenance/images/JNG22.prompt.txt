@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1762 Changgyeonggung Munjeongjeon tragedy: a closed traditional wooden rice chest alone in a solemn palace courtyard, distant court attendants in mourning seen from behind. No person inside shown, no corpse, no reenacted cruelty or graphic content.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1762년 윤5월 · 한성】 세자, 창경궁 뒤주 속에서 숨지다
+
+임금(영조)의 명으로 창경궁 문정전 앞 뒤주에 갇혔던 왕세자(사도세자)가 여드레 만에 숨을 거둔 것으로 알려졌다. 세자의 나이 스물여덟이다. 왕실의 대를 이을 세자가 친아버지의 손에 목숨을 잃은 전례 없는 일에 궁궐 안팎이 깊은 충격에 빠졌다.
+
+조정 안팎의 이야기를 종합하면 임금께서는 세자의 행실을 크게 꾸짖으시며 폐세자를 명하셨다. 이어 뒤주를 가져오게 해 세자를 그 안에 들어가게 하셨다. 세자는 눈물로 용서를 빌었으나 임금의 뜻은 꺾이지 않았다고 한다. 어린 세손이 할아버지 앞에 엎드려 아버지를 살려 달라고 애원했다는 이야기도 전해진다.
+
+세자는 어려서부터 총명하다는 평을 받았다. 그러나 엄한 부왕과의 사이가 벌어지면서 마음의 병을 얻었다는 말이 오래전부터 돌았다. 궁궐 안에서 사람을 해쳤다는 소문까지 겹치면서 임금의 분노가 쌓여 왔다. 조정 안 당파 사이의 다툼도 이번 일에 영향을 미쳤다는 시각이 있다.
+
+세자가 숨진 뒤 임금께서는 슬퍼하시며 '사도(思悼)'라는 시호를 내리셨다. '생각하며 슬퍼한다'는 뜻이다. 남겨진 열한 살 세손의 앞날을 걱정하는 목소리가 크다. 창경궁 문정전 앞마당에 놓였던 뒤주는 조선 왕실이 결코 잊을 수 없는 상처로 남게 되었다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

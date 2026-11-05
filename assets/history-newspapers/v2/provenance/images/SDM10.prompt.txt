@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1598 western outskirts of Hanseong: ordinary Joseon residents and stoneworkers standing around a newly erected plain commemorative stele beside an unpaved departure road, Ming entourage small in distance. No legible inscription.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1598년 · 한성 서쪽 교외】 경리 양호 귀국길에 백성들 송덕비 세워
+
+정유년 왜적의 재침 때 명나라 군사를 이끌고 조선에 온 경리 양호가 본국의 부름을 받고 돌아가게 되었다. 이에 도성 서쪽 길가에 그의 공을 기리는 거사비가 세워졌다. 지난해 가을 왜군은 남원과 전주를 휩쓸고 북쪽으로 치올라 도성을 위협했다. 양호는 군사를 독려해 직산에서 적의 선봉을 꺾었다. 적이 더는 북진하지 못한 것은 이 싸움 덕분이라는 평이 많다.
+
+양호는 겨울에 울산성에 웅거한 왜장 가토 기요마사를 에워싸 공격했다. 그러나 추위와 적의 원군 탓에 성을 떨어뜨리지는 못했다. 그 뒤 명 조정 안에서 그의 전과를 둘러싼 비방이 일었고, 결국 소환 명령이 내려졌다는 것이 조정 안팎의 이야기다.
+
+우리 조정은 그가 도성을 지켜 준 공을 잊을 수 없다며 아쉬움을 감추지 못하고 있다. 백성들도 길에 나와 귀국 행렬을 배웅했다. 함께 세워지는 사당 선무사에는 명군 총독 형개를 모시기로 했다.
+
+다만 전쟁은 아직 끝나지 않았다. 남해안에는 여전히 왜군이 웅거하고 있고 백성들의 삶은 피폐하다. 남의 나라 장수의 공을 돌에 새기는 일을 두고 씁쓸해하는 목소리도 들린다. 길가의 비석이 무엇을 기억하게 될지는 이 전쟁의 끝에 달려 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

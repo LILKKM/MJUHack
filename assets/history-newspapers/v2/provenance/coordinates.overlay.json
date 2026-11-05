@@ -1,0 +1,781 @@
+{
+  "meta": {
+    "version": "0.1.1",
+    "kind": "coordinate_overlay",
+    "sourceSha256": "29221c5eaa42c9565c11e151b1a69d5bf813a19914bf5a6afc0bbd7144f920a7",
+    "sourceCount": 58,
+    "missingBefore": 18,
+    "validBefore": 40,
+    "coordinateSystem": "EPSG:4326",
+    "coordinateOnly": true,
+    "productStatePromoted": false,
+    "requiresIntegrationReviewBeforeFrontend": true,
+    "decisionFile": "data/history/coordinates/decisions.json"
+  },
+  "items": [
+    {
+      "sourceId": "SDM03",
+      "originalName": "국립대한민국임시정부기념관",
+      "districtCode": "11410",
+      "verifiedName": "국립대한민국임시정부기념관",
+      "verifiedAddress": "서울특별시 서대문구 통일로 279-24",
+      "latitude": 37.576062,
+      "longitude": 126.954384,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "centroid",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현 기념관 건물의 지도 기준점. 해외 임시정부 청사나 서대문형무소 지점이 아니다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2017204",
+        "https://www.nmkpg.go.kr/index.do",
+        "https://nominatim.openstreetmap.org/search?q=%EA%B5%AD%EB%A6%BD%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80%EA%B8%B0%EB%85%90%EA%B4%80+%EC%84%9C%EC%9A%B8&format=jsonv2&addressdetails=1",
+        "https://api.openstreetmap.org/api/0.6/way/196065376/full.json"
+      ],
+      "providerRecordId": "osm:way:196065376",
+      "checkedAt": "2026-11-05T20:39:54.353213+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:196065376.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "기관 주소 279-24와 OSM 건물 주소 일치. 같은 이름의 버스정류장 node:14251161141은 제외.",
+        "건물 중심 기준점이며 실제 주출입구 좌표는 미실측."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/SDM03_source_1.response",
+        "data/history/coordinates/raw/official_SDM03.response",
+        "data/history/coordinates/raw/nominatim_probe.response",
+        "data/history/coordinates/raw/osm_way_SDM03.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2017204"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "SDM04",
+      "originalName": "독립관",
+      "districtCode": "11410",
+      "verifiedName": "서대문독립공원 복원 독립관",
+      "verifiedAddress": "서울특별시 서대문구 통일로 251 서대문독립공원 내",
+      "latitude": 37.573077,
+      "longitude": 126.958203,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "centroid",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현재 복원 독립관 건물 후보. 역사적 독립관 터의 별도 표석과 구분한다.",
+      "sourceUrls": [
+        "https://xn--ok0b236bp0a.com/place/12781",
+        "https://access.visitkorea.or.kr/ms/detail.do?cotId=7af7b531-fd44-45d8-9c8e-39dacdeeb798",
+        "https://i815.or.kr/2018/scholarship/domesticHistoricSite.do?mode=V&no=8",
+        "https://nominatim.openstreetmap.org/search?q=%EB%8F%85%EB%A6%BD%EA%B4%80+%EC%84%9C%EC%9A%B8+%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1",
+        "https://api.openstreetmap.org/api/0.6/way/777652962/full.json"
+      ],
+      "providerRecordId": "osm:way:777652962",
+      "checkedAt": "2026-11-05T20:41:13.736016+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:777652962.",
+      "confidence": "medium",
+      "reviewStatus": "draft",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "원본 여기유 좌표는 건물 후보에서 약 460m, 관광공사 길안내는 약 190m 떨어져 동일 지점으로 확정하지 않음.",
+        "독립기념관 지도는 복원 건물이 아닌 독립관 터 표석을 표시한다. 기관 좌표 충돌 때문에 방문용 채택 전 통합 검토/현장 대조 필요."
+      ],
+      "requiresIntegrationApproval": true,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/SDM04_source_1.response",
+        "data/history/coordinates/raw/official_SDM04_tour.response",
+        "data/history/coordinates/raw/official_SDM04_i815.response",
+        "data/history/coordinates/raw/osm_SDM04.response",
+        "data/history/coordinates/raw/osm_way_SDM04.response"
+      ],
+      "originalSourceUrls": [
+        "https://xn--ok0b236bp0a.com/place/12781"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "MPO01",
+      "originalName": "광흥창 터",
+      "districtCode": "11440",
+      "verifiedName": "광흥창 터 표석(이설 후)",
+      "verifiedAddress": "서울특별시 마포구 독막로21길 13 공민왕사당 입구 계단 오른쪽",
+      "latitude": 37.548405,
+      "longitude": 126.928531,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "광흥창 창고 영역을 기리는 현 표석. 광흥창역·공민왕사당 건물 중심과 구별한다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251",
+        "https://history.seoul.go.kr/archive/bbsctt/view.do?bbscttSn=2301031564&key=2211220005",
+        "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaAsno=0002310000000&ccbaCtcd=11",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EA%B4%91%ED%9D%A5%EC%B0%BD"
+      ],
+      "providerRecordId": "hgis:hgis_MPO01:oldid=5967",
+      "checkedAt": "2026-11-05T20:40:09.747921+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: hgis:hgis_MPO01:oldid=5967.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "HGIS 2015 이설 후 항목과 2026-03-04 사진 목록을 채택. 원래 사당 내부 표석 좌표는 사용하지 않음.",
+        "표석 위치/이설은 역사정보 위키의 답사 자료에 근거하며 현장 재측정 없음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO01_source_1.response",
+        "data/history/coordinates/raw/official_MPO01.response",
+        "data/history/coordinates/raw/khs_MPO01.response",
+        "data/history/coordinates/raw/hgis_MPO01.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "MPO02",
+      "originalName": "당인리 발전소(마포새빛문화숲)",
+      "districtCode": "11440",
+      "verifiedName": "마포새빛문화숲(당인리발전소 지상 공원)",
+      "verifiedAddress": "서울특별시 마포구 토정로 56",
+      "latitude": 37.544062,
+      "longitude": 126.919699,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "park_reference",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "지하 발전소 지상부의 시민 공원 기준점. 산업시설 내부 출입 지점이 아니다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251",
+        "https://mediahub.seoul.go.kr/archives/2006888",
+        "https://korean.visitseoul.net/nature/2024-maposaebit/KOPjxg13l",
+        "https://api.openstreetmap.org/api/0.6/map?bbox=126.915%2C37.542%2C126.922%2C37.546"
+      ],
+      "providerRecordId": "visitseoul:KOPjxg13l",
+      "checkedAt": "2026-11-05T20:40:55.606836+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: visitseoul:KOPjxg13l.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "공식 관광 지도 좌표를 사용. OSM 동일명 버스정류장 2곳은 제외했고 별도 park 노드의 근접 여부 대조.",
+        "주출입구·후문을 특정하는 값이 아닌 공원 기준점. 개별 발전시설 내부 출입을 허용하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO02_source_1.response",
+        "data/history/coordinates/raw/official_MPO02.response",
+        "data/history/coordinates/raw/official_MPO02_tour.response",
+        "data/history/coordinates/raw/osm_area_MPO02.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "MPO03",
+      "originalName": "마포·서강·양화 나루",
+      "districtCode": "11440",
+      "verifiedName": "서강 나루터 표석(2021 이설 후)",
+      "verifiedAddress": "서울특별시 마포구 상수동 308 상수나들목 강변 쪽 입구",
+      "latitude": 37.544335,
+      "longitude": 126.925499,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "사용자가 복수 나루 행의 대표 방문 지점으로 서강나루 현 표석을 선택했다. 마포·양화 나루 자체를 이 점과 동일시하지 않는다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1503449",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%84%9C%EA%B0%95%EB%82%98%EB%A3%A8",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%96%91%ED%99%94%EC%A7%84",
+        "https://www.visit-hangang.seoul.kr/course/show.asp?category=B&idx=8"
+      ],
+      "providerRecordId": "hgis:hgis_seogang:oldid=6236",
+      "checkedAt": "2026-11-05T20:42:38.765952+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: hgis:hgis_seogang:oldid=6236.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "2026-11-06 사용자 승인(decisions.json)에 따라 인계본에만 반영. 원본 sourceId/이름/raw 및 프론트는 보존.",
+        "2021 이설 후 상수나들목 강변 쪽 표석 좌표. 이전 봉원빗물펌프장 좌표·세 나루의 평균점은 사용하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO03_source_1.response",
+        "data/history/coordinates/raw/hgis_seogang.response",
+        "data/history/coordinates/raw/hgis_yanghwajin.response",
+        "data/history/coordinates/raw/official_MPO06_route.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1503449"
+      ],
+      "alternatives": [
+        {
+          "name": "서강 나루터 표석(2021 이설 후)",
+          "latitude": 37.544335,
+          "longitude": 126.925499,
+          "pointType": "marker",
+          "providerRecordId": "hgis:hgis_seogang:oldid=6236",
+          "sourceUrl": "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%84%9C%EA%B0%95%EB%82%98%EB%A3%A8",
+          "reason": "사용자가 선택한 현 방문점. 상수나들목 강변 쪽 입구; MPO06과 별도 장소."
+        },
+        {
+          "name": "양화진 나루터 표석",
+          "latitude": 37.543739,
+          "longitude": 126.911836,
+          "pointType": "marker",
+          "providerRecordId": "hgis:hgis_yanghwajin:oldid=6321",
+          "sourceUrl": "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%96%91%ED%99%94%EC%A7%84",
+          "reason": "미채택 대안. MPO06과 동일 표석이므로 별도 핀으로 중복 적용하지 않음."
+        },
+        {
+          "name": "마포나루",
+          "latitude": null,
+          "longitude": null,
+          "pointType": "unresolved",
+          "providerRecordId": null,
+          "sourceUrl": "https://mediahub.seoul.go.kr/archives/1503449",
+          "reason": "마포나루 원문 포함 여부는 확인했으나 독립 현 방문점 좌표는 이 패키지에서 미확정. 서강/양화 평균으로 대체하지 않음."
+        }
+      ]
+    },
+    {
+      "sourceId": "MPO05",
+      "originalName": "밤섬",
+      "districtCode": "11440",
+      "verifiedName": "밤섬공원 조망 기준점(밤섬 방문 대안)",
+      "verifiedAddress": "서울특별시 마포구 신정동 밤섬공원 한강변",
+      "latitude": 37.543012,
+      "longitude": 126.931437,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "viewpoint",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "밤섬은 일반인 출입 불가. 마포구 육지의 밤섬공원에서 섬을 조망하는 관련 장소로 전환하는 제안.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251",
+        "https://korean.visitseoul.net/nature/2024-BamseomIsland/KOP0l726f",
+        "https://hangang.seoul.go.kr/www/contents/876.do?mid=735",
+        "https://nominatim.openstreetmap.org/search?q=%EB%B0%A4%EC%84%AC%EA%B3%B5%EC%9B%90&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1",
+        "https://api.openstreetmap.org/api/0.6/way/469868503/full.json"
+      ],
+      "providerRecordId": "visitseoul:KOP0l726f",
+      "checkedAt": "2026-11-05T20:40:03.400010+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: visitseoul:KOP0l726f.",
+      "confidence": "medium",
+      "reviewStatus": "draft",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "공식 관광 페이지의 길안내 좌표와 OSM 밤섬공원을 대조. 섬 내부 좌표·여의도/영등포구 시설은 방문점으로 사용하지 않음.",
+        "섬은 면적을 가진 역사 장소라 historicalLocation 좌표는 null. 이 좌표로 밤섬 입도/섬 방문 인증을 처리하면 안 됨.",
+        "관측 위치 전환·표시명·방문 의미에 통합 승인 필요. 관광 지도 기준점이며 망원경 설치 위치의 실측점은 아님."
+      ],
+      "requiresIntegrationApproval": true,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO05_source_1.response",
+        "data/history/coordinates/raw/official_MPO05.response",
+        "data/history/coordinates/raw/policy_MPO05.response",
+        "data/history/coordinates/raw/osm_MPO05.response",
+        "data/history/coordinates/raw/osm_way_MPO05.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2007251"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "MPO06",
+      "originalName": "양화나루 터",
+      "districtCode": "11440",
+      "verifiedName": "양화진 나루터 표석",
+      "verifiedAddress": "서울특별시 마포구 토정로 6 절두산성지 아래 한강둔치",
+      "latitude": 37.543739,
+      "longitude": 126.911836,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "양화나루 역사 영역을 기리는 강변 현 표석. 절두산 박물관 건물이나 양화진역사공원 중심과 다르다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2002030",
+        "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=13&ccbaAsno=0003990000000&ccbaCtcd=11",
+        "https://www.visit-hangang.seoul.kr/course/show.asp?category=B&idx=8",
+        "https://mediahub.seoul.go.kr/archives/2014676",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%96%91%ED%99%94%EC%A7%84"
+      ],
+      "providerRecordId": "hgis:hgis_yanghwajin:oldid=6321",
+      "checkedAt": "2026-11-05T20:42:38.765952+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: hgis:hgis_yanghwajin:oldid=6321.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "기관의 현재 답사 동선에 양화나루터 표석 포함, HGIS 2024 위치 기록·2026-03-04 사진 목록과 대조.",
+        "둔치 출입은 홍수·시설 공사 시 달라질 수 있다. 계단의 무장애 통행을 보증하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO06_source_1.response",
+        "data/history/coordinates/raw/khs_MPO06.response",
+        "data/history/coordinates/raw/official_MPO06_route.response",
+        "data/history/coordinates/raw/official_MPO06_recent.response",
+        "data/history/coordinates/raw/hgis_yanghwajin.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2002030"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "MPO08",
+      "originalName": "이한열기념관",
+      "districtCode": "11440",
+      "verifiedName": "이한열기념관",
+      "verifiedAddress": "서울특별시 마포구 신촌로12나길 26",
+      "latitude": 37.555092,
+      "longitude": 126.933892,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "facility_reference",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "마포구의 현 기념관. 연세대 피격 현장이나 연세대 교내 이한열 관련 시설과 다르다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/186189",
+        "https://www.much.go.kr/cooperation/net/lee.do",
+        "https://nominatim.openstreetmap.org/search?q=%EC%9D%B4%ED%95%9C%EC%97%B4%EA%B8%B0%EB%85%90%EA%B4%80&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1"
+      ],
+      "providerRecordId": "osm:node:13717577362",
+      "checkedAt": "2026-11-05T20:39:12.015240+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:node:13717577362.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "대한민국역사박물관의 시설 주소·전시 설명과 OSM 박물관 노드 대조.",
+        "OSM 행정동 자동 라벨은 동교/서교로 나타나나 기관 주소는 노고산동이다. 세부 동 경계 라벨을 확정하지 않고 마포구·도로명으로 확인.",
+        "시설 기준점이며 출입문/층별 이동은 미측정."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/MPO08_source_1.response",
+        "data/history/coordinates/raw/official_MPO08.response",
+        "data/history/coordinates/raw/osm_MPO08.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/186189"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY01",
+      "originalName": "금성당",
+      "districtCode": "11380",
+      "verifiedName": "서울 금성당",
+      "verifiedAddress": "서울특별시 은평구 진관2로 57-23",
+      "latitude": 37.635122,
+      "longitude": 126.925434,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "site_reference",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "국가유산 금성당 건조물 기준점. 박물관에 옮겨진 금성당 무신도의 소장처 좌표와 구별한다.",
+      "sourceUrls": [
+        "https://www.heraldk.com/article/2026032213002036867",
+        "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=18&ccbaAsno=0002580000000&ccbaCtcd=11",
+        "https://museum.ep.go.kr/experience/geumseongdang.asp"
+      ],
+      "providerRecordId": "khs:18-0002580000000-11",
+      "checkedAt": "2026-11-05T20:40:07.219581+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: khs:18-0002580000000-11.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "국가유산청은 제한 관람 사전 확인을 요구하나 현 운영기관은 관람 시간·정기휴관·문의처를 제공한다. 특정 일시 출입 가능을 보증하지 않음.",
+        "부지 기준점이며 실제 방문은 최신 시설 안내와 현장 출입선을 따른다."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY01_source_1.response",
+        "data/history/coordinates/raw/khs_EPY01.response",
+        "data/history/coordinates/raw/official_EPY01_current.response"
+      ],
+      "originalSourceUrls": [
+        "https://www.heraldk.com/article/2026032213002036867",
+        "https://m.go.seoul.co.kr/news/2016/05/27/20160527012012"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY02",
+      "originalName": "북한산성",
+      "districtCode": "11380",
+      "verifiedName": "북한산성 탐방지원센터(은평구 접근 지점 제안)",
+      "verifiedAddress": "서울특별시 은평구 대서문길 45",
+      "latitude": 37.655084,
+      "longitude": 126.949562,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "visitor_centre",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "광역 산성 자체를 대신하는 은평구의 공단 안내·탐방 시작 지점 제안. 산성 성벽/성문 도착을 의미하지 않는다.",
+      "sourceUrls": [
+        "https://kyeonggi.com/article/20250812580344",
+        "https://reservation.knps.or.kr/contents/G/serviceGuide.do?parkId=B141&prdId=GB141XXX00372",
+        "https://api.openstreetmap.org/api/0.6/map?bbox=126.94%2C37.65%2C126.96%2C37.665"
+      ],
+      "providerRecordId": "osm:node:368631027",
+      "checkedAt": "2026-11-05T20:40:50.273267+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:node:368631027.",
+      "confidence": "medium",
+      "reviewStatus": "draft",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "공단 공식 2026 프로그램의 집결 장소와 OSM 안내센터 노드명 대조. 주소 검색 상위 결과의 식당 45-7, 45-14는 제외.",
+        "공단 페이지는 현재 대서문 공사로 현장 방문 불가를 명시한다. 대서문을 방문 지점으로 채택하지 않음.",
+        "성곽은 복수 구·고양시에 걸친 영역. 하나의 원 역사 좌표로 축소하지 않으며 접근점 전환에 통합 승인 필요."
+      ],
+      "requiresIntegrationApproval": true,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY02_source_1.response",
+        "data/history/coordinates/raw/official_EPY02.response",
+        "data/history/coordinates/raw/osm_area_EPY02.response"
+      ],
+      "originalSourceUrls": [
+        "https://kyeonggi.com/article/20250812580344"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY03",
+      "originalName": "셋이서문학관",
+      "districtCode": "11380",
+      "verifiedName": "옛 셋이서문학관 주소 건물 / 현 다락방",
+      "verifiedAddress": "서울특별시 은평구 진관길 23",
+      "latitude": 37.641483,
+      "longitude": 126.941158,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "centroid",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "옛 문학관 원문 주소와 현 다락방 운영 주소가 같다. 현 전시/운영 명칭은 원본과 달라 명칭·콘텐츠 재검토 필요.",
+      "sourceUrls": [
+        "https://m.seoul.co.kr/news/2016/04/22/20160422014002",
+        "https://museum.ep.go.kr/experience/darakbang.asp",
+        "https://museum.ep.go.kr/about/museum_history.asp",
+        "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8+%EC%9D%80%ED%8F%89%EA%B5%AC+%EC%A7%84%EA%B4%80%EA%B8%B8+23&format=jsonv2&addressdetails=1&limit=5"
+      ],
+      "providerRecordId": "osm:way:1203917048",
+      "checkedAt": "2026-11-05T20:40:57.122005+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:1203917048.",
+      "confidence": "medium",
+      "reviewStatus": "draft",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "기관 연혁은 2025-07 다락방 개관을 기록. 현재도 셋이서문학관 전시가 운영 중이라고 안내하지 말 것.",
+        "주소 건물 중심 좌표만 확인. 표시명 변경·옛 문학관 기억 거점 유지 여부는 통합 결정."
+      ],
+      "requiresIntegrationApproval": true,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY03_source_1.response",
+        "data/history/coordinates/raw/official_EPY03_darak.response",
+        "data/history/coordinates/raw/official_EPY03_history.response",
+        "data/history/coordinates/raw/osm_EPY03_address.response"
+      ],
+      "originalSourceUrls": [
+        "https://m.seoul.co.kr/news/2016/04/22/20160422014002"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY04",
+      "originalName": "수국사",
+      "districtCode": "11380",
+      "verifiedName": "수국사",
+      "verifiedAddress": "서울특별시 은평구 서오릉로23길 8-5",
+      "latitude": 37.615855,
+      "longitude": 126.904347,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "centroid",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현 수국사 건물 기준점. 과거 창건터나 개별 불상 소장 좌표를 전체 사찰 입구로 사용하지 않는다.",
+      "sourceUrls": [
+        "https://www.heritage.go.kr/sansa/html/view_01.html",
+        "https://nominatim.openstreetmap.org/search?q=%EC%88%98%EA%B5%AD%EC%82%AC+%EC%84%9C%EC%9A%B8&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1",
+        "https://api.openstreetmap.org/api/0.6/way/463154896/full.json"
+      ],
+      "providerRecordId": "osm:way:463154896",
+      "checkedAt": "2026-11-05T20:39:58.013247+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:463154896.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "국가유산 전통산사 안내의 사찰명·주소와 OSM 종교 건물 대조.",
+        "건물 중심이며 사찰 입구/GPS 반경·계단·접근성은 별도 확인."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/official_EPY04.response",
+        "data/history/coordinates/raw/osm_EPY04.response",
+        "data/history/coordinates/raw/osm_way_EPY04.response"
+      ],
+      "originalSourceUrls": [
+        "https://www.telltrip.com/domestic-travel/eunpyeong-suguksa-golden-temple-seoul/"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY05",
+      "originalName": "숙용심씨 묘표",
+      "districtCode": "11380",
+      "verifiedName": "숙용심씨묘표",
+      "verifiedAddress": "서울특별시 은평구 진관동 126 마실길 인근",
+      "latitude": 37.641974,
+      "longitude": 126.940627,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "반환된 묘표의 국가유산 위치. 심씨의 생몰연도·옛 묘역 전체와 좌표를 혼동하지 않는다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1503602",
+        "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaAsno=0000250000000&ccbaCtcd=11"
+      ],
+      "providerRecordId": "khs:23-0000250000000-11",
+      "checkedAt": "2026-11-05T20:39:20.944613+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: khs:23-0000250000000-11.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "공식 상세의 소재지·원문 마실길 설명 대조. 도로명 주소가 확인되지 않아 지번으로 인계.",
+        "국가유산이 제공한 현 지점 좌표이며 산책로의 마지막 보행 접근과 출입 상태는 미답사."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY05_source_1.response",
+        "data/history/coordinates/raw/khs_EPY05.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1503602"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY06",
+      "originalName": "은평역사한옥박물관",
+      "districtCode": "11380",
+      "verifiedName": "은평역사한옥박물관",
+      "verifiedAddress": "서울특별시 은평구 연서로50길 8",
+      "latitude": 37.640319,
+      "longitude": 126.938039,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "centroid",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현재 박물관 건물 기준점. 금성당 신당/진관사/동명 버스·자전거 시설과 구별한다.",
+      "sourceUrls": [
+        "https://m.go.seoul.co.kr/news/2014/12/19/20141219027003",
+        "https://museum.ep.go.kr/use/map.asp",
+        "https://nominatim.openstreetmap.org/search?q=%EC%9D%80%ED%8F%89%EC%97%AD%EC%82%AC%ED%95%9C%EC%98%A5%EB%B0%95%EB%AC%BC%EA%B4%80&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1",
+        "https://api.openstreetmap.org/api/0.6/way/976970948/full.json"
+      ],
+      "providerRecordId": "osm:way:976970948",
+      "checkedAt": "2026-11-05T20:40:05.439004+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:976970948.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "공식 도로명·지번 진관동 135-5와 OSM 건물 주소 일치. 같은 이름 자전거대여소 노드는 제외.",
+        "건물 중심이며 주차장/실제 주출입구 좌표로 표시하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY06_source_1.response",
+        "data/history/coordinates/raw/official_EPY06_map.response",
+        "data/history/coordinates/raw/osm_EPY06.response",
+        "data/history/coordinates/raw/osm_way_EPY06.response"
+      ],
+      "originalSourceUrls": [
+        "https://m.go.seoul.co.kr/news/2014/12/19/20141219027003"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY07",
+      "originalName": "진관사",
+      "districtCode": "11380",
+      "verifiedName": "진관사",
+      "verifiedAddress": "서울특별시 은평구 진관길 73",
+      "latitude": 37.638203,
+      "longitude": 126.946545,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "site_reference",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현재 사찰 영역의 지도 기준점. 진관사 태극기 비와 칠성각은 사찰과 관련된 별도 실물 지점이다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2001172",
+        "https://korean.visitseoul.net/attractions/%EC%A7%84%EA%B4%80%EC%82%AC/KOP006251",
+        "https://nominatim.openstreetmap.org/search?q=%EC%A7%84%EA%B4%80%EC%82%AC&format=jsonv2&addressdetails=1&limit=5&viewbox=126.85%2C37.70%2C127.02%2C37.52&bounded=1",
+        "https://api.openstreetmap.org/api/0.6/way/689859255/full.json"
+      ],
+      "providerRecordId": "osm:way:689859255",
+      "checkedAt": "2026-11-05T20:40:01.648561+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: osm:way:689859255.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "관광기관의 현 주소·구성 전각과 OSM 사찰 영역 대조. 이전 유물 목록의 다른 좌표를 적용하지 않음.",
+        "사찰 영역 기준점이며 태극기 비/태극기 실물/칠성각을 동일 위치로 간주하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY07_source_1.response",
+        "data/history/coordinates/raw/official_EPY07.response",
+        "data/history/coordinates/raw/osm_EPY07.response",
+        "data/history/coordinates/raw/osm_way_EPY07.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2001172",
+        "https://m.thesegye.com/news/view/1065615946714086"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "EPY08",
+      "originalName": "진관사 태극기 비",
+      "districtCode": "11380",
+      "verifiedName": "진관사 태극기 비(제5경)",
+      "verifiedAddress": "서울특별시 은평구 진관동 132-28",
+      "latitude": 37.642602,
+      "longitude": 126.941187,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "진관사로 향하는 길목의 독립 기념비. 사찰 영역·칠성각·보물 태극기 실물의 소장 위치와 구별한다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1259945",
+        "https://eptour.kr/v2/layout/contents_view.php?b_um=02&m_um=02&s_um=06",
+        "https://eptour.kr/v2/api/getMap.php?mnY=126.938&mxY=126.945&mnX=37.64&mxX=37.644&map_onoff1=ON&map_onoff2=ON&map_onoff3=ON&map_onoff4=ON&map_onoff5=ON&map_onoff6=ON&map_onoff7=ON&map_onoff8=ON&map_onoff9=ON",
+        "https://eptour.kr/data/data_20210108115741.jpg",
+        "https://mediahub.seoul.go.kr/archives/1244554",
+        "https://www.jinkwansa.org/html/index.html?mode=view&pCode=622&seq=626"
+      ],
+      "providerRecordId": "eptour:288",
+      "checkedAt": "2026-11-05T20:56:36.341544+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: eptour:288.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "은평구 공식 관광 지도 장소ID288의 제목·지번·좌표를 전용 상세 페이지와 대조. 해당 항목의 사진에서 태극기와 시문을 새긴 자연석 비석을 시각 확인.",
+        "공개 지도 iXpos/iYpos가 화면의 LatLng(위도,경도)에 그대로 연결되는 것을 확인. 단순 지도 중심값만 채택하지 않음.",
+        "공식 관광 핀을 사용한 문서 검토이며 비석 접면·안전한 정차 지점·현장 GNSS 정확도는 미측정. 사진 촬영일은 확인되지 않았으며 파일명 날짜를 현장 확인일로 취급하지 않음."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/EPY08_source_1.response",
+        "data/history/coordinates/raw/EPY08_update_eptour_view.response",
+        "data/history/coordinates/raw/EPY08_update_eptour_map.response",
+        "data/history/coordinates/raw/EPY08_update_eptour_photo.response",
+        "data/history/coordinates/raw/EPY08_update_seoul.response",
+        "data/history/coordinates/raw/EPY08_update_temple.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/1259945",
+        "https://www.heraldk.com/article/2026081317465480942"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "JNG02",
+      "originalName": "김정희 선생 집터 표석",
+      "districtCode": "11110",
+      "verifiedName": "김정희 본가 터 표석(이설 후)",
+      "verifiedAddress": "서울특별시 종로구 효자로 3 고도 건물 앞 보도 녹지",
+      "latitude": 37.576138,
+      "longitude": 126.974169,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "현재 표석의 위치. 과거 통의동 백송 앞 표석이나 김정희의 모든 거처를 뜻하지 않는다.",
+      "sourceUrls": [
+        "https://news.seoul.go.kr/culture/?p=41007",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EA%B9%80%EC%A0%95%ED%9D%AC"
+      ],
+      "providerRecordId": "hgis:hgis_JNG02:oldid=6889",
+      "checkedAt": "2026-11-05T20:39:18.422462+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: hgis:hgis_JNG02:oldid=6889.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "서울시 2014 이설 계획과 HGIS 2014 이후 명칭·2017/2024 주소·2024-08-03 사진 목록 대조.",
+        "원문 적선현대빌딩 앞은 과거 이설 계획 표현이다. 현 표석 자료는 효자로3 고도건물 앞이며, 원본 주소는 자동 수정하지 않았다.",
+        "옛 37.577922/126.972153 좌표는 채택하지 않음. 실제 위치의 현장 재측정은 미수행."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/JNG02_source_1.response",
+        "data/history/coordinates/raw/hgis_JNG02.response"
+      ],
+      "originalSourceUrls": [
+        "https://news.seoul.go.kr/culture/?p=41007"
+      ],
+      "alternatives": []
+    },
+    {
+      "sourceId": "JNG10",
+      "originalName": "조광조 집터 표석",
+      "districtCode": "11110",
+      "verifiedName": "조광조 선생 살던 집 터 표석",
+      "verifiedAddress": "서울특별시 종로구 삼일대로 437 낙원상가 북쪽 횡단보도 중간 녹지대",
+      "latitude": 37.573709,
+      "longitude": 126.987576,
+      "coordinateSystem": "EPSG:4326",
+      "pointType": "marker",
+      "historicalLocationLatitude": null,
+      "historicalLocationLongitude": null,
+      "visitPointRelation": "낙원동 현 기념 표석. 조광조 묘소/도봉서원이나 현대 도로명 주소의 건물 중심과 다르다.",
+      "sourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/168688",
+        "https://www.hisgeo.info/wiki/%ED%91%9C%EC%84%9D_%EC%A1%B0%EA%B4%91%EC%A1%B0"
+      ],
+      "providerRecordId": "hgis:hgis_JNG10:oldid=6476",
+      "checkedAt": "2026-11-05T20:39:19.070889+00:00",
+      "verificationMethod": "원본 장소·구·주소·역사 설명을 기관 자료와 대조하고, 명시된 좌표 지물 유형/이설 이력/공개 방문 관계를 수동 검토. 좌표는 캐시 원문에서 재추출. 공급 좌표를 소수 6자리로 반올림했으며 자릿수는 위치 정확도가 아니다. 원본 ID: hgis:hgis_JNG10:oldid=6476.",
+      "confidence": "medium",
+      "reviewStatus": "reviewed",
+      "limitations": [
+        "문서·공개지도 대조 검토이며 현장 답사·GNSS 측정·20m 정확도 보증이 아니다. 서비스 게시·방문 반경·접근성 승인을 뜻하지 않는다.",
+        "서울시 표지석 순례 원문 설명과 HGIS 2024 위치·2024-07-04 사진 목록 대조.",
+        "중앙 녹지대 인접 지점이므로 차도로 진입하지 말고 보행자 신호·안전한 보도/대기공간을 따른다. 정밀 통행 동선 미답사."
+      ],
+      "requiresIntegrationApproval": false,
+      "coordinateEvidencePaths": [
+        "data/history/coordinates/raw/JNG10_source_1.response",
+        "data/history/coordinates/raw/hgis_JNG10.response"
+      ],
+      "originalSourceUrls": [
+        "https://mediahub.seoul.go.kr/archives/168688"
+      ],
+      "alternatives": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "EPY07",
+  "name": "진관사",
+  "articleCell": "O32",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "94f8208e9af242e45044be0a3147d6f7ad72cd09fe91541bafa31430491a13f7",
+  "articleHeader": "【1397년 · 한성 서북 교외】 임금, 진관사에 수륙사 세워 나라 제사 열다",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "진관사 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1397년 · 한성 서북 교외】 임금, 진관사에 수륙사 세워 나라 제사 열다 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1397 Jingwansa national Suryuk Buddhist ritual: monks in early Joseon robes arranging offerings at a simple outdoor ritual table in a mountain temple courtyard, solemn lay witnesses, timber halls and forest. No modern ritual banners or text.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-57c54d43-7126-46aa-b625-a3cddc406fab.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/EPY07/article-v1.prompt.txt",
+    "sha256": "29424e7f03beb3bc7d5f78043829b631ec4a7bd3d8dc68a514f6d7cca4ed674b"
+  },
+  "image": {
+    "path": "deliverables/images/EPY07/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3039312,
+    "sha256": "222e8646c8ef9b78f70fcbf39ca273924ebc33ba6c182cea2100488ea4a4c503"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 추모·사찰 의식·2001년 유물 반환·2014년 전시·2009년 태극기 발견·민가 미사·유배길 장면 확인. EPY05 비문 및 EPY06 전시물 라벨, EPY08 신문은 재구성된 문자 유사무늬이며 원문 자료로 사용 불가. 의식·유물·복식 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

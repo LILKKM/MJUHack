@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1894 Yanghwajin after the posthumous punishment of Kim Ok-gyun: silent period riverside landing, distant officials leaving, grieving residents watching from behind, moored wooden boat. Evoke aftermath only; absolutely no corpse, severed parts, blood, execution action or displayed head.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1894년 4월 · 한성】 김옥균 시신, 양화진에서 능지처참
+
+갑신년 정변을 일으킨 뒤 10년 동안 일본에 망명해 있던 김옥균의 시신이 양화진 나루터에서 능지처참되었다. 김옥균은 지난달 청나라 상하이의 한 여관에서 조선 정부가 보낸 자객 홍종우의 총에 맞아 숨졌다. 그의 시신은 청나라 군함에 실려 조선으로 보내졌다. 이어 도성 서쪽 양화진에 옮겨져 머리와 사지가 잘리는 형벌을 받았다.
+
+잘린 머리는 장대에 매달아 '대역부도 옥균'이라고 써 붙였다. 나루터에는 구경꾼이 몰려들었다. 조정은 이번 처형으로 반역의 죄를 엄히 다스렸다고 밝혔다. 그러나 이미 숨진 이의 시신에 형벌을 가한 것을 두고 일본과 서양 각국 공사관에서는 야만적이라는 비판이 나온 것으로 전해진다.
+
+김옥균은 박규수의 문하에서 개화사상을 배웠다. 10년 전 우정국 낙성 연회를 틈타 정변을 일으켜 새 정부를 세우려 했다. 그러나 청군의 개입으로 사흘 만에 뜻을 이루지 못하고 일본으로 달아났다. 함께한 동지와 가족은 대부분 목숨을 잃었다.
+
+한 나루 사람은 "한때 나라를 바꾸겠다던 사람이 이렇게 돌아올 줄 누가 알았겠느냐"고 말했다. 그의 죽음을 둘러싸고 청과 일본의 신경전이 심상치 않다. 조선을 둘러싼 두 나라의 다툼이 더 거세질 것이라는 관측이 나온다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

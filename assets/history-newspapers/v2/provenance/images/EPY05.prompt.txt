@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 2001 return of a Joseon royal consort stone grave marker: conservators in ordinary early-2000s clothing with white cotton gloves carefully unpacking a weathered small upright stone marker from a protective crate in a conservation room. Oblique inscription not legible. Not an ancient scene.
+Style and texture: Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【2001년 · 서울】 임진왜란 때 사라진 후궁 묘표, 400여 년 만에 고국으로
+
+임진왜란 때 일본으로 반출된 것으로 보이는 조선 성종의 후궁 숙용 심씨의 묘표가 400여 년 만에 고국으로 돌아왔다. 이 묘표는 지난해 일본 도쿄에서 발견되었다. 이후 반환 논의를 거쳐 올해 우리나라로 돌아왔다.
+
+숙용 심씨는 성종의 후궁으로 경순옹주와 숙혜옹주, 이성군과 영산군을 낳았고 1515년에 세상을 떠났다. 묘표는 무덤 앞에 세워 묻힌 이의 신분과 행적을 새긴 돌이다. 이번에 돌아온 묘표에는 심씨의 생애와 자녀에 관한 내용이 새겨져 있다. 조선 전기 왕실 후궁의 장례와 예법을 보여 주는 귀한 자료로 평가된다.
+
+이 묘표가 언제, 어떻게 일본으로 건너갔는지는 분명하지 않다. 다만 임진왜란 당시 왜군이 왕릉과 무덤을 파헤치고 석물과 문화재를 대거 약탈해 간 사실에 비춰 볼 때 그 무렵 반출되었을 가능성이 크다는 것이 학계의 시각이다.
+
+전문가들은 "일본에는 아직도 돌아오지 못한 우리 문화재가 수없이 많다"며 체계적인 조사와 환수 노력이 필요하다고 입을 모았다. 묘표는 원래 무덤이 있던 서울 은평구 진관동 일대에서 보존될 방안이 논의되고 있다. 오랜 타향살이를 끝낸 작은 돌 하나가 잊힌 역사를 다시 불러내고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

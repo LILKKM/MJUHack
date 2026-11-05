@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 2014 Eunpyeong History Hanok Museum opening exhibition: modern visitors studying a detailed timber hanok structural model and archaeological pottery in a clean museum gallery, no readable display text. Not a Joseon-era scene.
+Style and texture: Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【2014년 12월 · 서울】 은평역사한옥박물관 문 열어
+
+서울 은평구 진관동 은평한옥마을 입구에 은평의 역사와 한옥 문화를 소개하는 은평역사한옥박물관이 문을 열었다. 박물관은 은평뉴타운 개발 과정에서 발굴된 유물과 이 지역의 옛 생활상, 한옥 건축의 원리를 함께 보여 주는 공간으로 꾸며졌다.
+
+은평 일대는 조선시대 도성에서 의주로 이어지는 큰길 길목이었다. 북한산 자락에는 왕실의 무덤과 사찰, 신당이 자리했다. 뉴타운 공사 과정에서는 조선시대 무덤 수천 기와 생활 유물이 무더기로 출토되어 학계의 관심을 모았다. 박물관은 이런 발굴 성과를 바탕으로 은평의 시간을 한자리에 모았다.
+
+전시장에는 출토된 그릇과 장신구, 무덤에서 나온 부장품 등이 진열되었다. 한옥이 어떻게 지어지는지 보여 주는 모형과 체험 공간도 마련되었다. 입구 바닥에는 대동여지도를 크게 재현해 관람객이 지도 위를 걸으며 옛 서울과 은평의 위치를 찾아볼 수 있도록 했다.
+
+박물관 측은 "아파트 단지로 변한 동네에도 수백 년 이어 온 역사가 있다는 사실을 주민들이 알았으면 한다"고 밝혔다. 인근의 진관사와 금성당, 북한산 둘레길과 연계한 역사 탐방 프로그램도 운영할 계획이다. 새 도시 한가운데에 옛 기억을 담은 공간이 생긴 셈이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

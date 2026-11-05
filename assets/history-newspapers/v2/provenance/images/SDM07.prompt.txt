@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1624 February Ansan hillside battle: wide distant Joseon government soldiers holding the upper ridge, opposing troops retreating down a dusty slope, smoke drifting. No gore or close combat, no modern beacon reconstruction.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1624년 2월 · 한성】 안산 싸움에서 관군 대승, 이괄 무리 무너지다
+
+평안도 영변에서 군사를 일으켜 한양까지 쳐들어온 이괄의 반란군이 도성 서쪽 안산 싸움에서 크게 패했다. 이괄은 지난해 반정에 공을 세우고도 대우가 박하다는 불만을 품고 있었다. 그러다 아들까지 역모로 몰리자 정예 군사를 이끌고 남쪽으로 내려왔다. 관군을 잇달아 물리친 반란군 앞에 임금은 도성을 떠나 공주로 피난했다. 이괄은 도성에 들어와 새 임금을 세우는 일까지 벌였다.
+
+뒤를 쫓던 도원수 장만의 관군은 정충신·남이흥 등의 제안에 따라 밤사이 안산(길마재) 꼭대기를 차지했다. 높은 곳에 진을 친 관군을 얕본 반란군은 이튿날 산을 향해 공격해 왔다. 마침 바람이 반란군 쪽으로 불어 흙먼지가 그들의 눈을 가렸다. 관군이 위에서 내리치자 반란군은 크게 무너져 흩어졌다.
+
+도성 백성들은 서쪽 산마루에서 오르는 연기와 함성을 지켜보며 가슴을 졸였다고 한다. 평소 횃불과 연기로 급보를 전하던 안산 봉수대 일대가 이번에는 직접 싸움터가 된 것이다.
+
+패한 이괄은 남은 무리를 이끌고 동쪽으로 달아났다. 머지않아 부하들의 손에 최후를 맞았다는 소식이 전해졌다. 조정은 곧 임금의 환도를 준비하고 있다. 반정 이듬해에 터진 이번 난은 조정 내부의 불신이 얼마나 깊은지 드러냈다는 평이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

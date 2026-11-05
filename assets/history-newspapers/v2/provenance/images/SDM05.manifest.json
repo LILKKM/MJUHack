@@ -1,0 +1,80 @@
+{
+  "spotId": "SDM05",
+  "name": "독립문·영은문 주초",
+  "articleCell": "O6",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceValidation": "integration/inputs/newspaper-articles/validation.json",
+  "sourceArticle": "integration/inputs/newspaper-articles/sample-SDM05.json",
+  "articleTextSha256": "49228e986506fc8a6240a34c05a08c09f3daeb3cc11228104525070fb0a64596",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "unverified": [
+    "사용자 제공 재구성 기사 자체의 사실·인용문은 독립 검증하지 않음.",
+    "복식·모자·관복 세부와 참석 인원 구성의 역사 정확성.",
+    "주춧돌의 실제 크기·형상과 목재 지렛대·받침·작업 방식.",
+    "당시 지형·주변 배치·행사 동선 및 구체적인 인물 외모.",
+    "최종 SVG/HTML 조판·접근성 표시·지면과 본문의 통합 검수."
+  ],
+  "version": "sample-v2-photo",
+  "createdDate": "2026-11-06",
+  "timezone": "Asia/Seoul",
+  "useCase": "style-transfer",
+  "changeIntent": "기존 3:2 장면과 인물 배치를 유지하면서 판화 선화에서 오래된 흑백 사진풍으로 전환하고 필름 그레인·랜덤 노이즈·약한 먼지·미세 스크래치를 추가.",
+  "visualStyle": "사진풍 흑백 AI 역사 재구성, 자연스러운 재질 명암과 광학적 깊이, 부드러운 렌즈, 살짝 퇴색한 은염 인화 느낌",
+  "caption": "독립문 정초식을 사진풍으로 재구성한 AI 이미지",
+  "alt": "독립문 정초식을 사진풍으로 재구성한 AI 이미지. 주춧돌을 놓는 작업자들과 뒤에서 지켜보는 사람들, 흑백 필름 그레인과 미세 스크래치.",
+  "inputImage": {
+    "path": "deliverables/images/SDM05/sample-v1.png",
+    "sha256": "68d158262ee701a96d5977d93c05fa375494e5295b4603b6a03f658e9a7f1dcd",
+    "role": "edit-target",
+    "manifest": "deliverables/images/SDM05/manifest.json"
+  },
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "edit",
+    "referenceMechanism": "referenced_image_paths",
+    "requestedImages": 1,
+    "generatedImages": 1,
+    "transparentBackground": false,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-20a7d288-8f30-4092-b999-26ce56024a10.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/SDM05/sample-v2-photo.prompt.txt",
+    "sha256": "487b4b1b6d803a7aed99fba154d5f3eb1557d161aab750b8819b25620938a785"
+  },
+  "assets": [
+    {
+      "role": "photo-style-edited-sample",
+      "path": "deliverables/images/SDM05/sample-v2-photo.png",
+      "mimeType": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3457493,
+      "sha256": "7b2c67662b8331a92f1c9b45b716413a793aa850f74a953838f747c30152d9f0"
+    }
+  ],
+  "visualReview": {
+    "method": "view_image로 v1 확인 후 내장 편집 결과 직접 시각 검토",
+    "result": "ready-for-user-style-review",
+    "compositionPreserved": true,
+    "foundationStoneAndThreeWorkersPreserved": true,
+    "observersPreserved": true,
+    "completedArchVisible": false,
+    "modernObjectsObserved": false,
+    "textOrWatermarkObserved": false,
+    "photographicMaterialsObserved": true,
+    "visibleFilmGrainAndSubtleScratches": true,
+    "notes": [
+      "주춧돌·전경 작업자 3명·관중·낮은 지형의 전체 배치 유지.",
+      "피부·옷감·돌의 연속 명암과 사진풍 질감 확인, 원본의 해칭이 크게 제거됨.",
+      "미세 디테일은 생성 편집으로 달라질 수 있으며 픽셀 단위 보존을 의미하지 않음.",
+      "실제 사료 사진이 아니며 역사 정확성은 검증되지 않음."
+    ]
+  },
+  "usageNote": "최종 지면/HTML에서 사진풍 AI 역사 재구성임을 외부 캡션으로 표시한다. 진짜 기록사진으로 표시하지 않는다. v1 및 v1 manifest는 보존한다."
+}

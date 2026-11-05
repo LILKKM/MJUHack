@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1919 February final independence planning meeting at a Gahoe-dong hanok: anonymous religious leaders in period robes and suits around a low table, quiet night meeting with a covered lamp and folded documents. No exact portraits, no legible documents.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1919년 3월 1일 · 경성 가회동】 민족대표들 가회동에서 최종 회합, 선언 장소 바꿔
+
+독립선언을 하루 앞둔 지난밤 경성 가회동 천도교 교주 손병희 씨의 집에 천도교와 기독교, 불교 지도자들이 모였다. 이들은 독립선언서에 이름을 올린 민족대표들로, 거사를 앞두고 마지막 점검을 했다. 이 자리에는 민족대표 가운데 20여 명이 참석한 것으로 알려졌다.
+
+이들은 당초 탑골공원에서 학생, 시민과 함께 선언서를 낭독하기로 했다. 그러나 이 자리에서 장소를 인사동의 음식점 태화관으로 바꾸기로 했다. 많은 사람이 모인 공원에서 선언을 하면 흥분한 군중과 일본 경찰이 충돌해 큰 희생이 날 수 있다는 걱정 때문이다. 대표들은 선언 뒤 스스로 경찰에 알려 붙잡히는 길을 택하기로 했다고 한다.
+
+손병희 씨가 사는 가회동과 이웃한 계동 일대는 이번 거사 준비의 중심지였다. 계동 중앙학교 숙직실에서는 교사들과 청년 지도자들이 일찍부터 모여 계획을 짰다. 천도교 인쇄소 보성사에서는 선언서 2만여 장이 비밀리에 찍혀 전국으로 퍼져 나갔다.
+
+오늘 정오를 넘기면 서울 한복판에서 "조선 독립 만세"가 울려 퍼질 것이다. 북촌 골목의 한옥 사랑방에서 다져진 결의가 온 나라를 흔들 큰 물결이 될지 귀추가 주목된다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

@@ -1,0 +1,506 @@
+{
+  "version": "v2",
+  "status": "passed",
+  "editions": 58,
+  "svgCount": 116,
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "workbookCellMatches": 58,
+  "imageMatches": 116,
+  "koreanParagraphsPreserved": 232,
+  "englishParagraphsComposed": 232,
+  "browserRenderedSvgs": 116,
+  "fontLoadedSvgs": 116,
+  "textBoundsFailures": 0,
+  "missingGlyphs": {
+    "ko": 0,
+    "en": 0
+  },
+  "headlineFontSizeRange": {
+    "ko": [
+      27,
+      37.25
+    ],
+    "en": [
+      26.5,
+      37
+    ]
+  },
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "translationReview": "assistant-translated; no independent linguistic review",
+  "records": [
+    {
+      "spotId": "SDM01",
+      "articleCell": "O2",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM02",
+      "articleCell": "O3",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM03",
+      "articleCell": "O4",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM04",
+      "articleCell": "O5",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM05",
+      "articleCell": "O6",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM06",
+      "articleCell": "O7",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM07",
+      "articleCell": "O8",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM08",
+      "articleCell": "O9",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM09",
+      "articleCell": "O10",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM10",
+      "articleCell": "O11",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM11",
+      "articleCell": "O12",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM12",
+      "articleCell": "O13",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM13",
+      "articleCell": "O14",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM14",
+      "articleCell": "O15",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "SDM15",
+      "articleCell": "O16",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO01",
+      "articleCell": "O17",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO02",
+      "articleCell": "O18",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO03",
+      "articleCell": "O19",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO04",
+      "articleCell": "O20",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO05",
+      "articleCell": "O21",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO06",
+      "articleCell": "O22",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO07",
+      "articleCell": "O23",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO08",
+      "articleCell": "O24",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "MPO09",
+      "articleCell": "O25",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY01",
+      "articleCell": "O26",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY02",
+      "articleCell": "O27",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY03",
+      "articleCell": "O28",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY04",
+      "articleCell": "O29",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY05",
+      "articleCell": "O30",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY06",
+      "articleCell": "O31",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY07",
+      "articleCell": "O32",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "EPY08",
+      "articleCell": "O33",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG01",
+      "articleCell": "O34",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG02",
+      "articleCell": "O35",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG03",
+      "articleCell": "O36",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG04",
+      "articleCell": "O37",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG05",
+      "articleCell": "O38",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG06",
+      "articleCell": "O39",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG07",
+      "articleCell": "O40",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG08",
+      "articleCell": "O41",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG09",
+      "articleCell": "O42",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG10",
+      "articleCell": "O43",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG11",
+      "articleCell": "O44",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG12",
+      "articleCell": "O45",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG13",
+      "articleCell": "O46",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG14",
+      "articleCell": "O47",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG15",
+      "articleCell": "O48",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG16",
+      "articleCell": "O49",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG17",
+      "articleCell": "O50",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG18",
+      "articleCell": "O51",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG19",
+      "articleCell": "O52",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG20",
+      "articleCell": "O53",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG21",
+      "articleCell": "O54",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG22",
+      "articleCell": "O55",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG23",
+      "articleCell": "O56",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG24",
+      "articleCell": "O57",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG25",
+      "articleCell": "O58",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    },
+    {
+      "spotId": "JNG26",
+      "articleCell": "O59",
+      "workbookText": "exact",
+      "imageBytes": "exact-both-languages",
+      "paragraphs": "4-ko-4-en",
+      "svgAndBounds": "passed"
+    }
+  ],
+  "galleryLocalReferencesVerified": 464,
+  "visualReview": {
+    "titleImageContactSheets": 6,
+    "fullPageSamples": [
+      "SDM05-en",
+      "MPO04-ko"
+    ],
+    "status": "reviewed"
+  }
+}

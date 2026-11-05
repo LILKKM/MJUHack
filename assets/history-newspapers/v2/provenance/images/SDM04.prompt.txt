@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1897 summer outside Seodaemun: a renovated modest traditional timber hall, people arriving for Independence Club public debate. No modern replica or completed Independence Gate; no readable name board.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1897년 여름 · 한성】 모화관, '독립관'으로 다시 태어나다
+
+중국 사신을 맞아 잔치를 베풀던 서대문 밖 모화관이 '독립관'이라는 새 이름을 달았다. 독립협회는 지난해 회를 만든 뒤 낡은 모화관 건물을 고쳐 회관으로 쓰기로 했다. 올해 공사를 마치고 '독립관' 현판을 내걸었다.
+
+모화관은 조선 초부터 명과 청의 칙사를 맞던 곳이다. 왕이 몸소 나와 사신을 맞이하던, 사대의 상징과 같은 건물이었다. 협회 측은 "섬기던 집을 우리 스스로 서는 집으로 바꾸는 것"이라며 이름에 담은 뜻을 설명했다. 바로 앞에서는 영은문을 헐어 낸 자리에 독립문 공사가 한창이다.
+
+독립관에서는 회원들이 모여 나라 일을 놓고 공개 토론회를 열 계획이다. 토론 주제로는 교육을 넓히는 일, 나라의 재정을 바로 세우는 일, 외국에 넘어가는 이권을 막는 일 등이 거론된다. 양반과 상민의 구별 없이 누구나 연단에 올라 말할 수 있다는 소식에 젊은 학생과 상인들의 관심이 높다.
+
+한 회원은 "백성이 모여 나라 일을 논하는 일은 우리 역사에 처음일 것"이라고 말했다. 일각에서는 백성이 정사를 논하는 것을 못마땅해하는 목소리도 들린다. 서대문 밖 낡은 사신관이 새 시대의 공론장이 될 수 있을지 장안의 이목이 쏠리고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

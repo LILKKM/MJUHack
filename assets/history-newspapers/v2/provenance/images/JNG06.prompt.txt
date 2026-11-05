@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1882 Andong royal detached palace wedding procession: distant formal royal palanquin with attendants moving through a palace courtyard, commoners watching outside timber gates. Period 1882 Joseon dress, no close-up child or royal likeness.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1882년 봄 · 한성 안국방】 안동별궁에서 세자 가례 성대히 거행
+
+임금의 맏아들인 왕세자 저하의 가례가 새로 지은 안동별궁에서 성대하게 치러졌다. 세자빈으로는 여흥 민씨 민태호의 따님이 간택되었다. 가례에 앞서 세자빈은 별궁에 머물며 궁중 법도를 익혔다. 이어 세자가 몸소 별궁에 나와 세자빈을 맞아들이는 친영 의식이 거행되었다.
+
+안동별궁은 이번 가례를 위해 임금께서 특별히 지으라고 명하신 별궁이다. 도성 북쪽 안국방에 자리 잡았다. 이 터는 일찍이 세종대왕께서 막내아들 영응대군의 집에 머무시다 승하하신 곳이기도 하다. 왕실의 깊은 내력이 서린 자리에 새 궁이 들어선 것이다.
+
+가례 행렬이 지나는 길에는 도성 백성들이 몰려나와 화려한 의장과 가마를 구경했다. 잔치에 드는 비용이 적지 않아 나라 살림을 걱정하는 목소리도 들린다. 그러나 왕실의 경사에 장안은 모처럼 들뜬 분위기다.
+
+한편 근래 조정 안팎은 개화를 둘러싼 논쟁과 구식 군인들의 불만으로 술렁이고 있다. 녹봉이 몇 달째 밀린 군인들 사이에서 원성이 높다는 소식도 들린다. 왕실의 경사가 나라 안의 어수선한 기운을 가라앉힐 수 있을지 사람들은 조심스럽게 지켜보고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

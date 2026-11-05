@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "JNG21",
+  "name": "종묘",
+  "articleCell": "O54",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "95e256990d8818ee66b36171a45f3341d5b5a863460cc796b3f5e3a19baa779a",
+  "articleHeader": "【1995년 12월 · 서울】 종묘, 유네스코 세계문화유산 등재",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "종묘 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1995년 12월 · 서울】 종묘, 유네스코 세계문화유산 등재 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.",
+  "sceneBrief": "1995 December Jongmyo world heritage listing story: quiet wide architectural view of Jongmyo long timber shrine hall and stone courtyard with a few visitors in 1995 winter coats; no invented UNESCO ceremony or modern banners.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-0ad9dd8c-eb95-44db-be90-f17006e75ae5.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/JNG21/article-v1.prompt.txt",
+    "sha256": "b4decc0ca1df14530bfa5dff86a7eacaf2e94aa28b776be867e37f8e14738614"
+  },
+  "image": {
+    "path": "deliverables/images/JNG21/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3307154,
+    "sha256": "a9f0ce0c7d09922e5f0b587358864b6ccee12b800fd2e8a60e5189b867d53076"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 가례·태화관 선언·1995년 종묘·닫힌 뒤주·1926년 조문·탑골 선언·1396년 축성·1592년 입성 장면 확인. 사진풍과 중심 구도 확인, 그래픽 폭력 없음. 성문·궁궐·복식·깃발과 행사 배치의 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}
