@@ -1,0 +1,67 @@
+@font-face { font-family: 'Neujoh'; src: url('../assets/fonts/Neujoh-Regular.woff2') format('woff2'); font-style: normal; font-weight: 400; font-stretch: 75%; font-display: swap; unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF, U+3000-303F, U+FF00-FFEF; }
+@font-face { font-family: 'Neujoh'; src: url('../assets/fonts/Neujoh-Bold.woff2') format('woff2'); font-style: normal; font-weight: 700; font-stretch: 75%; font-display: swap; unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF, U+3000-303F, U+FF00-FFEF; }
+@font-face { font-family: 'Chomsky'; src: url('../assets/fonts/Chomsky.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+
+@font-face {
+  font-family: 'Abhaya Libre';
+  src: url('../assets/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+
+:root {
+  --color-brand: #8FCBAD;
+  --color-surface: #FFF9ED;
+  --color-ink: #24364B;
+  --color-accent: #F2AC88;
+  --type-meta: 9pt;
+  --type-caption: 11pt;
+  --type-body: 13pt;
+  --type-card: 15pt;
+  --type-section: 19pt;
+  --type-heading: 23pt;
+  --type-display: 29pt;
+  --type-hero: 37pt;
+  --font-ko: 'Neujoh', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-en: 'Abhaya Libre', Georgia, 'Times New Roman', serif;
+  --font-masthead: 'Chomsky', 'Abhaya Libre', serif;
+  --masthead-paper: var(--color-surface);
+  --masthead-ink: #000;
+  --masthead-rule: #24364b40;
+  --app-header-height: calc(56px + env(safe-area-inset-top, 0px));
+  --radius-panel: 16px; --radius-button: 12px; --radius-chip: 999px;
+  --toast-enter-duration: 180ms; --toast-enter-easing: ease-in;
+  --toast-exit-duration: 220ms; --toast-exit-easing: ease-out;
+}
+
+.paper-masthead {
+  min-height: var(--app-header-height);
+  background-color: var(--masthead-paper);
+  background-image: url('../assets/hanji-paper.svg');
+  background-size: 240px 240px;
+  color: var(--masthead-ink);
+  border-bottom: 1px solid var(--masthead-rule);
+  box-shadow: 0 2px 8px #24364b14;
+}
+
+.brand-wordmark {
+  display: block;
+  font-family: var(--font-masthead);
+  font-size: var(--type-display);
+  font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  :root { --app-header-height: calc(56px + env(safe-area-inset-top, 0px)); }
+  .brand-wordmark { font-size: var(--type-heading); }
+}
+@container (max-width: 600px) {
+  .brand-wordmark { font-size: var(--type-heading); }
+}

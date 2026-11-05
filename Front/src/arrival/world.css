@@ -1,0 +1,37 @@
+.world-map-region, .world-map-region .naver-map { position: absolute; inset: 0; height: 100%; width: 100%; }
+.world-map-region .map-viewport { position: absolute; inset: 0; height: 100%; width: 100%; }
+.world-avatar-anchor { display: block; width: 1px; height: 1px; pointer-events: none; }
+.arrival-anchor { left: var(--avatar-x,50%); top: var(--avatar-y,50%); }
+.world-controls { position: absolute; inset: 0; z-index: 7; pointer-events: none; color: var(--ink); }
+.world-controls button, .world-controls aside, .world-controls details { pointer-events: auto; }
+.world-header { position: absolute; top: 0; left: 0; right: 0; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0; padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 8px; text-align: center; pointer-events: auto; }
+.world-controls button { border: 1px solid #24364b40; border-radius: 8px; background: #fff9edf5; color: var(--ink); box-shadow: 0 4px 16px #24364b14; font-size: var(--type-body); padding: 8px 14px; }
+.world-controls button:hover { background: var(--paper-deep); }
+.world-places-panel { position: absolute; top: 28%; right: 0; left: 0; bottom: 92px; width: 100%; background: var(--color-surface); border: 1px solid #24364b40; border-radius: 16px; padding: 16px 12px; box-shadow: 0 -12px 40px #24364b29; overflow-y: auto; overscroll-behavior: contain; }
+.world-demo-movement { font-size: var(--type-caption); }
+.world-demo-movement div { display: flex; gap: 5px; }
+.world-demo-movement button { min-width: 42px; padding: 4px; text-align: center; }
+.world-demo-movement small { font-size: var(--type-meta); }
+.world-panel-heading { display: flex; justify-content: space-between; align-items: center; }
+.world-panel-heading h2 { font-size: var(--type-section); margin: 0; }
+.world-panel-heading button { font-size: var(--type-card); }
+.world-filters { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-block: 12px; font-size: var(--type-caption); }
+.world-filters label:last-child { grid-column: 1/-1; }
+.world-filters select, .world-filters input { display: block; width: 100%; min-height: 40px; padding: 8px; margin-top: 4px; background: var(--paper); border: 1px solid var(--rule); }
+.world-count { font-size: var(--type-caption); }
+.world-place-list { list-style: none; padding: 0; margin: 0; }
+.world-place-list button { display: flex; flex-direction: column; text-align: left; gap: 4px; width: 100%; border: 0; border-bottom: 1px solid #24364b30; border-radius: 0; padding: 8px 0; background: transparent; box-shadow: none; }
+.world-place-list button[aria-pressed=true] { color: var(--color-ink); background: var(--color-brand); border-left: 3px solid var(--color-ink); padding-left: 8px; }
+.world-place-list small, .world-place-detail small { font-size: var(--type-meta); color: var(--muted); }
+.world-place-detail { padding: 12px 0; border-block: 1px solid var(--rule); margin-bottom: 12px; }
+.world-place-detail h3 { font-size: var(--type-card); margin: 6px 0; }
+.world-place-detail p { font-size: var(--type-caption); margin-bottom: 10px; }
+.world-place-detail a { font-size: var(--type-caption); margin-right: 16px; }
+.world-developer-options { font-size: var(--type-caption); margin-top: 12px; }
+.world-developer-options button { margin-bottom: 8px; }
+.phase-landed .arrival-ground-shade { opacity: .25; }
+
+.world-header::after { content:'';position:absolute;bottom:0;left:12px;right:12px;height:5px;border-top:1px solid #000;border-bottom:1px solid #000; }
+.world-bottom-actions { position:absolute;left:12px;right:12px;bottom:32px;display:grid;grid-template-columns:1fr 1fr;gap:8px;pointer-events:auto; }
+.world-controls .world-bottom-actions button { min-height:48px;padding:8px 4px;border-radius:999px;border:1px solid var(--color-ink);background:var(--color-surface);font-size:var(--type-body);text-align:center;white-space:nowrap; }
+.world-controls .world-bottom-actions .world-chat-button { background:var(--color-brand); }

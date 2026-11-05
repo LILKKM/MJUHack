@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "contractVersion": "0.1.0",
+    "dataKind": "mock",
+    "partial": false,
+    "createdAt": "2026-11-06T00:00:00+09:00",
+    "producer": "integration",
+    "limitations": [
+      "모든 장소·사건·작품·업체·접근성은 UI 시연 전용",
+      "ko와 방문 반경 100m는 mock 값이며 제품 확정값이 아님"
+    ]
+  },
+  "sources": [
+    {
+      "id": "mock:source:demo",
+      "provider": "mock",
+      "recordId": null,
+      "title": "시연 출처 (실제 사료 아님)",
+      "url": "https://example.invalid/mock-source",
+      "checkedAt": "2026-11-06T00:00:00+09:00",
+      "usageScope": "mock only",
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "eras": [
+    {
+      "id": "mock:era:a",
+      "label": "시연 시대 a",
+      "startYear": 1800,
+      "endYear": 1899,
+      "granularity": "century",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "mock:era:b",
+      "label": "시연 시대 b",
+      "startYear": 1900,
+      "endYear": 1999,
+      "granularity": "century",
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "kContents": [
+    {
+      "id": "mock:kcontent:a",
+      "title": "시연 작품 A (가상)",
+      "type": "drama",
+      "settingEraIds": [
+        "mock:era:a"
+      ],
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "settingNote": "실제 작품 매핑이 아님",
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "spots": [
+    {
+      "id": "mock:spot:a",
+      "name": "시연 거점 A (가상)",
+      "districtCode": "11110",
+      "latitude": 37.57,
+      "longitude": 126.98,
+      "serviceRadiusM": 100,
+      "tourPlaceId": "mock:tour:a",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed",
+      "status": "published"
+    }
+  ],
+  "historicalEvents": [
+    {
+      "id": "mock:event:a",
+      "title": "시연 사건 a (가상)",
+      "startYear": 1850,
+      "endYear": 1850,
+      "occurredOn": null,
+      "datePrecision": "year",
+      "eraIds": [
+        "mock:era:a"
+      ],
+      "verifiedClaims": [
+        {
+          "id": "mock:claim:a",
+          "text": "화면 검증을 위한 가상 기사입니다. 실제 역사적 사실이 아닙니다.",
+          "sourceIds": [
+            "mock:source:demo"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "mock:event:b",
+      "title": "시연 사건 b (가상)",
+      "startYear": 1950,
+      "endYear": 1950,
+      "occurredOn": null,
+      "datePrecision": "year",
+      "eraIds": [
+        "mock:era:b"
+      ],
+      "verifiedClaims": [
+        {
+          "id": "mock:claim:b",
+          "text": "화면 검증을 위한 가상 기사입니다. 실제 역사적 사실이 아닙니다.",
+          "sourceIds": [
+            "mock:source:demo"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "spotEvents": [
+    {
+      "id": "mock:spot-event:a",
+      "spotId": "mock:spot:a",
+      "eventId": "mock:event:a",
+      "relationType": "occurred_here",
+      "placeEvidence": "시연 연결, 실제 근거 아님",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "mock:spot-event:b",
+      "spotId": "mock:spot:a",
+      "eventId": "mock:event:b",
+      "relationType": "occurred_here",
+      "placeEvidence": "시연 연결, 실제 근거 아님",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "touristPlaces": [
+    {
+      "id": "mock:tour:a",
+      "contentId": "mock-content-a",
+      "name": "시연 관광지 A (가상)",
+      "districtCode": "11110",
+      "address": "실제 주소 아님",
+      "latitude": 37.571,
+      "longitude": 126.981,
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "mock:restaurant:a",
+      "storeId": "mock-store-a",
+      "name": "시연 음식점 A (가상)",
+      "category": "한식",
+      "districtCode": "11110",
+      "address": "실제 주소 아님",
+      "latitude": 37.569,
+      "longitude": 126.979,
+      "referenceMonth": "202609",
+      "branchHeuristic": "unknown",
+      "smallBusinessVerification": "unknown",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "placeMatches": [
+    {
+      "id": "mock:match:a",
+      "spotId": "mock:spot:a",
+      "tourPlaceId": "mock:tour:a",
+      "evidence": "UI 시연용 관계",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "accessibilityRecords": [
+    {
+      "id": "mock:access:tourist_place",
+      "placeType": "tourist_place",
+      "placeId": "mock:tour:a",
+      "features": [
+        {
+          "key": "wheelchair_entry",
+          "status": "available",
+          "detail": "UI 상태 검증용 가상 데이터"
+        }
+      ],
+      "rawFields": {},
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "checkedAt": "2026-11-06T00:00:00+09:00"
+    },
+    {
+      "id": "mock:access:restaurant",
+      "placeType": "restaurant",
+      "placeId": "mock:restaurant:a",
+      "features": [
+        {
+          "key": "wheelchair_entry",
+          "status": "unknown",
+          "detail": null
+        }
+      ],
+      "rawFields": {},
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "checkedAt": "2026-11-06T00:00:00+09:00"
+    },
+    {
+      "id": "mock:access:spot",
+      "placeType": "spot",
+      "placeId": "mock:spot:a",
+      "features": [
+        {
+          "key": "wheelchair_entry",
+          "status": "unknown",
+          "detail": null
+        }
+      ],
+      "rawFields": {},
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "checkedAt": "2026-11-06T00:00:00+09:00"
+    }
+  ],
+  "newspaperEditions": [
+    {
+      "id": "mock:edition:a",
+      "spotId": "mock:spot:a",
+      "eventIds": [
+        "mock:event:a"
+      ],
+      "eraIds": [
+        "mock:era:a"
+      ],
+      "language": "ko",
+      "templateId": "mock:template:paper",
+      "templateVersion": "0.1.0",
+      "svgAssetPath": "assets/newspaper-demo.svg",
+      "interactionManifest": {
+        "namespace": "mock-paper",
+        "elements": [
+          {
+            "id": "mock-paper-title",
+            "role": "title",
+            "action": "reveal"
+          },
+          {
+            "id": "mock-paper-illustration",
+            "role": "illustration",
+            "action": "reveal"
+          },
+          {
+            "id": "mock-paper-source",
+            "role": "source",
+            "action": "open_sources"
+          }
+        ]
+      },
+      "accessibleText": "시연 시대 a의 가상 역사 신문. 실제 역사적 사실이 아닙니다.",
+      "headline": "시연 시대 a에서 온 신문",
+      "lead": "기사·이미지·장소 관계를 확인하는 UI 전용 자료",
+      "body": [
+        "실제 사건과 무관한 시연 자료입니다."
+      ],
+      "claimSourceRefs": [
+        {
+          "claimId": "mock:claim:a",
+          "sourceIds": [
+            "mock:source:demo"
+          ]
+        }
+      ],
+      "aiIllustrationLabel": "최종 AI 삽화가 아닌 임시 자리표시자",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "status": "published",
+      "contentVersion": "0.1.0",
+      "publishedAt": "2026-11-06T00:00:00+09:00"
+    },
+    {
+      "id": "mock:edition:b",
+      "spotId": "mock:spot:a",
+      "eventIds": [
+        "mock:event:b"
+      ],
+      "eraIds": [
+        "mock:era:b"
+      ],
+      "language": "ko",
+      "templateId": "mock:template:paper",
+      "templateVersion": "0.1.0",
+      "svgAssetPath": "assets/newspaper-demo.svg",
+      "interactionManifest": {
+        "namespace": "mock-paper",
+        "elements": [
+          {
+            "id": "mock-paper-title",
+            "role": "title",
+            "action": "reveal"
+          },
+          {
+            "id": "mock-paper-illustration",
+            "role": "illustration",
+            "action": "reveal"
+          },
+          {
+            "id": "mock-paper-source",
+            "role": "source",
+            "action": "open_sources"
+          }
+        ]
+      },
+      "accessibleText": "시연 시대 b의 가상 역사 신문. 실제 역사적 사실이 아닙니다.",
+      "headline": "시연 시대 b에서 온 신문",
+      "lead": "기사·이미지·장소 관계를 확인하는 UI 전용 자료",
+      "body": [
+        "실제 사건과 무관한 시연 자료입니다."
+      ],
+      "claimSourceRefs": [
+        {
+          "claimId": "mock:claim:b",
+          "sourceIds": [
+            "mock:source:demo"
+          ]
+        }
+      ],
+      "aiIllustrationLabel": "최종 AI 삽화가 아닌 임시 자리표시자",
+      "sourceIds": [
+        "mock:source:demo"
+      ],
+      "status": "published",
+      "contentVersion": "0.1.0",
+      "publishedAt": "2026-11-06T00:00:00+09:00"
+    }
+  ]
+}
