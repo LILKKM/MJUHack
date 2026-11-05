@@ -73,7 +73,7 @@ public class CourseService {
         this.json = json;
     }
 
-    private record Origin(double lat, double lng, String label) {
+    private record Origin(double lat, double lng, String label, String spotId) {
     }
 
     private record Candidate(SpotRow spot, List<String> unknownRequired, List<String> partialRequired,
@@ -136,7 +136,10 @@ public class CourseService {
         while (chosen.size() < stopCount && !pool.isEmpty()) {
             final double lat = curLat;
             final double lng = curLng;
-            Candidate next = pool.stream().min(Comparator.comparingDouble((Candidate c) -> {
+            // 출발 장소가 후보에 있으면 항상 첫 장소다. 가산점이 거리 0 인 출발지를 이기면 안 된다
+            Candidate startStop = chosen.isEmpty() && origin.spotId() != null
+                    ? pool.stream().filter(c -> c.spot().id().equals(origin.spotId())).findFirst().orElse(null) : null;
+            Candidate next = startStop != null ? startStop : pool.stream().min(Comparator.comparingDouble((Candidate c) -> {
                 double d = dist(lat, lng, c.spot());
                 boolean continuesLink = c.crossLinkIds().stream().anyMatch(chosenLinks::contains);
                 return d - PREFERENCE_KM * c.preferenceScore() - (continuesLink ? CROSS_LINK_KM : 0);
@@ -339,11 +342,14 @@ public class CourseService {
                 score += 0.5;
             }
         }
-        // 필수 항목의 근거 원문 (예: "계단·급경사 없는 접근로: 출입구까지 경사로가 설치되어 있음")
-        List<String> evidence = required.keySet().stream().sorted()
-                .filter(f -> byFeature.containsKey(f) && byFeature.get(f).rawText() != null
-                        && !"UNKNOWN".equals(byFeature.get(f).status()))
-                .map(f -> required.get(f).featureName() + ": " + byFeature.get(f).rawText())
+        // 이용자 유형에 관련된 항목의 근거 원문. 필수 항목을 먼저 보여 준다.
+        // (시각·청각 유형은 필수 항목이 없어 선호 항목까지 봐야 점자·음성·자막 정보가 나온다)
+        List<String> evidence = java.util.stream.Stream.concat(
+                        required.values().stream().sorted(Comparator.comparing(Requirement::featureCode)),
+                        reqs.preferred().values().stream().sorted(Comparator.comparing(Requirement::featureCode)))
+                .filter(r -> byFeature.containsKey(r.featureCode()) && byFeature.get(r.featureCode()).rawText() != null
+                        && !"UNKNOWN".equals(byFeature.get(r.featureCode()).status()))
+                .map(r -> r.featureName() + ": " + byFeature.get(r.featureCode()).rawText())
                 .toList();
         return new Candidate(s, unknown, partial, score, links, evidence);
     }
@@ -420,7 +426,7 @@ public class CourseService {
             if (!s.hasCoords()) {
                 throw ApiException.badRequest("출발 장소 " + id + " 의 좌표가 아직 없습니다. 좌표로 출발지를 보내 주세요.");
             }
-            return new Origin(s.latitude().doubleValue(), s.longitude().doubleValue(), label != null ? label : s.name());
+            return new Origin(s.latitude().doubleValue(), s.longitude().doubleValue(), label != null ? label : s.name(), s.id());
         }
         if (start != null && start.latitude() != null && start.longitude() != null) {
             double lat = start.latitude();
@@ -428,7 +434,7 @@ public class CourseService {
             if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
                 throw ApiException.badRequest("start 좌표 범위가 올바르지 않습니다.");
             }
-            return new Origin(lat, lng, label != null ? label : "현재 위치");
+            return new Origin(lat, lng, label != null ? label : "현재 위치", null);
         }
         throw ApiException.badRequest("start.spotId 또는 start.latitude/longitude 가 필요합니다.");
     }

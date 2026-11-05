@@ -105,11 +105,11 @@ class KtoSyncIntegrationTests {
     void applyKeepsExistingRowsWhenKtoHasNoDetail() {
         jdbc.sql("""
                 INSERT INTO spot_accessibility (spot_id, feature_code, status, raw_text, provider)
-                VALUES ('SDM08', 'PARKING', 'AVAILABLE', '엑셀 메모', 'KTO')
+                VALUES ('MPO04', 'PARKING', 'AVAILABLE', '엑셀 메모', 'KTO')
                 """).update();
-        sync.fetchBarrierFree(false);   // SDM08(126503)은 가짜 응답에 상세가 없다
+        sync.fetchBarrierFree(false);   // MPO04(127307)은 가짜 응답에 상세가 없다
         sync.applyBarrierFree();
-        assertThat(statuses("SDM08")).containsEntry("PARKING", "AVAILABLE");
+        assertThat(statuses("MPO04")).containsEntry("PARKING", "AVAILABLE");
     }
 
     @Test

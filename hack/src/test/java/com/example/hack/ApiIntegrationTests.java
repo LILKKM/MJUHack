@@ -36,7 +36,7 @@ class ApiIntegrationTests {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(3)))
                 .andExpect(jsonPath("$[0].id").value("JOSEON"))
-                .andExpect(jsonPath("$[0].spotCount").value(34));
+                .andExpect(jsonPath("$[0].spotCount").value(25));
         mvc.perform(get("/api/k-contents"))
                 .andExpect(jsonPath("$", hasSize(5)))
                 .andExpect(jsonPath("$[?(@.title == '1987')].eraIds[0]").value("MODERN"));
@@ -50,12 +50,12 @@ class ApiIntegrationTests {
     void spotsFilteredByKContentEra() throws Exception {
         mvc.perform(get("/api/spots").param("kContentId", "5"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(8)))
+                .andExpect(jsonPath("$", hasSize(5)))
                 .andExpect(jsonPath("$[*].eraId", everyItem(is("MODERN"))));
-        // 은평구는 관광공사 좌표로 채운 2곳만 좌표가 있다 (V8)
+        // 은평구는 관광공사(V8)·OpenStreetMap(V9) 좌표로 채운 4곳이 남아 있다
         mvc.perform(get("/api/spots").param("districtId", "EPY").param("hasCoords", "true"))
-                .andExpect(jsonPath("$[*].id", is(java.util.List.of("EPY06", "EPY07"))))
-                .andExpect(jsonPath("$[0].coordStatus").value("KTO"));
+                .andExpect(jsonPath("$[*].id", is(java.util.List.of("EPY02", "EPY06", "EPY07", "EPY08"))))
+                .andExpect(jsonPath("$[1].coordStatus").value("KTO"));
     }
 
     @Test
@@ -76,11 +76,48 @@ class ApiIntegrationTests {
     }
 
     @Test
+    void startSpotIsAlwaysFirstEvenIfAnotherSpotHasBonus() throws Exception {
+        // 임시정부기념관(0.19km)은 음성 안내 가산점이 있지만, 출발지 서대문형무소역사관이 먼저다
+        mvc.perform(post("/api/courses").contentType(MediaType.APPLICATION_JSON).content("""
+                {"userTypes":["VISUAL"],"eraId":"OPENING_COLONIAL","start":{"spotId":"SDM09"}}
+                """))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.stops[0].spot.id").value("SDM09"))
+                .andExpect(jsonPath("$.stops[0].distanceFromPrevKm").value(0.0));
+    }
+
+    @Test
+    void visualUserSeesPreferredFeatureEvidence() throws Exception {
+        // 시각장애인 유형은 필수 항목이 없어도 음성 안내 근거를 메모로 받아야 한다
+        mvc.perform(post("/api/courses").contentType(MediaType.APPLICATION_JSON).content("""
+                {"userTypes":["VISUAL"],"eraId":"JOSEON","start":{"spotId":"JNG23"},"stopCount":3}
+                """))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.stops[0].spot.id").value("JNG23"))
+                .andExpect(jsonPath("$.stops[0].accessMemo").value(org.hamcrest.Matchers.containsString("음성 안내")));
+    }
+
+    @Test
+    void newsArticlesAreServedAndRemovedSpotsAreGone() throws Exception {
+        mvc.perform(get("/api/spots/SDM01"))
+                .andExpect(jsonPath("$.articles", hasSize(1)))
+                .andExpect(jsonPath("$.articles[0].eventDate").value("1991년 5월 15일 · 서울"))
+                .andExpect(jsonPath("$.articles[0].headline").value("고 강경대 군 영결식, 노제는 끝내 무산"))
+                .andExpect(jsonPath("$.articles[0].reconstructed").value(true));
+        mvc.perform(get("/api/spots/SDM01/articles")).andExpect(jsonPath("$", hasSize(1)));
+        mvc.perform(get("/api/spots").param("eraId", "MODERN"))
+                .andExpect(jsonPath("$[*].hasArticle", everyItem(is(true))));
+        // 삭제한 장소와, 장소가 모두 사라진 연결은 조회되지 않는다
+        mvc.perform(get("/api/spots/EPY04")).andExpect(status().isNotFound());
+        mvc.perform(get("/api/cross-links/X8")).andExpect(status().isNotFound());
+    }
+
+    @Test
     void crossLinks() throws Exception {
-        mvc.perform(get("/api/cross-links")).andExpect(jsonPath("$", hasSize(8)));
+        mvc.perform(get("/api/cross-links")).andExpect(jsonPath("$", hasSize(7)));
         mvc.perform(get("/api/cross-links").param("spotId", "SDM09"))
                 .andExpect(jsonPath("$[*].id", is(java.util.List.of("X4", "X5"))));
-        mvc.perform(get("/api/cross-links/X2")).andExpect(jsonPath("$.spots", hasSize(4)));
+        mvc.perform(get("/api/cross-links/X2")).andExpect(jsonPath("$.spots", hasSize(3)));
     }
 
     @Test

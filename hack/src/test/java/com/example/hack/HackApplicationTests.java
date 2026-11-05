@@ -21,12 +21,12 @@ class HackApplicationTests {
 
     @Test
     void flywaySeedsSpotsAndCrossLinks() {
-        assertThat(count("spot")).isEqualTo(58);
+        assertThat(count("spot")).isEqualTo(42);
         assertThat(count("era")).isEqualTo(3);
-        assertThat(count("cross_link")).isEqualTo(8);
-        assertThat(count("cross_link_spot")).isEqualTo(25);
+        assertThat(count("cross_link")).isEqualTo(7);
+        assertThat(count("cross_link_spot")).isEqualTo(20);
         assertThat(jdbc.queryForObject(
-                "SELECT COUNT(*) FROM spot WHERE era_id = 'JOSEON'", Integer.class)).isEqualTo(34);
+                "SELECT COUNT(*) FROM spot WHERE era_id = 'JOSEON'", Integer.class)).isEqualTo(25);
     }
 
     @Test
@@ -36,7 +36,7 @@ class HackApplicationTests {
         assertThat(jdbc.queryForObject(
                 "SELECT COUNT(*) FROM spot_accessibility WHERE provider = 'KTO'", Integer.class)).isEqualTo(116);
         assertThat(jdbc.queryForObject(
-                "SELECT COUNT(*) FROM spot WHERE kto_content_id IS NOT NULL", Integer.class)).isEqualTo(25);
+                "SELECT COUNT(*) FROM spot WHERE kto_content_id IS NOT NULL", Integer.class)).isEqualTo(24);
         assertThat(jdbc.queryForObject(
                 "SELECT COUNT(*) FROM spot WHERE coord_status = 'KTO'", Integer.class)).isEqualTo(4);
         // 수집되지 않은 안산 봉수대의 V5 행과 팀 판단 행도 그대로 있다

@@ -1,4 +1,4 @@
-# DB 스키마 v0.5
+# DB 스키마 v0.6
 
 MySQL 8.4 · Flyway 마이그레이션 · 원본 SQL: `hack/src/main/resources/db/migration/`
 
@@ -12,6 +12,7 @@ MySQL 8.4 · Flyway 마이그레이션 · 원본 SQL: `hack/src/main/resources/d
 | `V6__kto_barrier_free.sql` | 관광공사 원본 테이블 `kto_place`·`kto_barrier_free`, `spot.kto_match_status`, 좌표 상태 `KTO`, 접근성 항목 `ENTRANCE`(출입구)·`GUIDE_DOG`(보조견) |
 | `V7__manual_kto_links.sql` | 자동 연결이 애매했던 장소의 수동 연결 (창덕궁 → `창덕궁과 후원`) |
 | `V8__seed_kto_barrier_free.sql` | **자동 생성.** 수집한 관광공사 데이터 (목록 307, 상세 25, 자동 연결 21, 좌표 4, 접근성 116행). 팀원은 키 없이 받는다 |
+| `V9__remove_spots_and_seed_news.sql` | **자동 생성** (`scripts/xlsx-news-to-seed.ps1`). 현장 확인이 어려운 16곳 삭제, 연결 X8 삭제, 5곳 좌표 보강, 뉴스형 기사 42건 공개. 현재 장소 42곳, 연결 7개 |
 
 ## 관계도
 
@@ -45,7 +46,7 @@ chat_session ──< chat_message
 | `spot_accessibility` | 장소 × 항목 접근성 | 상태 `AVAILABLE/PARTIAL/UNAVAILABLE/UNKNOWN` + 원문 + 출처. `provider=KTO` 행은 관광공사 수집으로 채워짐 (아래 절차). 팀·현장 확인 행(`TEAM`, `FIELD_CHECK`)은 수집이 덮어쓰지 않음 |
 | `kto_place` | 관광공사 무장애 관광정보 목록 원본 | 4개 구. 목록 API item 을 `raw` 에 그대로 보관 |
 | `kto_barrier_free` | 관광공사 무장애 상세 원본 | `raw` 가 NULL 이면 관광공사에 데이터 없음 |
-| `spot_article` | 뉴스형 재구성 기사 + 카툰 | 이미지가 있으면 `image_alt` 필수. **아직 비어 있음** |
+| `spot_article` | 뉴스형 재구성 기사 + 카툰 | 이미지가 있으면 `image_alt` 필수. 기사 42건 공개 (V9). 이미지는 아직 없음 |
 | `chat_session`, `chat_session_user_type` | 익명 챗봇 세션 상태 | `expires_at` 이후 삭제. 정확한 좌표는 저장하지 않음 |
 | `chat_message` | 대화 기록 | `USER/ASSISTANT/TOOL` |
 | `course`, `course_stop` | 생성된 코스 | 수정 요청마다 새 코스 행, 세션은 `current_course_id` 로 최신을 가리킴 |
@@ -59,6 +60,15 @@ chat_session ──< chat_message
 | `source_1` = `엑셀 제공 목록(사용자)` | `review_status = NEEDS_SOURCE` (17곳), 나머지는 `DRAFT` |
 | `dist_from_mju_km` | 저장하지 않음. 좌표로 서버에서 계산 |
 | `cross_ids` | 저장하지 않음. `cross_link_spot` 으로 대체 |
+
+## 좌표 출처
+
+| `coord_status` | 출처 | 곳 수 |
+| --- | --- | --- |
+| `PROVIDED`, `AREA`, `APPROX` | 엑셀 (`APPROX` 5곳은 OpenStreetMap Nominatim 추가, © OpenStreetMap contributors) | 38 |
+| `KTO` | 관광공사 목록 | 4 |
+
+좌표가 없는 장소는 없다. `APPROX` 는 근사값이라 지도 핀을 정확히 쓰려면 카카오 로컬 API(키 필요)나 현장 확인으로 다시 맞춘다.
 
 ## 엑셀이 바뀌었을 때
 

@@ -59,5 +59,6 @@ cd hack && ./gradlew bootRun --args="--spring.main.web-application-type=none --k
 | [docs/API-SPEC.md](docs/API-SPEC.md) | REST API 명세 (구현 상태 표시) |
 | [docs/DB-SCHEMA.md](docs/DB-SCHEMA.md) | 테이블 구조, 엑셀 → DB 변환 규칙, 관광공사 무장애 정보 수집 |
 | [docs/barrier_free_service_design.md](docs/barrier_free_service_design.md) | 무장애 데이터 수집·코스 추천·챗봇 설계 |
-| [docs/seobuk4_history_pins.xlsx](docs/seobuk4_history_pins.xlsx) | 장소 58곳 · 시기 연결 8개 원본 데이터 |
+| [docs/USER-SCENARIOS.md](docs/USER-SCENARIOS.md) | 유저 시나리오, 시연 순서, 드러난 한계 |
+| [docs/seobuk4_history_pins.xlsx](docs/seobuk4_history_pins.xlsx) | 장소·기사·연결 원본 (58곳 중 42곳 사용) |
 | [docs/PRD.md](docs/PRD.md) | 제품 요구사항 초안 (이전 버전 기획 포함) |

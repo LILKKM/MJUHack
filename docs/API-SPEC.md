@@ -1,4 +1,4 @@
-# API 명세서 v0.4
+# API 명세서 v0.5
 
 서북권 역사 배리어프리 여행 서비스 · 백엔드(Spring Boot) REST API
 
@@ -68,9 +68,9 @@
 
 ```json
 [
-  { "id": "JOSEON", "name": "조선", "startYear": 1392, "endYear": 1875, "spotCount": 34 },
-  { "id": "OPENING_COLONIAL", "name": "개화기·일제강점기", "startYear": 1876, "endYear": 1945, "spotCount": 16 },
-  { "id": "MODERN", "name": "현대", "startYear": 1945, "endYear": null, "spotCount": 8 }
+  { "id": "JOSEON", "name": "조선", "startYear": 1392, "endYear": 1875, "spotCount": 25 },
+  { "id": "OPENING_COLONIAL", "name": "개화기·일제강점기", "startYear": 1876, "endYear": 1945, "spotCount": 12 },
+  { "id": "MODERN", "name": "현대", "startYear": 1945, "endYear": null, "spotCount": 5 }
 ]
 ```
 
@@ -464,3 +464,4 @@ LLM 사용 원칙:
 | v0.2 | 2026-11-06 | 기준 데이터·장소·시기 연결·기사·코스 생성/조회·세션 상태 API 구현. 코스 응답의 `eraId` → `eraIds`(작품이 여러 시대일 수 있음), `userTypes`·`startLabel`·`excluded[].name` 추가. 챗봇 메시지 API는 LLM 미선정으로 미구현 |
 | v0.3 | 2026-11-06 | 관광공사 무장애 정보 수집 연결. 접근성 항목 `ENTRANCE`(출입구 단차 없음)·`GUIDE_DOG`(보조견 동반) 추가 — `/api/user-types` 와 코스 선호 조건에 반영. 장소 좌표 상태에 `KTO` 추가 |
 | v0.4 | 2026-11-06 | Claude 연동. `POST /api/courses/recommend`, 챗봇 메시지 API 구현. `distanceFromPrevKm` 은 코스 수정 후 첫 장소에서 `null` 일 수 있음. 작품 없이 시대만 바꾸면 세션의 작품이 지워짐 |
+| v0.5 | 2026-11-06 | 데이터 변경: 장소 42곳, 연결 7개, 기사 42건. `coordStatus` 가 `MISSING` 인 장소 없음. 출발 장소가 후보에 있으면 코스 1번. `accessMemo` 에 선호 항목 근거도 포함 |
