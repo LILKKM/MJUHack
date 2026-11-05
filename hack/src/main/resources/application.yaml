@@ -12,3 +12,16 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+
+# 한국관광공사 무장애 여행정보 API (수집 방법: docs/DB-SCHEMA.md "관광공사 무장애 정보 수집")
+kto:
+  service-key: ${KTO_SERVICE_KEY:}       # 공공데이터포털 Decoding 키. 저장소에 커밋하지 않는다
+  base-url: https://apis.data.go.kr/B551011/KorWithService2
+  mobile-app: MJUHack
+  max-calls: 900                         # 개발계정 하루 1,000건
+  l-dong-regn-cd: "11"                   # 서울
+  signgu-districts:                      # 법정동 시군구 코드 → district.id
+    "110": JNG
+    "410": SDM
+    "440": MPO
+    "380": EPY

@@ -1,4 +1,4 @@
-# API 명세서 v0.1
+# API 명세서 v0.3
 
 서북권 역사 배리어프리 여행 서비스 · 백엔드(Spring Boot) REST API
 
@@ -26,7 +26,7 @@
 | `districtId` | `SDM`(서대문구) · `MPO`(마포구) · `EPY`(은평구) · `JNG`(종로구) |
 | `userType` | `WHEELCHAIR` · `ELDERLY` · `STROLLER` · `VISUAL` · `HEARING` |
 | `accessStatus` | `AVAILABLE`(있음) · `PARTIAL`(부분) · `UNAVAILABLE`(없음) · `UNKNOWN`(미확인) |
-| `coordStatus` | `VERIFIED` · `PROVIDED` · `APPROX` · `AREA`(권역 대표점) · `MISSING` |
+| `coordStatus` | `VERIFIED` · `PROVIDED` · `APPROX` · `AREA`(권역 대표점) · `KTO`(관광공사 좌표로 채움) · `MISSING` |
 | `reviewStatus` | `DRAFT` · `NEEDS_SOURCE`(출처 보강 필요) · `REVIEWED` |
 
 ### 오류 응답
@@ -63,7 +63,7 @@
 
 화면의 선택지(시대, 작품, 이용자 유형)를 그리는 데 쓴다. 자주 바뀌지 않으므로 프론트에서 캐시해도 된다.
 
-### 🛠 `GET /api/eras`
+### ✅ `GET /api/eras`
 
 ```json
 [
@@ -73,7 +73,7 @@
 ]
 ```
 
-### 🛠 `GET /api/k-contents`
+### ✅ `GET /api/k-contents`
 
 작품은 시대를 고르는 **추천 태그**다. 응답에 촬영지 정보는 없다. 포스터·장면 이미지 URL도 제공하지 않는다.
 
@@ -84,7 +84,7 @@
 ]
 ```
 
-### 🛠 `GET /api/user-types`
+### ✅ `GET /api/user-types`
 
 이용자 유형과, 그 유형에서 확인하는 접근성 항목.
 
@@ -108,7 +108,7 @@
 
 ## 3. 장소
 
-### 🛠 `GET /api/spots`
+### ✅ `GET /api/spots`
 
 | 쿼리 | 필수 | 설명 |
 | --- | --- | --- |
@@ -136,9 +136,9 @@
 ]
 ```
 
-### 🛠 `GET /api/spots/{spotId}`
+### ✅ `GET /api/spots/{spotId}`
 
-장소 상세. 출처, 접근성, 시기 연결, 게시된 기사를 함께 준다. 아래 `accessibility` 값은 형식 예시다. 현재 DB에는 접근성 전처리 데이터가 아직 없다.
+장소 상세. 출처, 접근성, 시기 연결, 게시된 기사를 함께 준다. 접근성은 관광공사 무장애 정보 수집(`provider: "KTO"`, `sourceUrl` 은 대한민국 구석구석 상세 페이지)과 팀 판단(`TEAM`, 예: 안산 봉수대 접근로)에서 온다. 수집 전에는 엑셀 메모에 근거가 있는 4행만 있다. 수집 방법은 [DB-SCHEMA.md](DB-SCHEMA.md#관광공사-무장애-정보-수집).
 
 ```json
 {
@@ -185,7 +185,7 @@
 
 ## 4. 시기를 넘는 연결
 
-### 🛠 `GET /api/cross-links`
+### ✅ `GET /api/cross-links`
 
 | 쿼리 | 설명 |
 | --- | --- |
@@ -207,7 +207,7 @@
 ]
 ```
 
-### 🛠 `GET /api/cross-links/{crossLinkId}`
+### ✅ `GET /api/cross-links/{crossLinkId}`
 
 같은 형식으로 하나만 반환한다.
 
@@ -217,7 +217,7 @@
 
 장소 상세(`GET /api/spots/{spotId}`)의 `articles[]` 로 함께 내려간다. 따로 조회할 때는 아래 API를 쓴다.
 
-### 🛠 `GET /api/spots/{spotId}/articles`
+### ✅ `GET /api/spots/{spotId}/articles`
 
 | 쿼리 | 설명 |
 | --- | --- |
@@ -246,7 +246,7 @@
 
 ## 6. 코스 생성
 
-### 🛠 `POST /api/courses`
+### ✅ `POST /api/courses`
 
 챗봇 없이 조건만으로 코스를 만든다. 챗봇 대화 중에도 내부적으로 같은 로직을 쓴다.
 
@@ -266,54 +266,70 @@
 
 | 필드 | 필수 | 설명 |
 | --- | --- | --- |
-| `sessionId` | – | 있으면 이 세션의 현재 코스로 저장. 없으면 저장하지 않고 결과만 반환 |
-| `userTypes` | ✔ | 1개 이상. 조건이 없으면 `[]` |
-| `eraId` / `kContentId` | 둘 중 하나 ✔ | 작품을 주면 작품의 시대로 바꾼다 |
-| `start` | ✔ | `spotId` 또는 좌표. 좌표는 거리 계산에만 쓰고 저장하지 않는다 |
-| `timeBudgetMin` | – | 여유 시간 (분) |
+| `sessionId` | – | 있으면 코스를 저장하고 세션의 `currentCourseId` 로 지정한다. 아래 필드가 비어 있으면 세션 상태 값을 쓴다. 없으면 저장하지 않고 결과만 반환 (`id: null`) |
+| `userTypes` | – | 생략하면 세션 값, 세션도 없으면 `[]` (접근성 조건 없음) |
+| `eraId` / `kContentId` | 둘 중 하나 ✔ | `eraId` 가 우선. 작품을 주면 작품의 시대로 바꾼다. 세션에 있으면 생략 가능 |
+| `start` | ✔ | `spotId` 또는 `latitude`+`longitude`. 좌표는 거리 계산에만 쓰고 저장하지 않는다. 세션에 `startSpotId` 가 있으면 생략 가능. `label` 은 화면 표시용 |
+| `timeBudgetMin` | – | `stopCount` 가 없을 때 `분 ÷ 40` 을 3~5로 맞춰 장소 수로 쓴다 (임시 규칙) |
 | `stopCount` | – | 3~5, 기본 4 |
 
-처리 순서는 기획서를 따른다.
+처리 순서 (기획서 기준):
 1. 시대로 후보를 거른다.
-2. `required` 접근성 항목이 `UNAVAILABLE` 인 장소를 뺀다.
-3. 출발지에서 가까운 순서로 묶는다.
-4. 방문 순서를 정한다.
+2. 이용자 유형의 `required` 항목이 `UNAVAILABLE` 인 장소를 뺀다 → `excluded`. `UNKNOWN`·기록 없음은 빼지 않고 `unknownFeatures` 로 표시한다.
+3. 좌표가 없는 장소는 뺀다 (경고로 개수만 알림).
+4. 출발지에서 시작해 "가장 가까운 다음 장소"를 반복해서 고른다. 거리에서 다음 보너스를 뺀 값으로 비교한다.
+   - 접근성 선호 항목이 `AVAILABLE` 이면 1점(`PARTIAL` 0.5점)당 0.2km
+   - 이미 고른 장소와 같은 시기 연결에 속하면 0.5km
 
-좌표가 없는(`MISSING`) 장소는 후보에서 제외한다.
-
-응답 `201 Created`:
+응답 `201 Created` (실제 응답 예시, 일부 생략):
 
 ```json
 {
-  "id": 41,
-  "eraId": "MODERN",
-  "reason": "「1987」의 시대인 현대 장소 중, 명지대에서 가깝고 휠체어 접근로가 확인되었거나 미확인인 곳으로 골랐습니다.",
+  "id": 7,
+  "eraIds": ["JOSEON"],
+  "userTypes": ["WHEELCHAIR"],
+  "startLabel": "양호 거사비",
+  "reason": "조선 장소 중 양호 거사비에서 가까운 순서로 4곳을 골랐습니다. 휠체어 이용자 조건을 적용했습니다. 필수 접근성 항목이 '없음'으로 확인된 2곳은 뺐습니다. '명지대 캠퍼스, 정유재란과 1991년' 이야기로 다른 시대와 이어집니다.",
   "stops": [
     {
       "order": 1,
-      "spot": { "id": "SDM02", "name": "강경대 열사 거리·표지석(사건 현장)", "latitude": 37.58, "longitude": 126.9238 },
-      "distanceFromPrevKm": 0.1,
-      "accessMemo": "보도 위치 — 비교적 평탄할 것으로 보이나 현장 확인 필요",
+      "spot": { "id": "SDM10", "name": "양호 거사비", "eraId": "JOSEON", "latitude": 37.5806, "longitude": 126.9234 },
+      "distanceFromPrevKm": 0.0,
+      "accessMemo": "캠퍼스 내 경사로·계단 여부 현장 확인 필요 / 미확인: 계단·급경사 없는 접근로",
       "unknownFeatures": ["ACCESS_ROUTE"],
       "crossLinkId": "X3"
+    },
+    {
+      "order": 2,
+      "spot": { "id": "SDM06", "name": "모래내·사천교(지명 유래)", "eraId": "JOSEON", "latitude": 37.5745, "longitude": 126.919 },
+      "distanceFromPrevKm": 0.78,
+      "accessMemo": "시장 골목·하천변 — 단차 현장 확인 필요 / 미확인: 계단·급경사 없는 접근로",
+      "unknownFeatures": ["ACCESS_ROUTE"],
+      "crossLinkId": null
     }
   ],
   "excluded": [
-    { "spotId": "SDM07", "reason": "ACCESS_ROUTE = UNAVAILABLE" }
+    { "spotId": "SDM07", "name": "무악산 동봉수대 터(안산 봉수대)", "reason": "계단·급경사 없는 접근로 없음 (정상부라 휠체어 접근 어려움)" },
+    { "spotId": "EPY02", "name": "북한산성", "reason": "계단·급경사 없는 접근로 없음 (산지 — 접근 어려움)" }
   ],
   "warnings": [
-    "장소 사이 이동 경로의 접근성은 확인되지 않았습니다. 이동 전 별도로 확인하세요."
+    "장소 사이 이동 경로의 접근성은 확인되지 않았습니다. 이동 전 별도로 확인하세요.",
+    "거리는 직선거리이며 실제 이동 거리·시간과 다릅니다.",
+    "4곳은 필수 접근성 항목이 아직 확인되지 않았습니다. 방문 전 확인이 필요합니다.",
+    "좌표가 아직 없는 장소 9곳은 후보에서 빠졌습니다."
   ]
 }
 ```
 
 - `distanceFromPrevKm` 는 직선거리다. 이동 시간이나 길찾기 경로는 주지 않는다.
+- `crossLinkId` 는 그 장소에서 **다른 시대 장소로 이어지는** 연결이 있을 때만 채운다.
 - `excluded` 는 "왜 빠졌는지"를 보여주는 용도다 (예: 안산 봉수대).
-- 후보가 `stopCount` 보다 적으면 있는 만큼만 반환한다. 하나도 없으면 `422 NO_CANDIDATES` 를 반환한다.
+- 후보가 `stopCount` 보다 적으면 있는 만큼만 반환하고 경고를 붙인다. 하나도 없으면 `422 NO_CANDIDATES` 를 반환한다.
+- 출발 장소에 좌표가 없으면 `400` 이다 (좌표로 다시 보내야 한다).
 
-### 🛠 `GET /api/courses/{courseId}`
+### ✅ `GET /api/courses/{courseId}`
 
-같은 형식으로 저장된 코스를 반환한다.
+저장된 코스를 생성 당시 응답 그대로 반환한다 (`course.snapshot`).
 
 ---
 
@@ -321,7 +337,7 @@
 
 세션은 익명이며 `expiresAt` (기본: 마지막 활동 후 24시간)이 지나면 삭제한다. 사용자 유형·시대·출발지·현재 코스는 대화 기록과 별도로 세션 상태에 저장한다.
 
-### 🛠 `POST /api/chat/sessions`
+### ✅ `POST /api/chat/sessions`
 
 요청 (모두 선택):
 
@@ -338,17 +354,22 @@
 
 응답 `201 Created`: [세션 상태](#세션-상태-형식)
 
-### 🛠 `GET /api/chat/sessions/{sessionId}`
+### ✅ `GET /api/chat/sessions/{sessionId}`
 
 응답: 세션 상태
 
-### 🛠 `PATCH /api/chat/sessions/{sessionId}`
+### ✅ `PATCH /api/chat/sessions/{sessionId}`
 
 화면 위 조건 요약에서 사용자가 직접 바꾼 값을 반영한다. 보낸 필드만 바뀐다. 응답은 세션 상태다.
 
 ```json
 { "userTypes": ["WHEELCHAIR"], "timeBudgetMin": 90 }
 ```
+
+- `null` 이거나 보내지 않은 필드는 그대로 둔다. 지금은 값을 비우는(`null` 로 되돌리는) 방법이 없다.
+- `userTypes` 는 보낸 목록으로 통째로 바뀐다 (`[]` 이면 조건 없음).
+- `kContentId` 를 보내고 `eraId` 를 안 보내면, 작품의 시대가 하나일 때 `eraId` 도 그 시대로 바뀐다.
+- 세션을 만들거나 바꾸거나 코스를 만들면 `expiresAt` 이 그 시점부터 24시간으로 늘어난다. 만료된 세션은 1시간마다 지워지며, 지워지기 전에 접근하면 `410 SESSION_EXPIRED` 를 반환한다.
 
 ### 세션 상태 형식
 
@@ -412,3 +433,5 @@ LLM 사용 원칙:
 | 버전 | 날짜 | 내용 |
 | --- | --- | --- |
 | v0.1 | 2026-11-06 | 초안. DB 스키마 V1~V3 기준. `/api/health` 만 구현됨 |
+| v0.2 | 2026-11-06 | 기준 데이터·장소·시기 연결·기사·코스 생성/조회·세션 상태 API 구현. 코스 응답의 `eraId` → `eraIds`(작품이 여러 시대일 수 있음), `userTypes`·`startLabel`·`excluded[].name` 추가. 챗봇 메시지 API는 LLM 미선정으로 미구현 |
+| v0.3 | 2026-11-06 | 관광공사 무장애 정보 수집 연결. 접근성 항목 `ENTRANCE`(출입구 단차 없음)·`GUIDE_DOG`(보조견 동반) 추가 — `/api/user-types` 와 코스 선호 조건에 반영. 장소 좌표 상태에 `KTO` 추가 |

@@ -40,11 +40,20 @@ MJUHack/
 
 DB 접속 정보는 기본값이 `localhost:3307 / hack / hack` 이다. 다른 DB를 쓰려면 환경변수 `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` 를 설정한다.
 
+### 관광공사 무장애 정보 수집 (선택, 한 번만)
+
+환경변수 `KTO_SERVICE_KEY` 에 공공데이터포털 Decoding 키를 넣고 실행한다. 자세한 단계는 [DB-SCHEMA.md](docs/DB-SCHEMA.md#관광공사-무장애-정보-수집) 참고.
+
+```bash
+cd hack && ./gradlew bootRun --args="--spring.main.web-application-type=none --kto.sync=all"
+```
+
 ## 문서
 
 | 문서 | 내용 |
 | --- | --- |
 | [docs/API-SPEC.md](docs/API-SPEC.md) | REST API 명세 (구현 상태 표시) |
-| [docs/DB-SCHEMA.md](docs/DB-SCHEMA.md) | 테이블 구조, 엑셀 → DB 변환 규칙 |
+| [docs/DB-SCHEMA.md](docs/DB-SCHEMA.md) | 테이블 구조, 엑셀 → DB 변환 규칙, 관광공사 무장애 정보 수집 |
+| [docs/barrier_free_service_design.md](docs/barrier_free_service_design.md) | 무장애 데이터 수집·코스 추천·챗봇 설계 |
 | [docs/seobuk4_history_pins.xlsx](docs/seobuk4_history_pins.xlsx) | 장소 58곳 · 시기 연결 8개 원본 데이터 |
 | [docs/PRD.md](docs/PRD.md) | 제품 요구사항 초안 (이전 버전 기획 포함) |
