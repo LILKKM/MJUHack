@@ -4,7 +4,7 @@
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V3 · weakest: V, retained task-specific split exploration and newspaper */
 :root {
   --paper: var(--color-surface); --paper-deep: #24364b0d; --ink: var(--color-ink); --muted: var(--color-ink); --rule: #24364b40; --accent: var(--color-accent); --focus: var(--color-ink);
-  --clear: transparent; --font-body: 'Abhaya Libre', 'Neujoh', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; --font-display: var(--font-body);
+  --clear: transparent; --font-body: 'Abhaya Libre', var(--font-ko); --font-display: var(--font-body);
 }
 * { box-sizing: border-box; }
 html, body { overflow-x: clip; }

@@ -1,0 +1,11 @@
+:root { --type-accessibility-label: 9pt; --type-accessibility-body: 9pt; }
+.arrival button.accessibility-trigger { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; min-height: 44px; padding: 0; border: 0; border-radius: 8px; background: transparent; box-shadow: none; }
+.arrival button.accessibility-trigger:hover { background: transparent; }
+.accessibility-trigger > span { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; color: var(--color-ink); }
+.accessibility-mint { background: transparent; }
+.accessibility-apricot { background: transparent; }
+.accessibility-glyph { display: block; width: 18px; height: 18px; background: currentColor; mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; }
+.arrival .accessibility-trigger:focus-visible, .accessibility-detail:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -2px; }
+.accessibility-detail { position: fixed; z-index: 50; overflow-y: auto; overscroll-behavior: contain; box-shadow: var(--shadow-panel); color: var(--color-ink); background: var(--color-surface); border: 1px solid #24364b30; border-radius: 8px; padding: 12px; text-align: left; overflow-wrap: anywhere; }
+.accessibility-detail strong, .accessibility-detail small { display: block; font-size: var(--type-accessibility-label); line-height: 1.5; }
+.accessibility-detail p { margin: 4px 0 0; font-size: var(--type-accessibility-body); line-height: 1.6; word-break: keep-all; }

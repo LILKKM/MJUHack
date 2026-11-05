@@ -21,3 +21,24 @@ test('server failure preserves input and no simulated reply appears; Escape clos
  expect(await screen.findByRole('alert')).toHaveTextContent('서버 연결 실패');expect(screen.getByLabelText('추천 요청')).toHaveValue('카페');
  fireEvent.keyDown(screen.getByRole('dialog'),{key:'Escape'});expect(close).toHaveBeenCalled();expect(outer).not.toHaveBeenCalled();
 });
+test('keyboard focus stays in the compact dialog, including while input is disabled',()=>{
+ createChatSession.mockImplementation(()=>new Promise(()=>{}));
+ render(<NearbyChat onClose={()=>{}}/>);
+ const dialog=screen.getByRole('dialog'),close=screen.getByRole('button',{name:'주변 추천 닫기'}),input=screen.getByLabelText('추천 요청'),log=screen.getByRole('log');
+ expect(dialog).toHaveFocus();
+ expect(input).toHaveAttribute('rows','1');
+ fireEvent.keyDown(dialog,{key:'Tab',shiftKey:true});expect(input).toHaveFocus();
+ fireEvent.keyDown(input,{key:'Tab'});expect(close).toHaveFocus();
+ fireEvent.change(input,{target:{value:'카페'}});fireEvent.click(screen.getByRole('button',{name:'보내기'}));
+ expect(input).toBeDisabled();
+ close.focus();fireEvent.keyDown(close,{key:'Tab',shiftKey:true});expect(log).toHaveFocus();
+ fireEvent.keyDown(log,{key:'Tab'});expect(close).toHaveFocus();
+});
+test('closing aborts the pending request and restores the trigger focus',()=>{
+ createChatSession.mockImplementation(()=>new Promise(()=>{}));
+ const trigger=document.createElement('button');document.body.appendChild(trigger);trigger.focus();
+ const {unmount}=render(<NearbyChat onClose={()=>{}}/>);
+ fireEvent.change(screen.getByLabelText('추천 요청'),{target:{value:'카페'}});fireEvent.click(screen.getByRole('button',{name:'보내기'}));
+ const signal=createChatSession.mock.calls[0][1];expect(signal.aborted).toBe(false);
+ unmount();expect(signal.aborted).toBe(true);expect(trigger).toHaveFocus();trigger.remove();
+});

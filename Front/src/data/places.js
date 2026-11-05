@@ -1,4 +1,5 @@
 import selectedPlaces from './selectedPlaces.json';
+import descriptionsKo from './placeDescriptionsKo.json';
 
 export const districts = { SDM: '서대문구', JNG: '종로구', MPO: '마포구', EPY: '은평구' };
 export const eras = { JOSEON: '조선', OPENING_COLONIAL: '개화기·일제강점기', MODERN: '현대' };
@@ -15,6 +16,7 @@ export function hasCoordinates(place) {
 export const places = selectedPlaces.map(place => ({
   id: place.sourceId,
   name: place.name,
+  descriptionKo: descriptionsKo[place.sourceId],
   districtId: districtIds[place.districtCode],
   eraId: eraIds[place.raw.period],
   eraDetail: place.raw.era,

@@ -58,8 +58,11 @@ export default function CloudArrival({ onLocated, onDemo, active = true }) {
   }, [phase, paused, reduced, hidden, active]);
   useEffect(() => { if (phase === 'landed') worldAction.current?.focus({ preventScroll: true }); }, [phase]);
   useEffect(() => {
-    if (phase === 'preparing' && mapPrepared.current) { stageTime.current = 0; setPhase('falling'); }
+    if (phase === 'preparing' && mapPrepared.current) { stageTime.current = 0; setPhase('clearing'); }
   }, [phase]);
+  useEffect(() => {
+    if (phase === 'clearing' && cloudsCleared && !paused && !hidden && active) { stageTime.current = 0; setPhase('falling'); }
+  }, [phase, cloudsCleared, paused, hidden, active]);
   useEffect(() => {
     if (!tracking || phase !== 'landed' || !active || hidden) return;
     return watchPosition(next => {
@@ -71,7 +74,7 @@ export default function CloudArrival({ onLocated, onDemo, active = true }) {
 
   const mapReady = useCallback(() => {
     mapPrepared.current = true;
-    if (phaseRef.current === 'preparing') { stageTime.current = 0; setCloudsCleared(false); setPhase('falling'); }
+    if (phaseRef.current === 'preparing') { stageTime.current = 0; setCloudsCleared(false); setPhase('clearing'); }
   }, []);
   const cloudClear = useCallback(() => setCloudsCleared(true), []);
   const modelReady = useCallback(() => setHeroReady(true), []);
@@ -93,7 +96,7 @@ export default function CloudArrival({ onLocated, onDemo, active = true }) {
       mapControlRef.current?.center(next);
       if (!alreadyLanded && !automatic) {
         stageTime.current = 0; setCloudsCleared(false);
-        setPhase(mapPrepared.current ? 'falling' : 'preparing');
+        setPhase(mapPrepared.current ? 'clearing' : 'preparing');
       }
     } catch (failure) { if (mounted.current && id === requestId.current) { setError(failure.message); setLocationIssue(failure.code === 1 ? 'denied' : failure.code === 'accuracy' ? 'accuracy' : 'missing'); if (failure.code === 1) setTracking(false); if (!alreadyLanded && !automatic) setPhase('flying'); } }
   }
@@ -110,18 +113,19 @@ export default function CloudArrival({ onLocated, onDemo, active = true }) {
   }
   function openChat() { setChat({ place: reader.place }); reader.clear(); }
   function restart() { ++requestId.current; setTracking(false); setError(''); setCloudsCleared(false); reader.clear(); scrollDistance.current = 0; stageTime.current = 0; setPhase('clouds'); }
-  const landing = ['falling', 'impact', 'pullback', 'landed'].includes(phase), isPaused = paused || hidden || !active;
+  const landing = ['clearing', 'falling', 'impact', 'pullback', 'landed'].includes(phase), isPaused = paused || hidden || !active;
   return <section ref={sceneRoot} data-location-updates={updates} className={`arrival phase-${phase} ${cloudsCleared ? 'clouds-cleared' : ''} ${isPaused ? 'motion-paused' : ''} ${reduced ? 'motion-reduced' : ''}`} aria-label="seoul times 서울 지도" aria-busy={!heroReady || ['locating', 'preparing'].includes(phase)}
     onWheel={event => { if (phase === 'clouds') { scrollDistance.current += Math.max(0, event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? sceneRoot.current.clientHeight : 1)); if (scrollDistance.current >= 36) revealFromScroll(); } }}
     onPointerDown={event => { if (phase === 'clouds' && event.pointerType !== 'mouse') touchStart.current = event.clientY; }}
     onPointerMove={event => { if (touchStart.current !== null && touchStart.current - event.clientY > 36) { touchStart.current = null; revealFromScroll(); } }}
     onPointerUp={() => { touchStart.current = null; }} onPointerCancel={() => { touchStart.current = null; }}>
     <LandingMap position={position} demo={demo} phase={phase} places={places} selectedId={selectedId} onSelect={reader.select} anchorRef={anchorRef} mapControlRef={mapControlRef} onReady={mapReady}/><div className="arrival-ground-shade"/>
-    {position && <div className="arrival-anchor"><div className="impact-ring impact-one"/><div className="impact-ring impact-two"/></div>}
+    {position && <div className="arrival-anchor"><div className="avatar-ground-shadow"/>{['impact', 'pullback'].includes(phase) && <div className="impact-waves"><div className="impact-ring impact-one"/><div className="impact-ring impact-two"/></div>}</div>}
     {!cloudsCleared && <CloudCanvas opening={landing} paused={isPaused} reduced={reduced} showcase={landing ? 0 : phase === 'clouds' ? .72 : 1} onCleared={cloudClear}/>}
     <HeroCanvas phase={phase} paused={isPaused} reduced={reduced} onReady={modelReady} onCamera={cameraUpdate} anchorRef={anchorRef} hasPosition={!!position || ['falling', 'impact', 'pullback'].includes(phase)}/>
     <h1 className="arrival-sr-only">seoul times</h1>
     <button className="arrival-motion-control" onClick={() => setPaused(value => !value)} aria-pressed={paused} aria-keyshortcuts="Escape">{paused ? '모션 재생' : '모션 멈추기'}</button>
+    {phase === 'clouds' && <div className="arrival-scroll-hint" aria-hidden="true"><span>아래로 스크롤</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></div>}
     {phase === 'clouds' && <p className="arrival-sr-only">아래로 스크롤하거나 위로 쓸어 올려 시작합니다. 키보드 아래 방향키로도 시작할 수 있습니다.</p>}
     {['revealing', 'flying', 'departing', 'following', 'preparing'].includes(phase) && <span className="flight-wordmark brand-wordmark">Seoul Times</span>}
     {error && phase !== 'landed' && <p className="arrival-sr-only" role="alert">{error}</p>}
