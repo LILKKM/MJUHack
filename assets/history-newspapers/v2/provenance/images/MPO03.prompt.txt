@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1866 Han River near Yanghwajin and Sogang: Korean boatmen on an unpaved shore watch small mid-19th-century French steam-and-sail vessels far out on the river, sparse timber boats nearby. No ironclad battleships or modern bridges.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1866년 9월 · 한성】 서양 배, 한강 거슬러 양화진·서강까지 들어와
+
+이양선 여러 척이 강화 앞바다를 지나 한강을 거슬러 올라와 도성 코앞인 양화진과 서강 일대까지 나타났다. 도성이 발칵 뒤집혔다. 배는 올봄 천주교 신부들이 처형된 일을 따지러 온 프랑스 군함인 것으로 알려졌다.
+
+마포와 서강, 양화의 세 나루는 평소 세곡선과 소금배, 새우젓 배로 붐비는 한양의 부엌이다. 그런데 연기를 뿜는 쇠배가 나타나자 뱃사람들은 배를 버리고 달아났다. 장사꾼들은 점포 문을 닫았다. 도성 안에서는 쌀값이 뛰고, 피난 보따리를 싸는 집도 생겼다. 강가에 모인 구경꾼들은 처음 보는 큰 배와 대포를 넋을 잃고 바라보았다.
+
+서양 배는 며칠 동안 강의 물길을 재고 지형을 살핀 뒤 물러갔다. 조정은 강가에 군사를 늘려 세우는 한편 서양 오랑캐를 물리쳐야 한다는 뜻을 거듭 밝히고 있다. 대원위 대감은 화친은 없다는 뜻을 분명히 했다고 한다.
+
+이들이 다시 군사를 이끌고 올 것이라는 소문이 파다하다. 나루 사람들은 "배가 끊기면 도성 사람들은 무엇을 먹고 사느냐"며 걱정을 감추지 못하고 있다. 한강 나루가 나라의 바깥 문이기도 하다는 사실을 도성 사람들이 처음으로 실감한 사건이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

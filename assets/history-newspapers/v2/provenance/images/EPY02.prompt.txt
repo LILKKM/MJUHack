@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1711 autumn newly completed Bukhansanseong: mountain stone ramparts following rugged granite ridges, period soldiers and monk-guards inspecting masonry, laborers resting nearby. No modern hikers or cable equipment.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1711년 가을 · 한성】 북한산성, 반년 만에 완공
+
+도성 북쪽 북한산에 큰 산성을 쌓는 공사가 반년 만에 마무리되었다. 지난 봄 공사를 시작한 이 산성은 훈련도감과 금위영, 어영청의 세 군영이 구간을 나눠 맡아 밤낮없이 돌을 쌓아 완성했다. 성벽은 북한산의 험한 봉우리와 능선을 따라 이어진다. 성 안에는 행궁과 창고, 절을 두어 유사시 임금과 백성이 오래 버틸 수 있도록 했다.
+
+조정에서는 수십 년 전 병자년 난리 때의 교훈을 들어 산성 축조를 서둘러 왔다. 당시 임금께서 남한산성으로 피했다가 결국 성을 나와 항복해야 했던 치욕을 되풀이하지 않으려면 도성 가까이 굳건한 방어 거점이 필요하다는 것이다. 성 안 곳곳의 절에는 승려들을 두어 성을 지키게 했다.
+
+반대의 목소리도 적지 않았다. 일부 신하들은 막대한 비용과 노역이 백성을 괴롭힌다고 지적했다. 산성보다 도성을 지키는 것이 먼저라는 상소도 올렸다. 공사에 동원된 군사와 백성들은 험한 산길에서 돌을 나르느라 큰 고생을 했다.
+
+임금께서는 이듬해 봄 몸소 산성에 올라 공사를 둘러보실 계획이라고 한다. 북한산의 바위 능선을 따라 길게 뻗은 성벽은 도성 사람들에게 든든함과 함께, 다시는 난리를 겪고 싶지 않다는 바람을 함께 안겨 주고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

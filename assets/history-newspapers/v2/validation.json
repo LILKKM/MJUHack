@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "matchedSpots": 58,
+  "matchedCoordinatePairs": 58,
+  "originalCoordinatePairsPreserved": 40,
+  "coordinateSupplementsPreserved": 18,
+  "supplementRowsRequiringIntegrationReview": 4,
+  "uniqueIllustrations": 58,
+  "newspaperSvgs": 116,
+  "embeddedImageMatches": 116,
+  "koreanParagraphsPreserved": 232,
+  "englishParagraphsComposed": 232,
+  "galleryReferences": 464,
+  "invalidMappingGuardsPassed": 3,
+  "priorBrowserBoundsFailures": 0,
+  "missingGlyphs": 0,
+  "baseRepositorySpotCount": 42,
+  "archivedSpotAssetsRetained": 16,
+  "publicationStatus": "unpublished",
+  "historicalReviewStatus": "unverified"
+}

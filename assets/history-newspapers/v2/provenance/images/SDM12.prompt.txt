@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1764 Yeonhui old royal estate outskirts: a distant dignified royal funeral procession moving toward a simple fresh burial mound, mourners in period white clothing, mulberry trees and low fields. No visible corpse or royal portrait.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1764년 · 한성 서교】 사도세자 생모 영빈 이씨, 연희궁 옛터에 잠들다
+
+임금의 후궁이자 사도세자의 생모인 영빈 이씨가 지난여름 세상을 떠났다. 장지는 도성 서쪽 연희궁 옛터로 정해졌다. 연희궁은 세종 임금 때 크게 고쳐 지어 왕실이 머물던 이궁이었다. 이후 왕실 뽕나무밭인 서잠실로 쓰이던 곳이다.
+
+영빈은 궁녀로 들어와 임금의 총애를 받았고 세자를 낳았다. 그러나 2년 전 세자가 뒤주에 갇혀 숨지는 참변을 겪었다. 그 일에 앞서 영빈이 나라와 종묘를 위해 세자의 일을 임금께 아뢰었다는 이야기가 조정 안팎에 전한다. 아들을 잃은 어미의 마음이 어떠했을지 짐작하기 어렵다.
+
+임금께서는 영빈의 죽음을 몹시 슬퍼하셨다. 나라를 위해 사사로운 정을 끊었다며 '의열(義烈)'이라는 이름을 내리고 묘에도 그 이름을 붙이셨다. 장례 행렬이 서대문을 나설 때 길가의 백성들은 머리를 숙여 배웅했다.
+
+연희궁 옛터는 한때 임금들이 쉬어 가고 잔치를 열던 곳이다. 이제는 비극으로 생을 마감한 세자의 어머니가 잠든 자리가 되었다. 궁궐의 영화와 왕실의 슬픔이 한 땅에 겹쳐 쌓이는 셈이다. 사람들은 이곳을 지날 때마다 지난날의 참변을 떠올리게 될 것이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

@@ -1,0 +1,480 @@
+{
+  "version": "batch-20261106",
+  "date": "2026-11-06",
+  "requestedArticles": 58,
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "items": [
+    {
+      "spotId": "SDM01",
+      "name": "강경대 민주광장(추모 동판)",
+      "articleCell": "O2",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM01/article-v1.png",
+      "manifestPath": "deliverables/images/SDM01/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM02",
+      "name": "강경대 열사 거리·표지석(사건 현장)",
+      "articleCell": "O3",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM02/article-v1.png",
+      "manifestPath": "deliverables/images/SDM02/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM03",
+      "name": "국립대한민국임시정부기념관",
+      "articleCell": "O4",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM03/article-v1.png",
+      "manifestPath": "deliverables/images/SDM03/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM04",
+      "name": "독립관",
+      "articleCell": "O5",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM04/article-v1.png",
+      "manifestPath": "deliverables/images/SDM04/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM05",
+      "name": "독립문·영은문 주초",
+      "articleCell": "O6",
+      "state": "reused-approved",
+      "imagePath": "deliverables/images/SDM05/sample-v2-photo.png",
+      "manifestPath": "deliverables/images/SDM05/sample-v2-photo.manifest.json"
+    },
+    {
+      "spotId": "SDM06",
+      "name": "모래내·사천교(지명 유래)",
+      "articleCell": "O7",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM06/article-v1.png",
+      "manifestPath": "deliverables/images/SDM06/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM07",
+      "name": "무악산 동봉수대 터(안산 봉수대)",
+      "articleCell": "O8",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM07/article-v1.png",
+      "manifestPath": "deliverables/images/SDM07/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM08",
+      "name": "봉원사",
+      "articleCell": "O9",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM08/article-v1.png",
+      "manifestPath": "deliverables/images/SDM08/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM09",
+      "name": "서대문형무소역사관",
+      "articleCell": "O10",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM09/article-v1.png",
+      "manifestPath": "deliverables/images/SDM09/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM10",
+      "name": "양호 거사비",
+      "articleCell": "O11",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM10/article-v1.png",
+      "manifestPath": "deliverables/images/SDM10/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM11",
+      "name": "연세대 스팀슨관·언더우드관·아펜젤러관",
+      "articleCell": "O12",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM11/article-v1.png",
+      "manifestPath": "deliverables/images/SDM11/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM12",
+      "name": "연희궁 터·서잠실 터 표석",
+      "articleCell": "O13",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM12/article-v1.png",
+      "manifestPath": "deliverables/images/SDM12/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM13",
+      "name": "이한열 열사 피격 현장 동판",
+      "articleCell": "O14",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM13/article-v1.png",
+      "manifestPath": "deliverables/images/SDM13/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM14",
+      "name": "홍제원 터 표석",
+      "articleCell": "O15",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM14/article-v1.png",
+      "manifestPath": "deliverables/images/SDM14/article-v1.manifest.json"
+    },
+    {
+      "spotId": "SDM15",
+      "name": "서대문독립공원",
+      "articleCell": "O16",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/SDM15/article-v1.png",
+      "manifestPath": "deliverables/images/SDM15/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO01",
+      "name": "광흥창 터",
+      "articleCell": "O17",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO01/article-v1.png",
+      "manifestPath": "deliverables/images/MPO01/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO02",
+      "name": "당인리 발전소(마포새빛문화숲)",
+      "articleCell": "O18",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO02/article-v1.png",
+      "manifestPath": "deliverables/images/MPO02/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO03",
+      "name": "마포·서강·양화 나루",
+      "articleCell": "O19",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO03/article-v1.png",
+      "manifestPath": "deliverables/images/MPO03/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO04",
+      "name": "망원정 터",
+      "articleCell": "O20",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO04/article-v1.png",
+      "manifestPath": "deliverables/images/MPO04/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO05",
+      "name": "밤섬",
+      "articleCell": "O21",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO05/article-v1.png",
+      "manifestPath": "deliverables/images/MPO05/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO06",
+      "name": "양화나루 터",
+      "articleCell": "O22",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO06/article-v1.png",
+      "manifestPath": "deliverables/images/MPO06/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO07",
+      "name": "양화진 외국인선교사묘원",
+      "articleCell": "O23",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO07/article-v1.png",
+      "manifestPath": "deliverables/images/MPO07/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO08",
+      "name": "이한열기념관",
+      "articleCell": "O24",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO08/article-v1.png",
+      "manifestPath": "deliverables/images/MPO08/article-v1.manifest.json"
+    },
+    {
+      "spotId": "MPO09",
+      "name": "절두산 순교성지",
+      "articleCell": "O25",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/MPO09/article-v1.png",
+      "manifestPath": "deliverables/images/MPO09/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY01",
+      "name": "금성당",
+      "articleCell": "O26",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY01/article-v1.png",
+      "manifestPath": "deliverables/images/EPY01/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY02",
+      "name": "북한산성",
+      "articleCell": "O27",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY02/article-v1.png",
+      "manifestPath": "deliverables/images/EPY02/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY03",
+      "name": "셋이서문학관",
+      "articleCell": "O28",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY03/article-v1.png",
+      "manifestPath": "deliverables/images/EPY03/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY04",
+      "name": "수국사",
+      "articleCell": "O29",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY04/article-v1.png",
+      "manifestPath": "deliverables/images/EPY04/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY05",
+      "name": "숙용심씨 묘표",
+      "articleCell": "O30",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY05/article-v1.png",
+      "manifestPath": "deliverables/images/EPY05/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY06",
+      "name": "은평역사한옥박물관",
+      "articleCell": "O31",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY06/article-v1.png",
+      "manifestPath": "deliverables/images/EPY06/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY07",
+      "name": "진관사",
+      "articleCell": "O32",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY07/article-v1.png",
+      "manifestPath": "deliverables/images/EPY07/article-v1.manifest.json"
+    },
+    {
+      "spotId": "EPY08",
+      "name": "진관사 태극기 비",
+      "articleCell": "O33",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/EPY08/article-v1.png",
+      "manifestPath": "deliverables/images/EPY08/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG01",
+      "name": "가회동 성당(북촌 천주교 첫 미사)",
+      "articleCell": "O34",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG01/article-v1.png",
+      "manifestPath": "deliverables/images/JNG01/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG02",
+      "name": "김정희 선생 집터 표석",
+      "articleCell": "O35",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG02/article-v1.png",
+      "manifestPath": "deliverables/images/JNG02/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG03",
+      "name": "박규수 집터",
+      "articleCell": "O36",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG03/article-v1.png",
+      "manifestPath": "deliverables/images/JNG03/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG04",
+      "name": "보신각",
+      "articleCell": "O37",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG04/article-v1.png",
+      "manifestPath": "deliverables/images/JNG04/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG05",
+      "name": "서울 중심점 표지석",
+      "articleCell": "O38",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG05/article-v1.png",
+      "manifestPath": "deliverables/images/JNG05/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG06",
+      "name": "안동별궁 터 표석",
+      "articleCell": "O39",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG06/article-v1.png",
+      "manifestPath": "deliverables/images/JNG06/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG07",
+      "name": "육의전 터 표석",
+      "articleCell": "O40",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG07/article-v1.png",
+      "manifestPath": "deliverables/images/JNG07/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG08",
+      "name": "윤보선 가옥",
+      "articleCell": "O41",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG08/article-v1.png",
+      "manifestPath": "deliverables/images/JNG08/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG09",
+      "name": "의금부 터 표석",
+      "articleCell": "O42",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG09/article-v1.png",
+      "manifestPath": "deliverables/images/JNG09/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG10",
+      "name": "조광조 집터 표석",
+      "articleCell": "O43",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG10/article-v1.png",
+      "manifestPath": "deliverables/images/JNG10/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG11",
+      "name": "경교장",
+      "articleCell": "O44",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG11/article-v1.png",
+      "manifestPath": "deliverables/images/JNG11/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG12",
+      "name": "경복궁",
+      "articleCell": "O45",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG12/article-v1.png",
+      "manifestPath": "deliverables/images/JNG12/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG13",
+      "name": "경희궁",
+      "articleCell": "O46",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG13/article-v1.png",
+      "manifestPath": "deliverables/images/JNG13/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG14",
+      "name": "국립민속박물관",
+      "articleCell": "O47",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG14/article-v1.png",
+      "manifestPath": "deliverables/images/JNG14/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG15",
+      "name": "대한민국역사박물관",
+      "articleCell": "O48",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG15/article-v1.png",
+      "manifestPath": "deliverables/images/JNG15/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG16",
+      "name": "북촌한옥마을",
+      "articleCell": "O49",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG16/article-v1.png",
+      "manifestPath": "deliverables/images/JNG16/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG17",
+      "name": "서울역사박물관",
+      "articleCell": "O50",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG17/article-v1.png",
+      "manifestPath": "deliverables/images/JNG17/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG18",
+      "name": "서촌",
+      "articleCell": "O51",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG18/article-v1.png",
+      "manifestPath": "deliverables/images/JNG18/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG19",
+      "name": "운현궁",
+      "articleCell": "O52",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG19/article-v1.png",
+      "manifestPath": "deliverables/images/JNG19/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG20",
+      "name": "인사동",
+      "articleCell": "O53",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG20/article-v1.png",
+      "manifestPath": "deliverables/images/JNG20/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG21",
+      "name": "종묘",
+      "articleCell": "O54",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG21/article-v1.png",
+      "manifestPath": "deliverables/images/JNG21/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG22",
+      "name": "창경궁",
+      "articleCell": "O55",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG22/article-v1.png",
+      "manifestPath": "deliverables/images/JNG22/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG23",
+      "name": "창덕궁",
+      "articleCell": "O56",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG23/article-v1.png",
+      "manifestPath": "deliverables/images/JNG23/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG24",
+      "name": "탑골공원",
+      "articleCell": "O57",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG24/article-v1.png",
+      "manifestPath": "deliverables/images/JNG24/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG25",
+      "name": "한양도성(서울성곽)",
+      "articleCell": "O58",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG25/article-v1.png",
+      "manifestPath": "deliverables/images/JNG25/article-v1.manifest.json"
+    },
+    {
+      "spotId": "JNG26",
+      "name": "흥인지문",
+      "articleCell": "O59",
+      "state": "reviewed",
+      "imagePath": "deliverables/images/JNG26/article-v1.png",
+      "manifestPath": "deliverables/images/JNG26/article-v1.manifest.json"
+    }
+  ],
+  "counts": {
+    "reused-approved": 1,
+    "reviewed": 57,
+    "generated-pending-review": 0,
+    "pending": 0
+  }
+}

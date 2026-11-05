@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1457 aftermath of Prince Geumseong death in Sunheung exile: empty humble room with folded Joseon clothing and a closed low wooden tray, anonymous mourners at the threshold. No drinking poison, no corpse, no later Geumseong shrine shown as contemporary.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1457년 가을 · 한성】 금성대군, 단종 복위 꾀하다 끝내 사사
+
+세종대왕의 여섯째 아들이자 상왕(단종)의 숙부인 금성대군이 사약을 받고 세상을 떠났다. 금성대군은 지난해 성삼문 등의 상왕 복위 사건 이후 경상도 순흥으로 귀양을 가 있었다. 그곳에서 순흥부사 이보흠과 함께 고을 군사와 선비들을 모아 상왕을 다시 모시려 했다는 혐의다.
+
+조정에 따르면 거사 계획은 격문을 돌리는 과정에서 새어 나가 발각되었다. 이 일로 순흥 고을은 피바람에 휩싸였다. 연루된 사람들이 대거 처형되고 고을 자체가 없어질 지경이라고 한다. 금성대군의 형님인 임금(세조)과의 사이는 이번 일로 완전히 끊어졌다.
+
+이번 일의 파장은 영월에 있는 상왕에게까지 미쳤다. 노산군으로 강등되어 영월에 머물던 상왕도 끝내 목숨을 잃었다는 소식이 전해지고 있다. 숙부와 조카가 같은 해에 비극적인 최후를 맞은 것이다.
+
+도성 백성들 사이에서는 금성대군의 의리를 기리는 말이 조심스럽게 오간다. 무당들 사이에서는 억울하게 죽은 대군의 넋을 신으로 모셔야 한다는 이야기도 나온다. 조정은 반역의 죄를 엄히 다스렸다고 밝혔다. 그러나 왕실의 피붙이끼리 목숨을 앗는 일이 거듭되면서 민심은 무겁게 가라앉아 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

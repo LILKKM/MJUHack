@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "MPO02",
+  "name": "당인리 발전소(마포새빛문화숲)",
+  "articleCell": "O18",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "8257abdaede7ceccb43bc57fd7a32d97248d197c48f7d292f54dcb713496a5e6",
+  "articleHeader": "【1930년 · 경성 당인리】 조선 첫 화력발전소 당인리발전소 1호기 준공",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "당인리 발전소(마포새빛문화숲) 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1930년 · 경성 당인리】 조선 첫 화력발전소 당인리발전소 1호기 준공 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1930 Danginri power station first unit: coal-fired industrial brick buildings and a tall chimney by the Han River, coal heaps and a few period workers. No modern combined-cycle plant or modern city skyline.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-387b93d3-81da-4457-9a17-66e686ef97a4.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/MPO02/article-v1.prompt.txt",
+    "sha256": "63185a78ab4e0f76e19cb0ce17e2cf98d1bfb3a209b45f4e3379289446056f33"
+  },
+  "image": {
+    "path": "deliverables/images/MPO02/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2823724,
+    "sha256": "46b67264839d7b0d11e67dd6a79482afbfb40d6d3805991301eed345c8c26a09"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 기사별 학교·장례·학생 부축·역원 준비·공원·곡창·발전소·군함 접근 장면을 구분할 수 있음. 사진풍과 시대별 질감 확인. 상세 건축·배·복식은 고증 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

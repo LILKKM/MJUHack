@@ -1,0 +1,4 @@
+v2/newspapers/**/*.svg linguist-generated=true
+v2/illustrations/*.png binary
+v2/previews/* binary
+v2/provenance/newspaper-v2/qa/render-report.json linguist-generated=true

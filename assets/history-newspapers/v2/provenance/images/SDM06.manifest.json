@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "SDM06",
+  "name": "모래내·사천교(지명 유래)",
+  "articleCell": "O7",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "990387ca9f968cd06f474be98b850352675e79c0da0485f6291a055046502420",
+  "articleHeader": "【1970년대 · 서울 서대문구】 '모래내' 이름 따라 걷는 서북 서울의 장터",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "모래내·사천교(지명 유래) 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1970년대 · 서울 서대문구】 '모래내' 이름 따라 걷는 서북 서울의 장터 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "1970s muted analog color negative photograph, gentle faded dyes and visible organic film grain, natural daylight; no excessive sepia or drawing lines.",
+  "sceneBrief": "1970s Moraenae market Seoul: fish and vegetable stalls in a narrow lively market alley, period shopkeepers and shoppers, no modern highrises or smartphones. Unlettered awnings.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-331a9832-5b1c-47d8-98f5-12b44d00c93c.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/SDM06/article-v1.prompt.txt",
+    "sha256": "6bc0025ff834f1f5aaaeebb4f55e8949f6c0baae8882b9a7f2a68772adbd169e"
+  },
+  "image": {
+    "path": "deliverables/images/SDM06/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3060679,
+    "sha256": "e3b1b05c46b1bb9b68b786bd5220f5099294ba8098b599c0063ba251352c94fa"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "사진풍 질감과 지정 장면을 확인. SDM07은 산 능선 전투 원경, SDM09는 비폭력적 감옥 추모 장면. 명백한 현대 사물이나 본문 텍스트는 관찰되지 않음. 시대별 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

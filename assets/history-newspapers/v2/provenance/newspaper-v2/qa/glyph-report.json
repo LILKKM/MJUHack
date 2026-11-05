@@ -1,0 +1,30 @@
+{
+  "ko": {
+    "font": "ChosunCentennial.woff2",
+    "usedUniqueCharacters": 836,
+    "supportedCharacterCount": 12289,
+    "fallbackCharacters": [
+      "沙",
+      "川",
+      "義",
+      "烈",
+      "喜",
+      "雨",
+      "亭",
+      "走",
+      "肖",
+      "爲",
+      "王",
+      "思",
+      "悼"
+    ],
+    "missing": []
+  },
+  "en": {
+    "font": "AbhayaLibre-ExtraBold.ttf",
+    "usedUniqueCharacters": 69,
+    "supportedCharacterCount": 416,
+    "fallbackCharacters": [],
+    "missing": []
+  }
+}

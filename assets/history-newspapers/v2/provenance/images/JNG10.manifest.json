@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "JNG10",
+  "name": "조광조 집터 표석",
+  "articleCell": "O43",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "7486f3fc023537c12980b4376e364c285d8edfe4c90556f78f1c1d5ed3494f49",
+  "articleHeader": "【1519년 겨울 · 한성】 기묘년 사화, 조광조 등 사림 대거 숙청",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "조광조 집터 표석 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1519년 겨울 · 한성】 기묘년 사화, 조광조 등 사림 대거 숙청 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1519 winter scholar purge: anonymous young Joseon scholars escorted by guards through a dim palace-side courtyard at night, oil lantern light, other scholars waiting anxiously outside the gate. No execution or torture, no readable leaf lettering.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-f85bba31-11a9-4284-8035-c55cedeeab5f.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/JNG10/article-v1.prompt.txt",
+    "sha256": "dfde53321c6d1593cf16b81fdb50fe81e1cae5402b3be0a4cedc68df6cbc5601"
+  },
+  "image": {
+    "path": "deliverables/images/JNG10/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2584565,
+    "sha256": "2949bffb3fcf4886c47b8296af1fb0a6f112feab18a694790dfcf2d2ae35f58b"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 한옥 진료·종로 집회·현대 로비 표석·왕실 가례·시장·1960년 취재·의금부 호송·사화 야간 체포 장면 확인. JNG05 표석 글자는 실제 원문이 아닌 재구성. 고증과 정확한 얼굴·건축 배치는 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

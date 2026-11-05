@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1946 newly opened National Ethnological Museum at Namsan: modest old interior with visitors studying everyday pottery, farming tools, weaving wheel and folk masks. Period 1946 clothing, no modern Gyeongbokgung museum exterior or digital screens.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1946년 4월 · 서울】 국립민족박물관 문 열어 "우리 생활문화를 우리 손으로"
+
+광복의 기쁨 속에 우리 민족의 생활문화를 모아 보여 주는 국립민족박물관이 서울 남산 기슭에서 문을 열었다. 박물관 설립은 일제강점기부터 전국을 다니며 민속 자료를 모아 온 민속학자 송석하 씨가 해방 직후인 지난해 11월부터 앞장서 준비해 왔다. 전시 유물 대부분은 그가 오랫동안 모은 소장품이다.
+
+전시실에는 농기구와 옷가지, 그릇, 탈, 장신구 등 조상들이 실제로 쓰던 물건들이 진열되었다. 송 씨는 "왕실의 보물만이 문화재가 아니라 백성이 날마다 쓰던 살림살이에도 민족의 얼이 담겨 있다"고 강조했다. 일제의 민족말살정책 속에서 사라져 가던 우리 풍속을 지키려 했던 노력이 비로소 결실을 본 셈이다.
+
+관람객들은 오랜만에 마주한 우리 옛 물건 앞에서 발걸음을 멈췄다. 한 노인은 어릴 적 할머니가 쓰던 물레를 보고 "꿈만 같다"며 눈시울을 붉혔다. 학생들은 탈춤에 쓰이던 탈을 보며 신기해했다.
+
+박물관 측은 앞으로 전국 각지에서 더 많은 민속 자료를 모아 전시할 계획이다. 그러나 해방 직후의 어려운 형편 속에서 예산과 인력이 부족해 앞날이 순탄치만은 않다. 그래도 우리 생활문화를 우리 손으로 기록하고 지키겠다는 첫걸음을 뗐다는 데 큰 의미가 있다는 평이다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

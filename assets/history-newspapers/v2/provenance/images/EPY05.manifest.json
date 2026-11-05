@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "EPY05",
+  "name": "숙용심씨 묘표",
+  "articleCell": "O30",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "8fe85289025648127225f403003dc1447f15e6817e8557d52b3a5834a0dec981",
+  "articleHeader": "【2001년 · 서울】 임진왜란 때 사라진 후궁 묘표, 400여 년 만에 고국으로",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "숙용심씨 묘표 기사 장면을 재구성한 AI 이미지",
+  "alt": "【2001년 · 서울】 임진왜란 때 사라진 후궁 묘표, 400여 년 만에 고국으로 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.",
+  "sceneBrief": "2001 return of a Joseon royal consort stone grave marker: conservators in ordinary early-2000s clothing with white cotton gloves carefully unpacking a weathered small upright stone marker from a protective crate in a conservation room. Oblique inscription not legible. Not an ancient scene.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-df604714-6d75-455f-979a-e0ecd6b98a27.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/EPY05/article-v1.prompt.txt",
+    "sha256": "633f5fe748bd95573be429e6dd4a0c64ba2682ba1c0f15698cb08dca60d3e0a7"
+  },
+  "image": {
+    "path": "deliverables/images/EPY05/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2410406,
+    "sha256": "91bbda542399e1cf46d896e52ccccec804d181cbe2574e5b4c07a202c7ad2e5a"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 추모·사찰 의식·2001년 유물 반환·2014년 전시·2009년 태극기 발견·민가 미사·유배길 장면 확인. EPY05 비문 및 EPY06 전시물 라벨, EPY08 신문은 재구성된 문자 유사무늬이며 원문 자료로 사용 불가. 의식·유물·복식 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

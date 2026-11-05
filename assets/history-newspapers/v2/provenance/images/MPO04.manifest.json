@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "MPO04",
+  "name": "망원정 터",
+  "articleCell": "O20",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "4b41e1e43e949b78c85b44c8a499ad0ae50edef66af364a7d8dffaa8ff528425",
+  "articleHeader": "【1425년 5월 · 한성 서쪽 한강변】 가뭄 끝 단비에 임금께서 '희우정' 이름 내리시다",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "망원정 터 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1425년 5월 · 한성 서쪽 한강변】 가뭄 끝 단비에 임금께서 '희우정' 이름 내리시다 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1425 Han River hill pavilion in welcome rain: view from a modest wooden pavilion toward drought-stricken fields receiving rain; a royal party seen from behind under the eaves, farmers in distance. No identifiable royal face, no modern skyline.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-9e5f4a2b-99a3-4d3c-97e6-d2d56a0177a1.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/MPO04/article-v1.prompt.txt",
+    "sha256": "7506c98cfaaf6645f8b02e8f84ecd36c36ffb366e197c3811e09cf785115f1ea"
+  },
+  "image": {
+    "path": "deliverables/images/MPO04/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2957147,
+    "sha256": "338d42f23527e7ec5068b3d42a9b42bfcb88b42cfaa8aeab85c4fd9b31f89fe1"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 비 내리는 정자·밤섬 폭파 원경·양화진 사건 후 풍경·장례·호송·빈방·산성 장면 확인. 노이즈가 중심 장면을 가리지 않음. 폭력 훼손 장면 없음. 산성 및 복식 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

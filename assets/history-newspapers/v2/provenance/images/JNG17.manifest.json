@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "JNG17",
+  "name": "서울역사박물관",
+  "articleCell": "O50",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "90c88c43f83ad5e25ea52eb0a2de197808289e64df76f639a2203e2783b75da4",
+  "articleHeader": "【2002년 5월 · 서울】 경희궁 터에 서울역사박물관 개관",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "서울역사박물관 기사 장면을 재구성한 AI 이미지",
+  "alt": "【2002년 5월 · 서울】 경희궁 터에 서울역사박물관 개관 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.",
+  "sceneBrief": "2002 Seoul Museum of History opening: contemporary families leaning over a large Seoul city model in a modern museum gallery, subdued early-digital color photograph texture. No readable labels.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-7eb94481-f0d8-41d5-a2e5-c96e2d02784d.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/JNG17/article-v1.prompt.txt",
+    "sha256": "ee78df4fa24ea0ce8de8529f7ed73c4918538a77c399e0ddc1523fdf4e97273f"
+  },
+  "image": {
+    "path": "deliverables/images/JNG17/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2860429,
+    "sha256": "e5dff6b7b7f51b84f3c1685d49a5955771f201d539af09c32ed34489d4d5dc41"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 조문·궁궐 사건 후·즉위·1946년 민속 전시·2012년 근현대 전시·1919년 준비 회합·2002년 도시 모형·1751년 화가와 인왕산 장면 확인. 사진풍 명암과 시대별 질감 확인. 정확한 장소 배치와 전시·의례·인물의 역사적 세부는 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

@@ -1,0 +1,48 @@
+{
+  "workbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "templates": {
+    "ko": {
+      "path": "templates/ko.svg",
+      "sha256": "30dd6bcc013187ed4b5e6fb8214029779a68226d13532cac683b52e79a6b30f9"
+    },
+    "en": {
+      "path": "templates/en.svg",
+      "sha256": "f8ff47e74c31e5a3e565a8cf6a1bea3034561da8447063bafc995c8bc8b5b5d1"
+    }
+  },
+  "font": {
+    "family": "Joseon100Years",
+    "file": "assets/fonts/ChosunCentennial.woff2",
+    "sha256": "b900b9e9905bb7445c18b1b81b21a6fbd0a908ea0642cdb345b725e3d19987f3",
+    "sourceUrl": "https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2",
+    "officialInformation": "https://event.chosun.com/100/100font.html"
+  },
+  "fonts": {
+    "ko": {
+      "family": "Joseon100Years",
+      "weight": 400,
+      "format": "woff2",
+      "mime": "font/woff2",
+      "sha256": "b900b9e9905bb7445c18b1b81b21a6fbd0a908ea0642cdb345b725e3d19987f3",
+      "file": "assets/fonts/ChosunCentennial.woff2",
+      "cssFamily": "Joseon100Years, \"Noto Serif KR Hanja\""
+    },
+    "en": {
+      "family": "Abhaya Libre",
+      "weight": 800,
+      "format": "truetype",
+      "mime": "font/ttf",
+      "sha256": "a8d05da8766a9bc540e0ea5b63f36a141d629907e8f06c4c2b23bb0bd741b2e1",
+      "file": "assets/fonts/AbhayaLibre-ExtraBold.ttf",
+      "source": "https://github.com/google/fonts/blob/main/ofl/abhayalibre/AbhayaLibre-ExtraBold.ttf"
+    },
+    "hanja": {
+      "family": "Noto Serif KR Hanja",
+      "weight": 400,
+      "format": "truetype",
+      "mime": "font/ttf",
+      "sha256": "e04148eb225c2dda877cbf3398263d716f98b52324109a18929024204937ff3f",
+      "file": "assets/fonts/NotoSerifKR-hanja.ttf"
+    }
+  }
+}

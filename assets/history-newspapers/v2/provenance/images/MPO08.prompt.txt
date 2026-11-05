@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1987 July Lee Han-yeol funeral: elevated wide view of a funeral procession and dense mourners along a Seoul street, flower-covered hearse, anonymous students and office workers. 1980s streetscape, no readable signs or deceased portrait.
+Style and texture: Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1987년 7월 10일 · 서울】 고 이한열 군 '민주국민장', 100만 인파 거리 메워
+
+최루탄에 맞아 쓰러진 지 26일 만인 지난 5일 숨진 연세대 경영학과 2학년 고 이한열 군의 장례식이 9일 '민주국민장'으로 치러졌다. 서울 신촌 연세대 본관 앞에서 영결식을 마친 운구 행렬은 신촌로터리와 아현동을 거쳐 서울시청 앞까지 이어졌다. 시청 앞 광장과 주변 도로에는 경찰 추산으로도 수십만, 주최 측 추산 100만 명이 넘는 인파가 몰렸다.
+
+이 군은 지난달 9일 '6·10 국민대회'를 하루 앞두고 교문 앞 시위에 나섰다가 경찰이 쏜 최루탄에 머리를 맞았다. 그의 피격은 6월 항쟁의 불씨가 되었다. 전국 곳곳에서 학생과 시민, 넥타이 부대가 거리로 나섰다. 결국 지난달 29일 여당 대표가 대통령 직선제 개헌을 받아들이는 선언을 내놓았다.
+
+시청 앞 노제에서 시민들은 "한열이를 살려내라"는 구호를 외쳤다. 이 군의 어머니는 아들의 영정 앞에서 오열해 주변을 숙연하게 했다. 운구 행렬은 이후 고향 광주로 향했다. 이 군은 광주 망월동 묘역에 안장될 예정이다.
+
+일부 지역에서는 행렬과 경찰이 충돌하기도 했다. 그러나 대체로 평화롭게 장례가 진행되었다. 한 청년의 죽음이 열어젖힌 민주화의 길이 앞으로 어디로 이어질지 국민의 눈이 쏠리고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

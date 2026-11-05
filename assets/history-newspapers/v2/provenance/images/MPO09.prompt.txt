@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1866 Jamdubong riverside persecution: distant Joseon prisoners escorted along an earthen path below a rocky Han River bluff, solemn bystanders, quiet oppressive mood. Before violence, no weapons striking, no blood, no execution or modern Catholic memorial.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1866년 가을 · 한성】 양화진 잠두봉에서 천주교도 잇달아 처형
+
+서양 배가 한강을 거슬러 양화진까지 들어왔다 물러간 뒤 조정이 천주교도에 대한 처벌을 더욱 엄하게 하고 있다. 양화진 나루 언덕 잠두봉에서는 천주교 신자들이 끌려와 목이 베이는 일이 잇달아 벌어지고 있다. 잠두봉은 누에가 머리를 치켜든 모양을 닮아 붙은 이름이다. 강가 바위 언덕으로 경치가 좋아 선비들이 시를 읊던 곳이기도 하다.
+
+대원위 대감은 "서양 오랑캐의 배가 들어와 더럽힌 땅을 천주학쟁이의 피로 씻어야 한다"는 뜻을 밝혔다고 전해진다. 올봄 프랑스 신부들과 수많은 신자가 처형된 데 이어 이번에는 서양 배가 다녀간 바로 그 자리가 처형장이 된 것이다. 붙잡혀 온 이들 가운데는 양반도 있지만 상민과 아낙네, 어린 사람까지 섞여 있다. 처형된 이의 수가 얼마인지는 정확히 알려지지 않고 있다.
+
+나루를 오가는 뱃사람들은 언덕에서 들려오는 소리에 고개를 돌렸다. 신자들은 형장에서도 기도를 멈추지 않았다고 한다. 한 구경꾼은 "죽음 앞에서도 흔들림이 없어 오히려 섬뜩했다"고 말했다.
+
+조정은 서양 세력과 손잡을 수 있는 내부의 무리를 뿌리 뽑겠다는 입장이다. 그러나 피바람이 언제 그칠지는 아무도 알 수 없다. 사람들은 벌써 이 언덕을 '목을 자른 산'이라 부르기 시작했다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

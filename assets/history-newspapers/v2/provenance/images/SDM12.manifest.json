@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "SDM12",
+  "name": "연희궁 터·서잠실 터 표석",
+  "articleCell": "O13",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "5e68255155fc5236d48b8b87f99c2dd1ccc03ec744f0be53ae3079461cb32e57",
+  "articleHeader": "【1764년 · 한성 서교】 사도세자 생모 영빈 이씨, 연희궁 옛터에 잠들다",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "연희궁 터·서잠실 터 표석 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1764년 · 한성 서교】 사도세자 생모 영빈 이씨, 연희궁 옛터에 잠들다 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1764 Yeonhui old royal estate outskirts: a distant dignified royal funeral procession moving toward a simple fresh burial mound, mourners in period white clothing, mulberry trees and low fields. No visible corpse or royal portrait.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-e552513f-b582-422d-bc4c-1fdb1b2f272d.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/SDM12/article-v1.prompt.txt",
+    "sha256": "d831a9d1d9694a8500c26d5fb7c8a1230e8a23ea15b89c102cbaa00c5c74dba9"
+  },
+  "image": {
+    "path": "deliverables/images/SDM12/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3138616,
+    "sha256": "c4a2931b0b4eea4abb37b96ca1b7451ec9b761e77d2c54d3bc7c83ccb506923c"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 기사별 학교·장례·학생 부축·역원 준비·공원·곡창·발전소·군함 접근 장면을 구분할 수 있음. 사진풍과 시대별 질감 확인. 상세 건축·배·복식은 고증 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

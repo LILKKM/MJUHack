@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1894 Gwangheungchang riverside grain warehouse closing: porters gathering the last straw rice sacks by a quiet timber storehouse, moored wooden cargo boat on the Sogang riverbank, officials in late Joseon dress. Not a modern memorial marker.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1894년 · 한성】 갑오년 개혁으로 녹봉 창고 광흥창 문 닫는다
+
+조선 건국 이래 관리들의 녹봉을 대 오던 서강의 광흥창이 문을 닫게 되었다. 올여름부터 이어진 갑오년 개혁으로 관청 제도가 크게 바뀌었기 때문이다. 조세를 쌀이나 베 대신 돈으로 거두고 관리 봉급도 돈으로 주는 방식이 도입되면서 녹봉 창고는 쓸모를 잃게 되었다.
+
+광흥창은 한강 서강 나루 가까이에 자리 잡은 나라의 큰 창고다. 해마다 전라도와 충청도 등지에서 세곡을 실은 배가 서해를 돌아 한강을 거슬러 이곳에 닿았다. 쌀가마를 내리고 쌓는 일꾼들로 나루는 늘 북적였다. 녹봉을 받는 날이면 관리 집안의 하인들이 수레를 끌고 장사진을 이뤘다.
+
+하지만 근래에는 창고가 비는 일이 잦았다. 세곡을 빼돌리는 관리의 부정과 물에 불린 쌀, 모래 섞인 쌀 문제로 원성이 높았다. 12년 전 군인들이 밀린 녹봉으로 받은 쌀에 겨와 모래가 섞인 것에 분노해 들고일어난 임오년 군란도 결국 창고 문제에서 비롯된 것이었다.
+
+서강 나루의 한 늙은 뱃사람은 "평생 세곡선을 몰았는데 이제 무엇을 싣고 다녀야 할지 모르겠다"고 말했다. 한편 새 제도가 부정을 줄일 것이라는 기대도 있다. 수백 년 이어 온 곡식 창고의 시대가 저물고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

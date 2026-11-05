@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1993 memorial for poet Cheon Sang-byeong: quiet modest Seoul mourning room, anonymous readers and writers paying respects beside white flowers, closed poetry books and tea cup. No legible poems or invented portrait.
+Style and texture: Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1993년 4월 29일 · 서울】 '귀천'의 시인 천상병 별세
+
+삶을 잠시 다녀가는 '소풍'에 빗댄 시 「귀천」으로 널리 사랑받은 시인 천상병 씨가 28일 세상을 떠났다. 향년 63세. 오랜 지병인 간경화가 악화된 것으로 알려졌다.
+
+고인은 1950년대 문단에 나와 맑고 천진한 시 세계로 주목받았다. 그러나 1967년 이른바 동백림 사건에 연루되어 모진 고문을 받았다. 이후 그의 몸과 마음은 크게 망가졌다. 1971년에는 거리에서 쓰러져 행방불명이 되었다. 그가 숨진 줄 안 친구들이 유고 시집 『새』를 펴내기도 했다. 정신병원에 있던 그가 살아 돌아온 사실이 뒤늦게 알려지면서 '살아서 유고집을 낸 시인'이라는 이야기가 남았다.
+
+1972년 친구의 누이동생 목순옥 씨와 결혼한 뒤 그는 인사동 찻집 '귀천'을 꾸리는 아내의 곁에서 시를 썼다. 가난했지만 늘 웃음을 잃지 않아 '마지막 순수 시인'으로 불렸다. 막걸리 한 잔과 천 원짜리 한 장에도 행복해하던 그의 모습을 기억하는 이가 많다.
+
+문인들은 "고문과 가난도 그의 맑은 눈을 흐리지 못했다"며 고인을 기렸다. 이 세상을 소풍처럼 살다 가겠다던 그의 시처럼, 그는 이제 긴 소풍을 마치고 하늘로 돌아갔다. 빈소에는 그의 시를 아끼던 문인과 독자들의 발길이 이어지고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

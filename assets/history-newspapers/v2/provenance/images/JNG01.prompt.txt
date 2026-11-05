@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1795 clandestine Catholic mass in a Bukchon private hanok room: anonymous Chinese priest in restrained period vestments at a small altar, Korean believers kneeling, quiet candlelight and screened windows. No modern cathedral or electric lights.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1795년 봄 · 한성 북촌】 청나라 신부, 북촌 민가에서 조선 첫 미사
+
+지난겨울 몰래 국경을 넘어 한양에 들어온 청나라 신부 주문모가 부활 대축일을 맞아 북촌의 한 민가에서 미사를 올린 것으로 알려졌다. 사제가 이 땅에서 미사를 집전한 것은 처음 있는 일이다. 미사가 열린 곳은 역관 출신 신자 최인길의 집이다. 신자들은 이 집에 신부를 숨겨 두고 밤에 몰래 모여 예식을 치렀다고 한다.
+
+이 나라의 천주교는 십여 년 전 선비 이승훈이 청에서 세례를 받고 돌아오면서 스스로 퍼지기 시작했다. 신자들은 사제 없이 자기들끼리 예식을 치르다 그것이 교회 법도에 어긋난다는 사실을 알게 되었다. 이후 북경 주교에게 거듭 신부를 보내 달라고 청했다. 신자 윤유일 등이 목숨을 걸고 북경을 오간 끝에 주문모 신부가 압록강을 건너왔다.
+
+미사에 참석한 신자들은 처음 받는 성체 앞에서 눈물을 흘렸다고 전한다. 그러나 기쁨도 잠시, 신부가 들어와 있다는 사실이 밀고되었다는 소문이 돌고 있다. 포도청이 수색에 나섰다는 이야기도 들린다.
+
+조정은 제사를 거부하는 천주학을 나라의 근본을 흔드는 사학으로 보고 있다. 신부를 숨겨 준 이들에게 어떤 처벌이 내려질지 알 수 없다. 북촌 골목의 작은 기와집에서 시작된 미사가 앞으로 큰 피바람을 부르게 될지 신자들은 숨을 죽이고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

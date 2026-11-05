@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1597 Uigeumbu imprisonment of Admiral Yi: dignified anonymous middle-aged Joseon military official in simple robes led through a wooden judicial compound gate by guards. No torture, blood or invented portrait, no naval battle or armor fantasy.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1597년 봄 · 한성】 통제사 이순신, 의금부에 하옥되다
+
+삼도수군통제사 이순신이 붙잡혀 한양으로 압송된 뒤 의금부에 갇혔다. 조정에 따르면 그는 왜적이 다시 바다를 건너올 때 명을 받고도 군사를 내지 않아 적을 놓쳤다는 죄목을 받고 있다. 임금을 속였다는 혐의도 더해졌다. 왜장 가토 기요마사가 바다를 건너온다는 정보가 전해졌을 때 출전하지 않은 일이 문제가 된 것이다.
+
+그러나 수군 안팎에서는 정보 자체가 적의 계략이었다는 이야기가 나온다. 무리하게 출전했다면 오히려 함대를 잃었을 것이라는 반론도 만만치 않다. 임진년 이래 옥포와 한산도에서 잇달아 왜적을 무찌른 장수를 하루아침에 죄인으로 만든 것은 조정 안 당파 다툼 탓이라는 수군거림도 있다.
+
+의금부에서는 그를 상대로 엄한 국문이 이어지고 있는 것으로 알려졌다. 한때 사형까지 거론되었으나 판중추부사 정탁이 상소를 올려 "공을 세운 장수를 죽여서는 안 된다"며 목숨만은 살려 달라고 간곡히 청했다고 한다.
+
+남해 바다의 수군은 새 통제사 원균이 이끌게 되었다. 백성들 사이에서는 "이 장군이 없으면 바다를 누가 지키느냐"는 걱정이 커지고 있다. 이순신이 다시 바다로 돌아갈 수 있을지 장안의 관심이 의금부로 쏠리고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

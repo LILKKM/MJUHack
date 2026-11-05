@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1397 Jingwansa national Suryuk Buddhist ritual: monks in early Joseon robes arranging offerings at a simple outdoor ritual table in a mountain temple courtyard, solemn lay witnesses, timber halls and forest. No modern ritual banners or text.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1397년 · 한성 서북 교외】 임금, 진관사에 수륙사 세워 나라 제사 열다
+
+임금께서 도성 서북쪽 삼각산 기슭의 진관사에 수륙사를 세우게 하셨다. 앞으로 이곳에서 나라가 주관하는 수륙재를 지내도록 명하셨다. 수륙재는 물과 뭍을 떠도는 외로운 넋들에게 음식을 베풀고 극락으로 이끄는 불교 의식이다.
+
+나라를 새로 세우는 동안 전쟁과 변란 속에서 수많은 사람이 목숨을 잃었다. 임금께서는 이들의 넋을 달래는 일이 새 왕조의 안정에 필요하다고 여기신 것으로 보인다. 일각에서는 고려 왕실 사람들의 원혼을 위로하려는 뜻도 담겼다는 이야기가 나온다. 진관사가 수륙사로 정해진 데에는 절이 도성에 가깝고 산세가 깊고 고요하다는 점이 고려되었다고 한다.
+
+진관사는 고려 현종이 왕위에 오르기 전 목숨을 위협받던 시절 그를 숨겨 지켜 준 진관대사를 위해 세운 절로 알려져 있다. 이번 일로 고려에 이어 조선 왕실과도 깊은 인연을 맺게 되었다.
+
+유학을 나라의 근본으로 삼으려는 신하들 사이에서는 불교 의식을 나라가 주관하는 것에 대한 불만도 들린다. 그러나 죽은 이를 위로하는 일만은 막을 수 없다는 것이 대체적인 분위기다. 산사의 종소리가 새 나라의 아픔을 달래는 의식으로 이어지게 되었다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

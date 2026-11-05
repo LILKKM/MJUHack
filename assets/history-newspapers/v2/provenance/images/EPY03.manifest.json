@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "EPY03",
+  "name": "셋이서문학관",
+  "articleCell": "O28",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "1d0170fd8cd56c49fee9db725b9bcaead38c2fb27a27e19a530b06a26394b697",
+  "articleHeader": "【1993년 4월 29일 · 서울】 '귀천'의 시인 천상병 별세",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "셋이서문학관 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1993년 4월 29일 · 서울】 '귀천'의 시인 천상병 별세 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.",
+  "sceneBrief": "1993 memorial for poet Cheon Sang-byeong: quiet modest Seoul mourning room, anonymous readers and writers paying respects beside white flowers, closed poetry books and tea cup. No legible poems or invented portrait.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-11956276-a149-46fc-8967-3998c57ce779.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/EPY03/article-v1.prompt.txt",
+    "sha256": "27fd2db22b245159acd6b67e0463e96b402a788ec93f1c99d81828dd58b6dbe4"
+  },
+  "image": {
+    "path": "deliverables/images/EPY03/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3077208,
+    "sha256": "ac16c5f893aae265782ecbf26215a157a538ecce887febcc0b465ff733300f43"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 추모·사찰 의식·2001년 유물 반환·2014년 전시·2009년 태극기 발견·민가 미사·유배길 장면 확인. EPY05 비문 및 EPY06 전시물 라벨, EPY08 신문은 재구성된 문자 유사무늬이며 원문 자료로 사용 불가. 의식·유물·복식 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1895 Gyeongbokgung royal assassination aftermath: quiet palace courtyard at dawn with a few anxious court attendants in 1895 dress, armed intruders only distant silhouettes beyond a gateway. No attack on queen, body, burning body or gore; no modern memorial.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1895년 10월 · 한성】 궁궐에 일본인 난입, 왕후 시해 참변
+
+8일 새벽 일본 공사관 수비대와 일본 낭인들이 경복궁에 쳐들어와 왕후 폐하를 시해하는 전대미문의 참변이 일어났다. 궁궐 안팎의 증언에 따르면 이들은 새벽 어둠을 틈타 광화문을 지나 궁 깊숙한 건청궁까지 몰려들었다. 궁녀들 사이에서 왕후를 찾아내 칼로 해쳤다. 왕후의 시신은 궁궐 안 숲으로 옮겨져 불태워졌다고 한다.
+
+이 과정에서 궁궐을 지키던 시위대 연대장 홍계훈과 궁내부대신 이경직 등이 목숨을 잃었다. 당시 궁궐 안에는 미국인 교관과 러시아인 기술자가 머물고 있었다. 이들이 현장을 목격한 것으로 알려지면서 사건의 전모가 외국에도 알려지고 있다.
+
+이번 일은 새로 부임한 일본 공사 미우라 고로가 꾸민 것이라는 이야기가 파다하다. 왕후가 러시아와 손잡고 일본 세력을 몰아내려 하자 이를 막으려 했다는 것이다. 그러나 일본 측은 조선 내부의 다툼일 뿐이라며 책임을 떠넘기고 있다.
+
+사건 뒤 친일 성향의 내각이 들어섰다. 왕후를 폐서인한다는 조칙까지 나오자 백성들의 분노는 하늘을 찌르고 있다. 각지의 유생들이 원수를 갚겠다며 의병을 일으키려 한다는 소식도 들린다. 나라의 궁궐에서 국모가 외국인의 칼에 쓰러진 이번 참변은 조선의 운명에 짙은 그림자를 드리우고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

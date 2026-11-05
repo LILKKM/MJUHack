@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "JNG12",
+  "name": "경복궁",
+  "articleCell": "O45",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "23ca868684892c8c0bfc666e7971eae53ac5d848ebb69c86509745c52607153e",
+  "articleHeader": "【1895년 10월 · 한성】 궁궐에 일본인 난입, 왕후 시해 참변",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "경복궁 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1895년 10월 · 한성】 궁궐에 일본인 난입, 왕후 시해 참변 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1895 Gyeongbokgung royal assassination aftermath: quiet palace courtyard at dawn with a few anxious court attendants in 1895 dress, armed intruders only distant silhouettes beyond a gateway. No attack on queen, body, burning body or gore; no modern memorial.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-42bdd918-cbac-4a89-97dc-867a6d5e0401.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/JNG12/article-v1.prompt.txt",
+    "sha256": "4524e1517c429beed78836fcfdea24ce8ac8cf39651d32cfc6cba8b0cc1003e5"
+  },
+  "image": {
+    "path": "deliverables/images/JNG12/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2615227,
+    "sha256": "6f074a2d4aef51b388040dca1310f7e52ffd026b92aadebaf4e51841907f8b7c"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 조문·궁궐 사건 후·즉위·1946년 민속 전시·2012년 근현대 전시·1919년 준비 회합·2002년 도시 모형·1751년 화가와 인왕산 장면 확인. 사진풍 명암과 시대별 질감 확인. 정확한 장소 배치와 전시·의례·인물의 역사적 세부는 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

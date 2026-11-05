@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1987 June Yonsei entrance: anonymous students supporting an unconscious fellow student seen from the back at a distance through light tear gas haze, with classmates nearby. Non-graphic, no visible wound or blood, do not copy a specific iconic photograph or claim exact faces.
+Style and texture: Mid-to-late twentieth-century black-and-white 35mm press photograph texture, visible irregular organic film grain, candid tonal contrast, subtle printing imperfections, readable faces and subject, minimal scratches.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1987년 6월 10일 · 서울】 연세대생, 교문 앞 시위 중 최루탄 맞아 중태
+
+서울 서대문구 신촌 연세대 정문 앞에서 시위를 하던 이 학교 학생이 경찰이 쏜 최루탄에 머리를 맞아 의식을 잃었다. 9일 오후 경영학과 2학년 이한열 군(20)이 쓰러졌다. 이 군은 곧바로 세브란스병원으로 옮겨졌으나 의식을 찾지 못한 채 중태에 빠져 있다.
+
+학생들에 따르면 이날 연세대생 1천여 명은 10일 열릴 '박종철 군 고문살인 은폐 규탄 및 호헌 철폐 국민대회'를 앞두고 교내에서 결의대회를 열었다. 이어 교문 밖으로 나가려다 경찰과 맞섰다. 경찰이 최루탄을 쏘며 진압하는 과정에서 이 군이 정면으로 날아온 최루탄에 뒷머리를 맞고 쓰러졌다. 피를 흘리며 동료의 부축을 받는 이 군의 모습은 현장에 있던 이들에게 큰 충격을 줬다.
+
+경찰은 최루탄 직격 여부를 조사하고 있다고 밝혔다. 그러나 학생들은 "사람을 겨냥해 쏜 것"이라며 강하게 반발하고 있다. 올해 1월 박종철 군 고문치사 사건으로 들끓던 민심은 이번 일로 더욱 거세질 것으로 보인다.
+
+오늘 전국에서 열리는 국민대회를 앞두고 정부는 대규모 경찰력을 배치했다. 병원 앞에는 밤새 학생들이 모여 이 군의 쾌유를 빌었다. 신촌 거리에는 아직 최루가스 냄새가 가시지 않았다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

@@ -1,0 +1,667 @@
+{
+  "date": "2026-11-06",
+  "articleCount": 58,
+  "newGeneratedImages": 57,
+  "reusedApprovedImages": 1,
+  "missingImages": 0,
+  "uniqueImageHashes": 58,
+  "allDimensions": [
+    1536,
+    1024
+  ],
+  "allPngDecoded": true,
+  "allPromptAndImageHashesVerified": true,
+  "allArticleCellsMatched": true,
+  "allVisualReviewsRecorded": true,
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "imageBytes": 170176219,
+  "records": [
+    {
+      "spotId": "SDM01",
+      "articleCell": "O2",
+      "imagePath": "deliverables/images/SDM01/article-v1.png",
+      "imageSha256": "79371fdc595bf5bf8acd8aa5e2e5e2aba7d6a96583fbd0feed00c3471de79fd2",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM02",
+      "articleCell": "O3",
+      "imagePath": "deliverables/images/SDM02/article-v1.png",
+      "imageSha256": "1631ea9735722b63262463eaf0670ab6b32489f8d613a27abc14fc1942bfcee0",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM03",
+      "articleCell": "O4",
+      "imagePath": "deliverables/images/SDM03/article-v1.png",
+      "imageSha256": "686a85c353a829d3cc733c7c58cc3bc8467babd4878f72dd8e9395e51d109c66",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM04",
+      "articleCell": "O5",
+      "imagePath": "deliverables/images/SDM04/article-v1.png",
+      "imageSha256": "06394dced52bdbae1c7e18dac44b0f14da30430d06b7e2a9283b0b359739b056",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM05",
+      "articleCell": "O6",
+      "imagePath": "deliverables/images/SDM05/sample-v2-photo.png",
+      "imageSha256": "7b2c67662b8331a92f1c9b45b716413a793aa850f74a953838f747c30152d9f0",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM06",
+      "articleCell": "O7",
+      "imagePath": "deliverables/images/SDM06/article-v1.png",
+      "imageSha256": "e3b1b05c46b1bb9b68b786bd5220f5099294ba8098b599c0063ba251352c94fa",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM07",
+      "articleCell": "O8",
+      "imagePath": "deliverables/images/SDM07/article-v1.png",
+      "imageSha256": "e2b76a7c28d73d5d541545958121a907c9c6f204776098734f98ac04eaba6892",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM08",
+      "articleCell": "O9",
+      "imagePath": "deliverables/images/SDM08/article-v1.png",
+      "imageSha256": "e204f8bd2d375d6c9d171a11faf2d61a224323933bfaefa39fa6f1be100a2371",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM09",
+      "articleCell": "O10",
+      "imagePath": "deliverables/images/SDM09/article-v1.png",
+      "imageSha256": "4629b18c860ad1739cfe4eda90e07d0d7e6bb0c608d46efa338476585570bf6f",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM10",
+      "articleCell": "O11",
+      "imagePath": "deliverables/images/SDM10/article-v1.png",
+      "imageSha256": "7e130a612154e5be83c09bb7b656e1b697ee41f09413f5a78d07896aac011b28",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM11",
+      "articleCell": "O12",
+      "imagePath": "deliverables/images/SDM11/article-v1.png",
+      "imageSha256": "5050da0fad498404d9a60e02fa0632cdbc843e9c9dea24927f7748cc471b6ae6",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM12",
+      "articleCell": "O13",
+      "imagePath": "deliverables/images/SDM12/article-v1.png",
+      "imageSha256": "c4a2931b0b4eea4abb37b96ca1b7451ec9b761e77d2c54d3bc7c83ccb506923c",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM13",
+      "articleCell": "O14",
+      "imagePath": "deliverables/images/SDM13/article-v1.png",
+      "imageSha256": "9f2d5d794fef13f8429eacc2179ccc2b3940ec4ae512c10cf419d92564e07357",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM14",
+      "articleCell": "O15",
+      "imagePath": "deliverables/images/SDM14/article-v1.png",
+      "imageSha256": "d5dd80c0d2be82fbf02da4b65ba9a8cda7dfaa6bed1fd129148fdb4a1511e5c2",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "SDM15",
+      "articleCell": "O16",
+      "imagePath": "deliverables/images/SDM15/article-v1.png",
+      "imageSha256": "34737f15964d08f68070065326120daf906e3b841ba81ccf5abd5792e2f10b96",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO01",
+      "articleCell": "O17",
+      "imagePath": "deliverables/images/MPO01/article-v1.png",
+      "imageSha256": "70ed143b12707024993a69d6d7a0dd8149d9cc6920c0bea95d91133d1372662f",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO02",
+      "articleCell": "O18",
+      "imagePath": "deliverables/images/MPO02/article-v1.png",
+      "imageSha256": "46b67264839d7b0d11e67dd6a79482afbfb40d6d3805991301eed345c8c26a09",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO03",
+      "articleCell": "O19",
+      "imagePath": "deliverables/images/MPO03/article-v1.png",
+      "imageSha256": "07342acf5bb465ba4a029bcc828843e07cb2a163a80213f4f5078725cf05cd15",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO04",
+      "articleCell": "O20",
+      "imagePath": "deliverables/images/MPO04/article-v1.png",
+      "imageSha256": "338d42f23527e7ec5068b3d42a9b42bfcb88b42cfaa8aeab85c4fd9b31f89fe1",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO05",
+      "articleCell": "O21",
+      "imagePath": "deliverables/images/MPO05/article-v1.png",
+      "imageSha256": "1b4c0d1708a4b3cf31198d753a730bf76407c7cfbcb3ce30ed003fe6523bc75e",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO06",
+      "articleCell": "O22",
+      "imagePath": "deliverables/images/MPO06/article-v1.png",
+      "imageSha256": "db27a322c80949c87728ce97913c4ad886a24f0071b4dbd58eef065be5920a51",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO07",
+      "articleCell": "O23",
+      "imagePath": "deliverables/images/MPO07/article-v1.png",
+      "imageSha256": "0fdaa5cb6ddc5e5995d94885683f51781a17b149582776084b2fca06c5d9325e",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO08",
+      "articleCell": "O24",
+      "imagePath": "deliverables/images/MPO08/article-v1.png",
+      "imageSha256": "49af973fe680162c2dd556af54dda7168eb35d2f3ab1bbf519a21d69ff55b086",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "MPO09",
+      "articleCell": "O25",
+      "imagePath": "deliverables/images/MPO09/article-v1.png",
+      "imageSha256": "1cebeceaaa68cc06c5b7dbb491526805313868e30750e2054bc269efe46557e0",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY01",
+      "articleCell": "O26",
+      "imagePath": "deliverables/images/EPY01/article-v1.png",
+      "imageSha256": "d78068cb0b7b5cefb7733cbe848ed6ab38b4c4909deb97c70be9aecb9f1bacd3",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY02",
+      "articleCell": "O27",
+      "imagePath": "deliverables/images/EPY02/article-v1.png",
+      "imageSha256": "0363b1489d19c9b1357487a7d0bc98458d8630e159e5f12afef962bb7e14ee80",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY03",
+      "articleCell": "O28",
+      "imagePath": "deliverables/images/EPY03/article-v1.png",
+      "imageSha256": "ac16c5f893aae265782ecbf26215a157a538ecce887febcc0b465ff733300f43",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY04",
+      "articleCell": "O29",
+      "imagePath": "deliverables/images/EPY04/article-v1.png",
+      "imageSha256": "8afccc5b89d15a384d70fcde2080138b41e8fedd9cec9587782008841329c584",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY05",
+      "articleCell": "O30",
+      "imagePath": "deliverables/images/EPY05/article-v1.png",
+      "imageSha256": "91bbda542399e1cf46d896e52ccccec804d181cbe2574e5b4c07a202c7ad2e5a",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY06",
+      "articleCell": "O31",
+      "imagePath": "deliverables/images/EPY06/article-v1.png",
+      "imageSha256": "1395a0c33ff95d7ce339ab2040506f16f6dc9433def59668473f070f136698f4",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY07",
+      "articleCell": "O32",
+      "imagePath": "deliverables/images/EPY07/article-v1.png",
+      "imageSha256": "222e8646c8ef9b78f70fcbf39ca273924ebc33ba6c182cea2100488ea4a4c503",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "EPY08",
+      "articleCell": "O33",
+      "imagePath": "deliverables/images/EPY08/article-v1.png",
+      "imageSha256": "a1535eca6484b27947650c3816d90dc1edb277448883ea23c7ea072fe4b90c8e",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG01",
+      "articleCell": "O34",
+      "imagePath": "deliverables/images/JNG01/article-v1.png",
+      "imageSha256": "db10467554de0ca251c571e0fc31931c2f2673f689e6253395bf89c62ea54d43",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG02",
+      "articleCell": "O35",
+      "imagePath": "deliverables/images/JNG02/article-v1.png",
+      "imageSha256": "5f527373d3c1530515532e970f9394a0059ec1f12cb2298cb0946b86a140da5a",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG03",
+      "articleCell": "O36",
+      "imagePath": "deliverables/images/JNG03/article-v1.png",
+      "imageSha256": "16be56e191825c4fa5c58773fa3e82d998421a4fa0979e5f76bc991ca3e17d75",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG04",
+      "articleCell": "O37",
+      "imagePath": "deliverables/images/JNG04/article-v1.png",
+      "imageSha256": "cb56bfa5fd09910e43a98270e08ead3cf6439fd67fd3d99c67cfa63b73dbd84f",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG05",
+      "articleCell": "O38",
+      "imagePath": "deliverables/images/JNG05/article-v1.png",
+      "imageSha256": "7b2af7c3035f9492bfd65770770a6542e4c3e23662d885a8fe0efd5158863a22",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG06",
+      "articleCell": "O39",
+      "imagePath": "deliverables/images/JNG06/article-v1.png",
+      "imageSha256": "db009048776d135ae9af060f359206451ffcbd7ce2bef07406d269a1a5fc74ee",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG07",
+      "articleCell": "O40",
+      "imagePath": "deliverables/images/JNG07/article-v1.png",
+      "imageSha256": "1e0d85d4e92581020853330784dce51b445f2e030d09e7d90200d1b51f06a994",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG08",
+      "articleCell": "O41",
+      "imagePath": "deliverables/images/JNG08/article-v1.png",
+      "imageSha256": "22d342162ded7295baeaccf582d01bd0221cb392f0a5ee6bfd297c7028769ed3",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG09",
+      "articleCell": "O42",
+      "imagePath": "deliverables/images/JNG09/article-v1.png",
+      "imageSha256": "b9133c341fcdbd30a84069857519eb66185911e809905812d94092f5cd7f8dc5",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG10",
+      "articleCell": "O43",
+      "imagePath": "deliverables/images/JNG10/article-v1.png",
+      "imageSha256": "2949bffb3fcf4886c47b8296af1fb0a6f112feab18a694790dfcf2d2ae35f58b",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG11",
+      "articleCell": "O44",
+      "imagePath": "deliverables/images/JNG11/article-v1.png",
+      "imageSha256": "2b2800c5048e0f09f1581d9ca0036170bd96434f27c951a8c6a189334fdc03a9",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG12",
+      "articleCell": "O45",
+      "imagePath": "deliverables/images/JNG12/article-v1.png",
+      "imageSha256": "6f074a2d4aef51b388040dca1310f7e52ffd026b92aadebaf4e51841907f8b7c",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG13",
+      "articleCell": "O46",
+      "imagePath": "deliverables/images/JNG13/article-v1.png",
+      "imageSha256": "f1652fb612ff166c3b08325e16917ce84882d334a7fd4dec7c413d94ec6b9099",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG14",
+      "articleCell": "O47",
+      "imagePath": "deliverables/images/JNG14/article-v1.png",
+      "imageSha256": "85b62bb318a6bed3ab68f117e7dda78204afb33afbf577a85bfed85b04015baa",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG15",
+      "articleCell": "O48",
+      "imagePath": "deliverables/images/JNG15/article-v1.png",
+      "imageSha256": "e8fd1fea3bbf0ea705c41a712e3e6172384c242dd6bbb5f80e531c6b6f62a985",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG16",
+      "articleCell": "O49",
+      "imagePath": "deliverables/images/JNG16/article-v1.png",
+      "imageSha256": "9c6e1086096babd0f7931d5d94d3d8c6ecc8503520f0008bb46fefa2ca1c1b7b",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG17",
+      "articleCell": "O50",
+      "imagePath": "deliverables/images/JNG17/article-v1.png",
+      "imageSha256": "e5dff6b7b7f51b84f3c1685d49a5955771f201d539af09c32ed34489d4d5dc41",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG18",
+      "articleCell": "O51",
+      "imagePath": "deliverables/images/JNG18/article-v1.png",
+      "imageSha256": "b3530db1beac4c46767aa7cb2a185e77cf4448b1125009746266ba03a8637c22",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG19",
+      "articleCell": "O52",
+      "imagePath": "deliverables/images/JNG19/article-v1.png",
+      "imageSha256": "6947936d344dd051a0ebb9a5b16b136b1c76da87ed3d7e65e09f8fed7248051b",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG20",
+      "articleCell": "O53",
+      "imagePath": "deliverables/images/JNG20/article-v1.png",
+      "imageSha256": "5ca6c2eafef7dfa83bf5db4418bbe6973b6ac69591d3dee22e218782c87db4a5",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG21",
+      "articleCell": "O54",
+      "imagePath": "deliverables/images/JNG21/article-v1.png",
+      "imageSha256": "a9f0ce0c7d09922e5f0b587358864b6ccee12b800fd2e8a60e5189b867d53076",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG22",
+      "articleCell": "O55",
+      "imagePath": "deliverables/images/JNG22/article-v1.png",
+      "imageSha256": "ab6e890398faa2b36b080f9832177449c0aa7aa550099421984cdc0f7ee5ad34",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG23",
+      "articleCell": "O56",
+      "imagePath": "deliverables/images/JNG23/article-v1.png",
+      "imageSha256": "73b880b3da116efe8a04a3ad4294a10f186ce01740f9390a4e216dc24f3cc38c",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG24",
+      "articleCell": "O57",
+      "imagePath": "deliverables/images/JNG24/article-v1.png",
+      "imageSha256": "c88021ca09b3535ddad947e4936fa13af695673edd3ef6b5882050e6e7de0fac",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG25",
+      "articleCell": "O58",
+      "imagePath": "deliverables/images/JNG25/article-v1.png",
+      "imageSha256": "6ec47aa138bf5edd651a0c6314dac5894f479acdbc9016c5419c040fe1ae2e38",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    },
+    {
+      "spotId": "JNG26",
+      "articleCell": "O59",
+      "imagePath": "deliverables/images/JNG26/article-v1.png",
+      "imageSha256": "d6f7b2c116f04f9594487eeb174b0fffac1f80cc90d8ad19fad0de230eedd341",
+      "size": [
+        1536,
+        1024
+      ],
+      "manifestVerified": true
+    }
+  ],
+  "galleryCards": 58,
+  "galleryLocalReferencesVerified": 290,
+  "contactSheetReview": {
+    "status": "reviewed",
+    "sheets": 3,
+    "previewWidth": 390,
+    "notes": "58장 전체 축소 목록에서 중심 장면 식별을 확인. 역사 고증은 미검증."
+  }
+}

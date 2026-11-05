@@ -1,0 +1,51 @@
+{
+  "version": "article-v1",
+  "spotId": "MPO07",
+  "name": "양화진 외국인선교사묘원",
+  "articleCell": "O23",
+  "sourceSheet": "장소",
+  "sourceWorkbook": "integration/inputs/newspaper-articles/source.xlsx",
+  "sourceWorkbookSha256": "33c8c5f9b0d8fe2a92209aa88307dd154cf4880593d81433b0a4a814ec10a619",
+  "sourceArticle": "integration/inputs/newspaper-articles/articles.staging.json",
+  "articleTextSha256": "60aac8bf853d7b17a58f6c55e81c7586988343a2406c709131fc4f5b5cdfd435",
+  "articleHeader": "【1909년 5월 · 경성】 대한매일신보 사장 베델, 양화진에 잠들다",
+  "sourceArticleReviewStatus": "draft",
+  "status": "generated",
+  "representation": "reconstruction",
+  "historicalReviewStatus": "unverified",
+  "publicationStatus": "unpublished",
+  "caption": "양화진 외국인선교사묘원 기사 장면을 재구성한 AI 이미지",
+  "alt": "【1909년 5월 · 경성】 대한매일신보 사장 베델, 양화진에 잠들다 — 기사 장면을 사진풍으로 재구성한 AI 이미지.",
+  "visualStyle": "Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.",
+  "sceneBrief": "1909 Yanghwajin cemetery funeral for British journalist Bethell: Korean mourners in white and a few foreign mourners in period dark suits around a closed flower-covered coffin on a river-facing grassy slope, no identifiable faces or inscription.",
+  "generator": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "generate",
+    "requestedImages": 1,
+    "originalOutputPath": "/Users/thegreatkkm/.codex/generated_images/01a1acec-4ef1-7303-88eb-fe9dbd2a54f1/exec-7511bff9-ead0-4628-a640-dae565b7e334.png"
+  },
+  "prompt": {
+    "path": "deliverables/images/MPO07/article-v1.prompt.txt",
+    "sha256": "d7550fac3dd0e0fbc739ffd98fb599f7300f5e438df8b3d39fcf2dc7e556ad0c"
+  },
+  "image": {
+    "path": "deliverables/images/MPO07/article-v1.png",
+    "mimeType": "image/png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2855371,
+    "sha256": "0fdaa5cb6ddc5e5995d94885683f51781a17b149582776084b2fca06c5d9325e"
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "method": "내장 생성 결과 직접 시각 검토",
+    "notes": "직접 시각 검토: 비 내리는 정자·밤섬 폭파 원경·양화진 사건 후 풍경·장례·호송·빈방·산성 장면 확인. 노이즈가 중심 장면을 가리지 않음. 폭력 훼손 장면 없음. 산성 및 복식 세부 고증은 미검증.",
+    "historicalAccuracyVerified": false
+  },
+  "unverified": [
+    "기사의 사실·인용문 및 역사 정확성은 독립 검증하지 않음.",
+    "복식·인물·건축·지형·작업 방식·유물 세부는 재구성으로 실제 기록과 다를 수 있음.",
+    "최종 SVG/HTML 조판과 AI 표시 및 접근성 통합 검토 미완료."
+  ],
+  "usageNote": "실제 사료 사진으로 제시하지 말고 AI 재구성 캡션을 지면과 HTML에 표시. 사진술 이전 시기는 가상 사진풍 표현. 모든 기사는 draft·미게시 상태 유지."
+}

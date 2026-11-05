@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 1459 new royal memorial Buddhist temple outside northwest Hanseong: monks performing a restrained memorial rite for the late crown prince in a modest freshly built wooden hall, offerings and incense. No later gilded Suguiksa exterior.
+Style and texture: Monochrome historical photographic reconstruction with soft vintage optics, natural continuous tonal shading, gently faded silver-print feel, visible irregular grain and random noise, a few subtle dust specks and fine micro-scratches. No drawing, hatching or engraved paper. For dates before photography existed, this remains explicitly a fictional camera-style visualization, never an archival photo.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【1459년 · 한성 서북 교외】 임금, 요절한 세자 위해 원찰 세우다
+
+임금께서 2년 전 스무 살의 젊은 나이로 세상을 떠난 맏아들 의경세자의 명복을 빌기 위해 도성 서북쪽 교외에 절을 세우셨다. 절은 세자의 무덤 가까이에 자리 잡았다. 왕실의 원찰로서 세자의 넋을 위로하는 재를 올리게 된다.
+
+의경세자는 임금께서 즉위하신 뒤 세자로 책봉되었다. 학문과 덕행이 뛰어나 기대를 모았으나 병을 얻어 갑자기 세상을 떠났다. 이를 두고 궁궐 안팎에서는 상왕(단종)의 일과 관련된 원혼의 탓이라는 흉흉한 소문까지 돌았다. 아들을 잃은 임금의 슬픔은 매우 깊었다고 한다.
+
+임금께서는 왕위에 오르신 뒤 불교를 깊이 믿으셨다. 경전을 한글로 풀어 펴내고 여러 절을 세우거나 고치는 일에 힘을 쏟고 계신다. 이번 원찰 건립도 그 연장선에 있다는 평이다. 공사에는 왕실의 재물이 들어갔다. 절이 완성되자 승려들이 모여 첫 재를 올렸다.
+
+유학을 받드는 신하들 가운데는 절을 짓는 데 나라의 재물을 쓰는 것을 못마땅해하는 이도 있다. 그러나 자식을 앞세운 부모의 마음을 탓할 수는 없다는 목소리가 더 크다. 도성 서북쪽 산자락의 새 절은 왕실의 슬픔을 품은 채 세자를 위한 기도를 이어 가게 된다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.

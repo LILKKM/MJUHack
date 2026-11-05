@@ -1,0 +1,20 @@
+Use case: historical-scene
+Asset type: One landscape 3:2 newspaper scene, photographic-style AI historical reconstruction.
+Primary scene: 2009 Jingwansa discovery: conservators with gloves carefully opening an aged cloth bundle containing a worn historical Korean flag and folded old newspaper sheets beside a dismantled timber Buddhist altar. No legible newspaper words; flag as artifact, no invented inscriptions.
+Style and texture: Contemporary documentary photographic realism, natural gently desaturated color, restrained fine sensor noise, clear materials, no fake aged scratches. No invented devices or objects beyond the article setting.
+Photographic realism: actual-looking skin, cloth, timber, stone, subtle natural light and optical depth; no pencil lines, crosshatching, painting or cartoon. Cohesive newspaper editorial image with a strong focal subject readable when reduced to 390px wide.
+Period constraint: Use the event date and event location in the article, not the modern pin address or today's memorial. Match period clothes, tools, architecture and streetscape; no modern objects in premodern scenes. Avoid overclaiming exact building layout, uniforms or identities. Named persons need not have visible recognizable faces; favor rear views or distant anonymous figures.
+Text constraint: No title, date, captions, readable body text, logos, watermark or explanatory lettering anywhere. Documents face away or are too small to read. No invented banner slogans. Image only; type will be added outside it.
+Scene constraints: One coherent scene only, no collage or panels. No graphic injury, execution, torture, corpse, severed parts or gore. Use the specific respectful non-graphic scene above. No theatrical fantasy, poster, staged film still or famous photograph imitation.
+Provenance: This is AI reconstruction of user-supplied draft narrative, NOT a genuine historical photograph or verified historical evidence. Keep the scene plausible without inventing evidence. External captions will identify the AI reconstruction.
+Article context (reference narrative only, do not typeset this text, do not illustrate every paragraph):
+【2009년 5월 · 서울】 진관사 칠성각 벽 속에서 90년 전 태극기 나왔다
+
+서울 은평구 진관사의 칠성각을 해체·보수하던 중 불단 안쪽에서 일제강점기 태극기와 독립운동 관련 신문 뭉치가 발견되었다. 낡은 보자기에 싸인 태극기는 일장기 위에 태극과 4괘를 덧그린 것이다. 군데군데 불에 탄 듯한 구멍이 나 있다. 함께 나온 신문은 1919년 무렵 발행된 『독립신문』과 『조선독립신문』, 『자유신종보』 등으로 확인되었다.
+
+절 측과 학계는 이 유물들을 3·1운동 무렵 이 절 승려였던 백초월 스님이 숨겨 둔 것으로 보고 있다. 백초월 스님은 승려들의 비밀 독립운동 조직을 이끌며 독립 자금을 모으고 임시정부를 도왔다. 그러다 여러 차례 붙잡혀 옥고를 치렀고, 끝내 광복을 보지 못하고 옥중에서 순국한 것으로 알려져 있다.
+
+일장기를 태극기로 바꿔 그린 이 깃발은 일제의 상징 위에 우리의 상징을 덧입힌 저항의 표시로 해석된다. 전문가들은 "불교계의 독립운동 참여를 보여 주는 생생한 증거"라고 평가했다. 사찰에서 일제강점기 태극기가 발견된 것은 매우 드문 일이다.
+
+진관사는 유물을 보존 처리한 뒤 일반에 공개할 계획이다. 90년 동안 불단 속에서 숨죽이고 있던 태극기가 마침내 세상 밖으로 나와 그날의 함성을 다시 전하고 있다.
+Output: Exactly one opaque 3:2 landscape image. Prioritize the Primary scene above.
