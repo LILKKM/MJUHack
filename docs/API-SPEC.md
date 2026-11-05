@@ -14,6 +14,7 @@
 | 형식 | 요청·응답 모두 `application/json; charset=UTF-8` |
 | 필드 이름 | camelCase. ID는 DB 값 그대로 (`SDM01`, `JOSEON`, `X3`) |
 | 시간 | ISO-8601, Asia/Seoul (`2026-11-06T14:30:00+09:00`) |
+| CORS | `ALLOWED_ORIGINS` 환경변수에 등록한 주소만 허용 (`GET`, `POST`, `PATCH`) |
 | 인증 | 없음. 챗봇은 익명 `sessionId`(UUID)로 구분 |
 | 개인정보 | 정확한 사용자 좌표는 거리 계산에만 쓰고 저장하지 않는다. 장애 진단명 등 건강정보는 받지 않는다 |
 | 빈 값 | 모르는 값은 `null`. 접근성은 `UNKNOWN` 으로 표시하며 "가능/불가"로 추정하지 않는다 |

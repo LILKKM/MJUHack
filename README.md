@@ -40,6 +40,8 @@ MJUHack/
 
 DB 접속 정보는 기본값이 `localhost:3307 / hack / hack` 이다. 다른 DB를 쓰려면 환경변수 `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` 를 설정한다.
 
+프론트와 백엔드를 다른 주소로 배포하면 백엔드 환경변수 `ALLOWED_ORIGINS` 에 프론트 주소를 넣는다 (쉼표로 여러 개). 개발 중에는 프록시를 쓰므로 필요 없다.
+
 ### AI 코스 추천·챗봇 (Claude)
 
 환경변수 `ANTHROPIC_API_KEY` 에 Claude API 키를 넣고 서버를 실행한다. 저장소에 커밋하지 않는다. 키가 없어도 서버와 일반 API는 동작하고, AI API만 `503 LLM_NOT_CONFIGURED` 를 준다. 모델은 `application.yaml` 의 `claude.model` 에서 바꾼다.

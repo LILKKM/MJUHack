@@ -13,6 +13,11 @@ spring:
     enabled: true
     locations: classpath:db/migration
 
+# 프론트와 주소가 다를 때 허용할 주소 (쉼표로 구분). 비어 있으면 허용하지 않는다
+app:
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS:}
+
 # 한국관광공사 무장애 여행정보 API (수집 방법: docs/DB-SCHEMA.md "관광공사 무장애 정보 수집")
 kto:
   service-key: ${KTO_SERVICE_KEY:}       # 공공데이터포털 Decoding 키. 저장소에 커밋하지 않는다
